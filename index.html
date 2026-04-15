@@ -2,313 +2,140 @@
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jutavit Romania - Suplimente Alimentare & Vitamine | Shop Online</title>
-    <meta name="description" content="Jutavit Romania - Magazin online de suplimente alimentare, vitamine și produse farmaceutice. Livrare rapidă la domiciliu.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Patricecom - Depozit Farmaceutic | Suplimente & Vitamine cu Livrare</title>
+    <meta name="description" content="Patricecom - Depozit farmaceutic cu livrare la domiciliu. Suplimente alimentare, vitamine si produse farmaceutice de la branduri de top. Comenzi online cu transport rapid.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="css/assistant.css">
     <link rel="stylesheet" href="css/dark-mode.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💊</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
 </head>
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="preloader-inner">
-            <div class="preloader-logo">JUTAVIT</div>
-            <div class="preloader-bar"><div class="preloader-progress"></div></div>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <span><i class="fas fa-truck"></i> Livrare rapida in toata Romania</span>
+            <span><i class="fas fa-phone"></i> Comenzi: +40 721 000 000</span>
+            <span class="hide-mobile"><i class="fas fa-clock"></i> Luni-Vineri: 8:00-18:00</span>
         </div>
     </div>
 
-    <!-- Navigation -->
-    <nav id="navbar" class="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <span class="logo-icon"><i class="fas fa-leaf"></i></span>
-                <span class="logo-text">JUTAVIT</span>
-                <span class="logo-subtitle">Romania</span>
+    <!-- Header / Navigation -->
+    <header id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon"><i class="fas fa-warehouse"></i></span>
+                <div class="logo-text-group">
+                    <span class="logo-text">PATRICECOM</span>
+                    <span class="logo-subtitle">Depozit Farmaceutic</span>
+                </div>
             </a>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#hero" class="nav-link active">Acasa</a></li>
-                <li><a href="#about" class="nav-link">Despre Noi</a></li>
-                <li><a href="#categories" class="nav-link">Categorii</a></li>
-                <li><a href="#shop" class="nav-link">Magazine</a></li>
-                <li><a href="#brands" class="nav-link">Branduri</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+
+            <!-- Main Search Bar -->
+            <div class="nav-search" id="navSearch">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Cauta produse, vitamine, suplimente..." autocomplete="off">
+                <div class="search-results" id="searchResults"></div>
+            </div>
+
             <div class="nav-actions">
                 <button class="nav-btn theme-toggle" id="themeToggle" title="Schimba tema">
                     <i class="fas fa-moon" id="themeIcon"></i>
                 </button>
-                <button class="nav-btn search-toggle" id="searchToggle" title="Cauta">
-                    <i class="fas fa-search"></i>
-                </button>
                 <button class="nav-btn cart-toggle" id="cartToggle" title="Cos de cumparaturi">
-                    <i class="fas fa-shopping-bag"></i>
+                    <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count" id="cartCount">0</span>
                 </button>
-                <button class="nav-btn ai-toggle" id="aiToggle" title="Asistent AI">
-                    <i class="fas fa-robot"></i>
-                    <span class="ai-pulse"></span>
+                <button class="nav-btn mobile-search-btn" id="mobileSearchBtn">
+                    <i class="fas fa-search"></i>
                 </button>
-                <button class="nav-btn mobile-toggle" id="mobileToggle">
-                    <span class="hamburger"></span>
+                <button class="nav-btn mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
                 </button>
             </div>
         </div>
-        <!-- Search Bar -->
-        <div class="search-overlay" id="searchOverlay">
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Cauta produse, vitamine, suplimente..." autocomplete="off">
-                <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
-                <div class="search-results" id="searchResults"></div>
+        <!-- Mobile search -->
+        <div class="mobile-search" id="mobileSearch">
+            <input type="text" id="mobileSearchInput" placeholder="Cauta produse..." autocomplete="off">
+            <div class="search-results" id="mobileSearchResults"></div>
+        </div>
+    </header>
+
+    <!-- Category Navigation Bar -->
+    <nav class="cat-nav" id="catNav">
+        <div class="container">
+            <div class="cat-nav-scroll" id="catNavScroll">
+                <a href="#" class="cat-nav-item active" data-cat="all"><i class="fas fa-th"></i> <span>Toate</span></a>
+                <a href="#" class="cat-nav-item" data-cat="vitamine"><i class="fas fa-sun"></i> <span>Vitamine</span></a>
+                <a href="#" class="cat-nav-item" data-cat="minerale"><i class="fas fa-gem"></i> <span>Minerale</span></a>
+                <a href="#" class="cat-nav-item" data-cat="imunitate"><i class="fas fa-shield-virus"></i> <span>Imunitate</span></a>
+                <a href="#" class="cat-nav-item" data-cat="omega"><i class="fas fa-fish"></i> <span>Omega</span></a>
+                <a href="#" class="cat-nav-item" data-cat="digestie"><i class="fas fa-leaf"></i> <span>Digestie</span></a>
+                <a href="#" class="cat-nav-item" data-cat="frumusete"><i class="fas fa-spa"></i> <span>Frumusete</span></a>
+                <a href="#" class="cat-nav-item" data-cat="copii"><i class="fas fa-baby"></i> <span>Copii</span></a>
+                <a href="#" class="cat-nav-item" data-cat="ceaiuri"><i class="fas fa-mug-hot"></i> <span>Ceaiuri</span></a>
+                <a href="#" class="cat-nav-item" data-cat="geluri"><i class="fas fa-pump-medical"></i> <span>Geluri & Creme</span></a>
+                <a href="#" class="cat-nav-item" data-cat="igiena"><i class="fas fa-tooth"></i> <span>Igiena Orala</span></a>
+                <a href="#" class="cat-nav-item" data-cat="siropuri"><i class="fas fa-prescription-bottle"></i> <span>Siropuri</span></a>
+                <a href="#" class="cat-nav-item" data-cat="relaxare"><i class="fas fa-moon"></i> <span>Relaxare</span></a>
+                <a href="#" class="cat-nav-item" data-cat="slabire"><i class="fas fa-weight"></i> <span>Slabire</span></a>
+                <a href="#" class="cat-nav-item" data-cat="ochi"><i class="fas fa-eye"></i> <span>Ochi</span></a>
+                <a href="#" class="cat-nav-item" data-cat="parafarmaceutice"><i class="fas fa-first-aid"></i> <span>Parafarmaceutice</span></a>
+                <a href="#" class="cat-nav-item" data-cat="energie"><i class="fas fa-bolt"></i> <span>Energie</span></a>
+                <a href="#" class="cat-nav-item" data-cat="oferte"><i class="fas fa-tags"></i> <span>Oferte</span></a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-bg">
-            <div class="hero-gradient"></div>
-            <div class="hero-particles" id="heroParticles"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <span class="hero-badge">
-                    <i class="fas fa-shield-alt"></i> Produse Certificate & Testate Clinic
-                </span>
-                <h1 class="hero-title">
-                    Sanatatea ta,<br>
-                    <span class="hero-highlight">prioritatea noastra</span>
-                </h1>
-                <p class="hero-description">
-                    Descopera gama completa de suplimente alimentare, vitamine si produse
-                    naturale de la branduri de incredere. Livrare rapida la domiciliu in toata Romania.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#shop" class="btn btn-primary btn-lg">
-                        <i class="fas fa-shopping-bag"></i> Exploreaza Magazinul
-                    </a>
-                    <a href="#about" class="btn btn-outline btn-lg">
-                        <i class="fas fa-play-circle"></i> Afla Mai Multe
-                    </a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="500">0</span><span class="stat-plus">+</span>
-                        <span class="stat-label">Produse</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="50000">0</span><span class="stat-plus">+</span>
-                        <span class="stat-label">Clienti Multumiti</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="15">0</span><span class="stat-plus">+</span>
-                        <span class="stat-label">Branduri Premium</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="hero-card hero-card-1">
-                    <i class="fas fa-capsules"></i>
-                    <span>Vitamine</span>
-                </div>
-                <div class="hero-card hero-card-2">
-                    <i class="fas fa-leaf"></i>
-                    <span>Natural</span>
-                </div>
-                <div class="hero-card hero-card-3">
-                    <i class="fas fa-heartbeat"></i>
-                    <span>Sanatate</span>
-                </div>
-                <div class="hero-circle"></div>
-                <div class="hero-circle hero-circle-2"></div>
-            </div>
-        </div>
-        <div class="hero-scroll">
-            <a href="#about"><i class="fas fa-chevron-down"></i></a>
-        </div>
-    </section>
-
-    <!-- Features Bar -->
-    <section class="features-bar">
-        <div class="container">
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fas fa-truck"></i></div>
-                    <div class="feature-text">
-                        <strong>Livrare Rapida</strong>
-                        <span>In toata Romania</span>
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container main-grid">
+            <!-- Sidebar - Brand Filters -->
+            <aside class="sidebar" id="sidebar">
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-building"></i> Branduri</h3>
+                    <div class="brand-filters" id="brandFilters">
+                        <label class="brand-filter active" data-brand="all">
+                            <span class="brand-name">Toate Brandurile</span>
+                            <span class="brand-count" id="totalCount">804</span>
+                        </label>
+                        <label class="brand-filter" data-brand="JUTAVIT">
+                            <span class="brand-name">Jutavit</span>
+                            <span class="brand-count">84</span>
+                        </label>
+                        <label class="brand-filter" data-brand="HOFIGAL">
+                            <span class="brand-name">Hofigal</span>
+                            <span class="brand-count">198</span>
+                        </label>
+                        <label class="brand-filter" data-brand="LARIX">
+                            <span class="brand-name">Larix</span>
+                            <span class="brand-count">170</span>
+                        </label>
+                        <label class="brand-filter" data-brand="ZDROVIT">
+                            <span class="brand-name">Zdrovit</span>
+                            <span class="brand-count">140</span>
+                        </label>
+                        <label class="brand-filter" data-brand="BIOEEL">
+                            <span class="brand-name">Bioeel</span>
+                            <span class="brand-count">127</span>
+                        </label>
+                        <label class="brand-filter" data-brand="FARES">
+                            <span class="brand-name">Fares</span>
+                            <span class="brand-count">68</span>
+                        </label>
+                        <label class="brand-filter" data-brand="MEDICA">
+                            <span class="brand-name">Medica</span>
+                            <span class="brand-count">17</span>
+                        </label>
                     </div>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-                    <div class="feature-text">
-                        <strong>Produse Originale</strong>
-                        <span>100% Autentice</span>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
-                    <div class="feature-text">
-                        <strong>Suport 24/7</strong>
-                        <span>Asistent AI Integrat</span>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fas fa-undo"></i></div>
-                    <div class="feature-text">
-                        <strong>Retur Gratuit</strong>
-                        <span>In 30 de zile</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content" data-animate="fade-right">
-                    <span class="section-badge">Despre Noi</span>
-                    <h2 class="section-title">Dedicati sanatatii tale de peste <span class="text-accent">20 de ani</span></h2>
-                    <p class="about-text">
-                        Jutavit Romania este distribuitorul autorizat al celor mai apreciate branduri de suplimente
-                        alimentare din Europa. Oferim o gama completa de vitamine, minerale si produse naturale,
-                        toate certificate si testate clinic pentru siguranta ta.
-                    </p>
-                    <div class="about-features">
-                        <div class="about-feature">
-                            <div class="about-feature-icon"><i class="fas fa-check-circle"></i></div>
-                            <div>
-                                <strong>Calitate Garantata</strong>
-                                <p>Toate produsele sunt certificate conform standardelor europene</p>
-                            </div>
-                        </div>
-                        <div class="about-feature">
-                            <div class="about-feature-icon"><i class="fas fa-flask"></i></div>
-                            <div>
-                                <strong>Testate Clinic</strong>
-                                <p>Formule dezvoltate si testate in laboratoare acreditate</p>
-                            </div>
-                        </div>
-                        <div class="about-feature">
-                            <div class="about-feature-icon"><i class="fas fa-hand-holding-heart"></i></div>
-                            <div>
-                                <strong>Ingrediente Naturale</strong>
-                                <p>Produse cu ingrediente naturale de cea mai inalta calitate</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual" data-animate="fade-left">
-                    <div class="about-image-grid">
-                        <div class="about-img-card about-img-1">
-                            <i class="fas fa-microscope"></i>
-                            <span>Laborator Acreditat</span>
-                        </div>
-                        <div class="about-img-card about-img-2">
-                            <i class="fas fa-award"></i>
-                            <span>Premii & Certificari</span>
-                        </div>
-                        <div class="about-img-card about-img-3">
-                            <i class="fas fa-users"></i>
-                            <span>Echipa de Specialisti</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Categories Section -->
-    <section id="categories" class="categories section">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-badge">Categorii</span>
-                <h2 class="section-title">Exploreaza dupa categorie</h2>
-                <p class="section-subtitle">Gaseste produsul potrivit nevoilor tale de sanatate</p>
-            </div>
-            <div class="categories-grid" data-animate="fade-up">
-                <div class="category-card" data-category="vitamine">
-                    <div class="category-icon"><i class="fas fa-sun"></i></div>
-                    <h3>Vitamine</h3>
-                    <p>Vitamina C, D, B Complex si multe altele</p>
-                    <span class="category-count">85+ produse</span>
-                </div>
-                <div class="category-card" data-category="minerale">
-                    <div class="category-icon"><i class="fas fa-gem"></i></div>
-                    <h3>Minerale</h3>
-                    <p>Magneziu, Zinc, Seleniu, Calciu</p>
-                    <span class="category-count">40+ produse</span>
-                </div>
-                <div class="category-card" data-category="imunitate">
-                    <div class="category-icon"><i class="fas fa-shield-virus"></i></div>
-                    <h3>Imunitate</h3>
-                    <p>Intareste sistemul imunitar natural</p>
-                    <span class="category-count">30+ produse</span>
-                </div>
-                <div class="category-card" data-category="digestie">
-                    <div class="category-icon"><i class="fas fa-stomach"></i></div>
-                    <h3>Digestie</h3>
-                    <p>Probiotice, enzime si sanatate digestiva</p>
-                    <span class="category-count">25+ produse</span>
-                </div>
-                <div class="category-card" data-category="articulatii">
-                    <div class="category-icon"><i class="fas fa-bone"></i></div>
-                    <h3>Articulatii</h3>
-                    <p>Glucozamina, condroitina si colagen</p>
-                    <span class="category-count">20+ produse</span>
-                </div>
-                <div class="category-card" data-category="frumusete">
-                    <div class="category-icon"><i class="fas fa-spa"></i></div>
-                    <h3>Frumusete</h3>
-                    <p>Par, piele si unghii sanatoase</p>
-                    <span class="category-count">15+ produse</span>
-                </div>
-                <div class="category-card" data-category="energie">
-                    <div class="category-icon"><i class="fas fa-bolt"></i></div>
-                    <h3>Energie & Vitalitate</h3>
-                    <p>Omega 3, Coenzima Q10, Ginseng</p>
-                    <span class="category-count">30+ produse</span>
-                </div>
-                <div class="category-card" data-category="copii">
-                    <div class="category-icon"><i class="fas fa-baby"></i></div>
-                    <h3>Pentru Copii</h3>
-                    <p>Vitamine si suplimente pentru cei mici</p>
-                    <span class="category-count">20+ produse</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Shop Section -->
-    <section id="shop" class="shop section">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-badge">Magazine Online</span>
-                <h2 class="section-title">Produsele Noastre</h2>
-                <p class="section-subtitle">Alege din gama completa de suplimente si vitamine</p>
-            </div>
-
-            <!-- Shop Filters -->
-            <div class="shop-toolbar" data-animate="fade-up">
-                <div class="shop-filters">
-                    <button class="filter-btn active" data-filter="all">Toate</button>
-                    <button class="filter-btn" data-filter="JUTAVIT">Jutavit</button>
-                    <button class="filter-btn" data-filter="MEDICA">Medica</button>
-                    <button class="filter-btn" data-filter="ZDROVIT">Zdrovit</button>
-                    <button class="filter-btn" data-filter="COSMOPHARM">Cosmopharm</button>
-                    <button class="filter-btn" data-filter="DACIA PLANT">Dacia Plant</button>
-                    <button class="filter-btn" data-filter="BIOEEL">Bioeel</button>
-                    <button class="filter-btn" data-filter="offer">Oferte</button>
-                </div>
-                <div class="shop-sort">
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-sort"></i> Sortare</h3>
                     <select id="sortSelect">
                         <option value="name-asc">Nume A-Z</option>
                         <option value="name-desc">Nume Z-A</option>
@@ -316,130 +143,98 @@
                         <option value="price-desc">Pret descrescator</option>
                     </select>
                 </div>
-            </div>
-
-            <!-- Products Grid -->
-            <div class="products-grid" id="productsGrid">
-                <!-- Products loaded dynamically -->
-            </div>
-
-            <!-- Load More -->
-            <div class="shop-load-more">
-                <button class="btn btn-outline" id="loadMore">
-                    <i class="fas fa-plus"></i> Incarca Mai Multe Produse
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Brands Section -->
-    <section id="brands" class="brands section">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-badge">Parteneri</span>
-                <h2 class="section-title">Branduri de Incredere</h2>
-                <p class="section-subtitle">Colaboram cu cele mai apreciate branduri farmaceutice</p>
-            </div>
-            <div class="brands-grid" data-animate="fade-up">
-                <div class="brand-card">
-                    <div class="brand-logo"><i class="fas fa-leaf"></i></div>
-                    <h3>Jutavit</h3>
-                    <p>Suplimente premium din Ungaria</p>
-                </div>
-                <div class="brand-card">
-                    <div class="brand-logo"><i class="fas fa-plus-circle"></i></div>
-                    <h3>Medica</h3>
-                    <p>Produse naturiste romanesti</p>
-                </div>
-                <div class="brand-card">
-                    <div class="brand-logo"><i class="fas fa-heartbeat"></i></div>
-                    <h3>Zdrovit</h3>
-                    <p>Sanatate si vitalitate</p>
-                </div>
-                <div class="brand-card">
-                    <div class="brand-logo"><i class="fas fa-star"></i></div>
-                    <h3>Cosmopharm</h3>
-                    <p>Suplimente alimentare naturale</p>
-                </div>
-                <div class="brand-card">
-                    <div class="brand-logo"><i class="fas fa-seedling"></i></div>
-                    <h3>Dacia Plant</h3>
-                    <p>Puterea plantelor medicinale</p>
-                </div>
-                <div class="brand-card">
-                    <div class="brand-logo"><i class="fas fa-flask"></i></div>
-                    <h3>Bioeel</h3>
-                    <p>Produse farmaceutice de calitate</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter section">
-        <div class="container">
-            <div class="newsletter-card" data-animate="fade-up">
-                <div class="newsletter-content">
-                    <h2>Aboneaza-te la Newsletter</h2>
-                    <p>Primeste oferte exclusive si noutati despre produsele noastre direct in inbox-ul tau.</p>
-                </div>
-                <form class="newsletter-form" id="newsletterForm">
-                    <div class="newsletter-input-group">
-                        <input type="email" placeholder="Adresa ta de email" required>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i> Aboneaza-te
-                        </button>
+                <div class="sidebar-section sidebar-info">
+                    <div class="info-card">
+                        <i class="fas fa-truck"></i>
+                        <div><strong>Livrare Rapida</strong><small>2-4 zile lucratoare</small></div>
                     </div>
-                </form>
+                    <div class="info-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <div><strong>Produse Originale</strong><small>100% autentice</small></div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-undo"></i>
+                        <div><strong>Retur 30 Zile</strong><small>Fara intrebari</small></div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Products Area -->
+            <section class="products-area">
+                <!-- Results Header -->
+                <div class="results-header">
+                    <div class="results-info">
+                        <h2 id="resultsTitle">Toate Produsele</h2>
+                        <span class="results-count" id="resultsCount">804 produse</span>
+                    </div>
+                    <div class="results-actions">
+                        <button class="view-btn active" id="gridViewBtn" title="Grid"><i class="fas fa-th"></i></button>
+                        <button class="view-btn" id="listViewBtn" title="Lista"><i class="fas fa-list"></i></button>
+                        <button class="filter-mobile-btn" id="filterMobileBtn"><i class="fas fa-sliders-h"></i> Filtre</button>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid" id="productsGrid"></div>
+
+                <!-- Load More -->
+                <div class="load-more-area">
+                    <button class="btn btn-primary" id="loadMore">
+                        <i class="fas fa-plus"></i> Incarca Mai Multe Produse
+                    </button>
+                    <span class="load-more-info" id="loadMoreInfo"></span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- About Section (lower, compact) -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-main">
+                    <h2><i class="fas fa-warehouse"></i> Patricecom - Depozit Farmaceutic</h2>
+                    <p>Suntem un depozit farmaceutic autorizat, specializat in distributia de suplimente alimentare, vitamine si produse parafarmaceutice. Lucram cu cele mai apreciate branduri din Romania si Europa, asigurand transport rapid si sigur catre clientii nostri din toata tara.</p>
+                    <div class="about-stats">
+                        <div class="stat"><strong>800+</strong><span>Produse</span></div>
+                        <div class="stat"><strong>7</strong><span>Branduri</span></div>
+                        <div class="stat"><strong>19</strong><span>Categorii</span></div>
+                        <div class="stat"><strong>48h</strong><span>Livrare</span></div>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="about-feat"><i class="fas fa-boxes"></i><div><strong>Stoc Permanent</strong><p>Peste 800 de produse disponibile permanent in depozitul nostru</p></div></div>
+                    <div class="about-feat"><i class="fas fa-shipping-fast"></i><div><strong>Transport National</strong><p>Livram in toata Romania prin curier rapid, 2-4 zile lucratoare</p></div></div>
+                    <div class="about-feat"><i class="fas fa-certificate"></i><div><strong>Produse Certificate</strong><p>Toate produsele sunt originale si certificate conform normelor UE</p></div></div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <section class="contact-section">
         <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-badge">Contact</span>
-                <h2 class="section-title">Contacteaza-ne</h2>
-                <p class="section-subtitle">Suntem aici sa te ajutam cu orice intrebare</p>
-            </div>
-            <div class="contact-grid" data-animate="fade-up">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <h3>Adresa</h3>
-                        <p>Strada Sanatatii Nr. 10<br>Bucuresti, Romania</p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                        <h3>Telefon</h3>
-                        <p>+40 721 000 000<br>Luni - Vineri: 9:00 - 18:00</p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                        <h3>Email</h3>
-                        <p>contact@jutavit.ro<br>comenzi@jutavit.ro</p>
-                    </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Depozit</h3>
+                    <p>Strada Sanatatii Nr. 10<br>Bucuresti, Romania</p>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" placeholder="Numele tau" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Email" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Subiect">
-                    </div>
-                    <div class="form-group">
-                        <textarea rows="5" placeholder="Mesajul tau..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-lg">
-                        <i class="fas fa-paper-plane"></i> Trimite Mesajul
-                    </button>
-                </form>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Comenzi Telefonice</h3>
+                    <p>+40 721 000 000<br>Luni-Vineri: 8:00-18:00</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>comenzi@patricecom.ro<br>contact@patricecom.ro</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Livrare</h3>
+                    <p>Standard: 15.99 Lei<br>Express: 29.99 Lei</p>
+                </div>
             </div>
         </div>
     </section>
@@ -449,34 +244,25 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#" class="footer-logo">
-                        <span class="logo-icon"><i class="fas fa-leaf"></i></span>
-                        <span class="logo-text">JUTAVIT</span>
-                    </a>
-                    <p>Distribuitorul tau de incredere pentru suplimente alimentare si vitamine de calitate premium.</p>
+                    <div class="footer-logo">
+                        <span class="logo-icon"><i class="fas fa-warehouse"></i></span>
+                        <span class="logo-text">PATRICECOM</span>
+                    </div>
+                    <p>Depozit farmaceutic cu distributie nationala. Suplimente alimentare, vitamine si produse parafarmaceutice de la branduri de incredere.</p>
                     <div class="footer-social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="footer-links">
-                    <h4>Link-uri Rapide</h4>
+                    <h4>Categorii Populare</h4>
                     <ul>
-                        <li><a href="#hero">Acasa</a></li>
-                        <li><a href="#about">Despre Noi</a></li>
-                        <li><a href="#shop">Magazine</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Categorii</h4>
-                    <ul>
-                        <li><a href="#categories">Vitamine</a></li>
-                        <li><a href="#categories">Minerale</a></li>
-                        <li><a href="#categories">Imunitate</a></li>
-                        <li><a href="#categories">Digestie</a></li>
+                        <li><a href="#" data-cat="vitamine">Vitamine</a></li>
+                        <li><a href="#" data-cat="minerale">Minerale</a></li>
+                        <li><a href="#" data-cat="imunitate">Imunitate</a></li>
+                        <li><a href="#" data-cat="ceaiuri">Ceaiuri</a></li>
+                        <li><a href="#" data-cat="geluri">Geluri & Creme</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -486,33 +272,37 @@
                         <li><a href="#">Termeni si Conditii</a></li>
                         <li><a href="#">Politica de Retur</a></li>
                         <li><a href="#">Livrare & Plata</a></li>
+                        <li><a href="#">Despre Noi</a></li>
                     </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Metode de Plata</h4>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fas fa-money-bill-wave"></i>
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <p class="footer-small">Plata ramburs, card sau transfer bancar</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Jutavit Romania. Toate drepturile rezervate.</p>
-                <div class="payment-methods">
-                    <i class="fab fa-cc-visa"></i>
-                    <i class="fab fa-cc-mastercard"></i>
-                    <i class="fas fa-money-bill-wave"></i>
-                    <i class="fas fa-university"></i>
-                </div>
+                <p>&copy; 2026 Patricecom SRL. Toate drepturile rezervate.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Shopping Cart Sidebar -->
+    <!-- Cart Sidebar -->
     <div class="cart-overlay" id="cartOverlay"></div>
     <div class="cart-sidebar" id="cartSidebar">
         <div class="cart-header">
-            <h3><i class="fas fa-shopping-bag"></i> Cosul Tau</h3>
+            <h3><i class="fas fa-shopping-cart"></i> Cosul Tau</h3>
             <button class="cart-close" id="cartClose"><i class="fas fa-times"></i></button>
         </div>
         <div class="cart-items" id="cartItems">
             <div class="cart-empty">
-                <i class="fas fa-shopping-bag"></i>
+                <i class="fas fa-shopping-cart"></i>
                 <p>Cosul tau este gol</p>
-                <a href="#shop" class="btn btn-primary">Incepe Cumparaturile</a>
             </div>
         </div>
         <div class="cart-footer" id="cartFooter" style="display:none;">
@@ -520,7 +310,7 @@
                 <span>Total:</span>
                 <span class="cart-total-price" id="cartTotal">0.00 Lei</span>
             </div>
-            <button class="btn btn-primary btn-lg btn-block" id="checkoutBtn">
+            <button class="btn btn-primary btn-block" id="checkoutBtn">
                 <i class="fas fa-lock"></i> Finalizeaza Comanda
             </button>
         </div>
@@ -535,178 +325,43 @@
             </div>
             <div class="modal-body">
                 <div class="checkout-steps">
-                    <div class="checkout-step active" data-step="1">
-                        <span class="step-number">1</span>
-                        <span class="step-label">Date Personale</span>
-                    </div>
-                    <div class="checkout-step" data-step="2">
-                        <span class="step-number">2</span>
-                        <span class="step-label">Livrare</span>
-                    </div>
-                    <div class="checkout-step" data-step="3">
-                        <span class="step-number">3</span>
-                        <span class="step-label">Plata</span>
-                    </div>
+                    <div class="checkout-step active" data-step="1"><span class="step-number">1</span><span class="step-label">Date</span></div>
+                    <div class="checkout-step" data-step="2"><span class="step-number">2</span><span class="step-label">Livrare</span></div>
+                    <div class="checkout-step" data-step="3"><span class="step-number">3</span><span class="step-label">Plata</span></div>
                 </div>
-
-                <!-- Step 1: Personal Info -->
                 <div class="checkout-panel active" id="step1">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Nume Complet *</label>
-                            <input type="text" id="checkName" required placeholder="Ion Popescu">
-                        </div>
-                        <div class="form-group">
-                            <label>Telefon *</label>
-                            <input type="tel" id="checkPhone" required placeholder="07XX XXX XXX">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Email *</label>
-                        <input type="email" id="checkEmail" required placeholder="email@exemplu.ro">
-                    </div>
-                    <button class="btn btn-primary btn-lg btn-block" onclick="nextStep(2)">
-                        Continua <i class="fas fa-arrow-right"></i>
-                    </button>
+                    <div class="form-row"><div class="form-group"><label>Nume Complet *</label><input type="text" id="checkName" placeholder="Ion Popescu"></div><div class="form-group"><label>Telefon *</label><input type="tel" id="checkPhone" placeholder="07XX XXX XXX"></div></div>
+                    <div class="form-group"><label>Email *</label><input type="email" id="checkEmail" placeholder="email@exemplu.ro"></div>
+                    <button class="btn btn-primary btn-block" onclick="nextStep(2)">Continua <i class="fas fa-arrow-right"></i></button>
                 </div>
-
-                <!-- Step 2: Delivery -->
                 <div class="checkout-panel" id="step2">
-                    <div class="form-group">
-                        <label>Adresa de Livrare *</label>
-                        <input type="text" id="checkAddress" required placeholder="Strada, Numar, Bloc, Scara, Ap.">
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Oras *</label>
-                            <input type="text" id="checkCity" required placeholder="Bucuresti">
-                        </div>
-                        <div class="form-group">
-                            <label>Judet *</label>
-                            <input type="text" id="checkCounty" required placeholder="Ilfov">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Cod Postal</label>
-                        <input type="text" id="checkZip" placeholder="010101">
-                    </div>
+                    <div class="form-group"><label>Adresa de Livrare *</label><input type="text" id="checkAddress" placeholder="Strada, Numar, Bloc, Scara, Ap."></div>
+                    <div class="form-row"><div class="form-group"><label>Oras *</label><input type="text" id="checkCity" placeholder="Bucuresti"></div><div class="form-group"><label>Judet *</label><input type="text" id="checkCounty" placeholder="Ilfov"></div></div>
                     <div class="delivery-options">
-                        <label class="delivery-option">
-                            <input type="radio" name="delivery" value="standard" checked>
-                            <div class="delivery-card">
-                                <i class="fas fa-truck"></i>
-                                <div>
-                                    <strong>Livrare Standard</strong>
-                                    <span>2-4 zile lucratoare - 15.99 Lei</span>
-                                </div>
-                            </div>
-                        </label>
-                        <label class="delivery-option">
-                            <input type="radio" name="delivery" value="express">
-                            <div class="delivery-card">
-                                <i class="fas fa-shipping-fast"></i>
-                                <div>
-                                    <strong>Livrare Express</strong>
-                                    <span>1-2 zile lucratoare - 29.99 Lei</span>
-                                </div>
-                            </div>
-                        </label>
+                        <label class="delivery-option"><input type="radio" name="delivery" value="standard" checked><div class="delivery-card"><i class="fas fa-truck"></i><div><strong>Standard</strong><span>2-4 zile - 15.99 Lei</span></div></div></label>
+                        <label class="delivery-option"><input type="radio" name="delivery" value="express"><div class="delivery-card"><i class="fas fa-shipping-fast"></i><div><strong>Express</strong><span>1-2 zile - 29.99 Lei</span></div></div></label>
                     </div>
-                    <div class="form-row">
-                        <button class="btn btn-outline btn-lg" onclick="nextStep(1)">
-                            <i class="fas fa-arrow-left"></i> Inapoi
-                        </button>
-                        <button class="btn btn-primary btn-lg" onclick="nextStep(3)">
-                            Continua <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
+                    <div class="form-row"><button class="btn btn-outline" onclick="nextStep(1)"><i class="fas fa-arrow-left"></i> Inapoi</button><button class="btn btn-primary" onclick="nextStep(3)">Continua <i class="fas fa-arrow-right"></i></button></div>
                 </div>
-
-                <!-- Step 3: Payment -->
                 <div class="checkout-panel" id="step3">
                     <div class="order-summary" id="orderSummary"></div>
                     <div class="payment-options">
-                        <label class="payment-option">
-                            <input type="radio" name="payment" value="card" checked>
-                            <div class="payment-card">
-                                <i class="fas fa-credit-card"></i>
-                                <span>Card Bancar</span>
-                            </div>
-                        </label>
-                        <label class="payment-option">
-                            <input type="radio" name="payment" value="ramburs">
-                            <div class="payment-card">
-                                <i class="fas fa-money-bill-wave"></i>
-                                <span>Ramburs la Curier</span>
-                            </div>
-                        </label>
-                        <label class="payment-option">
-                            <input type="radio" name="payment" value="transfer">
-                            <div class="payment-card">
-                                <i class="fas fa-university"></i>
-                                <span>Transfer Bancar</span>
-                            </div>
-                        </label>
+                        <label class="payment-option"><input type="radio" name="payment" value="ramburs" checked><div class="payment-card"><i class="fas fa-money-bill-wave"></i><span>Ramburs</span></div></label>
+                        <label class="payment-option"><input type="radio" name="payment" value="card"><div class="payment-card"><i class="fas fa-credit-card"></i><span>Card</span></div></label>
+                        <label class="payment-option"><input type="radio" name="payment" value="transfer"><div class="payment-card"><i class="fas fa-university"></i><span>Transfer</span></div></label>
                     </div>
-                    <div class="form-row">
-                        <button class="btn btn-outline btn-lg" onclick="nextStep(2)">
-                            <i class="fas fa-arrow-left"></i> Inapoi
-                        </button>
-                        <button class="btn btn-success btn-lg" id="placeOrderBtn">
-                            <i class="fas fa-check"></i> Plaseaza Comanda
-                        </button>
-                    </div>
+                    <div class="form-row"><button class="btn btn-outline" onclick="nextStep(2)"><i class="fas fa-arrow-left"></i> Inapoi</button><button class="btn btn-success" id="placeOrderBtn"><i class="fas fa-check"></i> Plaseaza Comanda</button></div>
                 </div>
-
-                <!-- Success -->
                 <div class="checkout-panel" id="stepSuccess">
                     <div class="order-success">
                         <div class="success-icon"><i class="fas fa-check-circle"></i></div>
-                        <h2>Comanda Plasata cu Succes!</h2>
-                        <p>Iti multumim pentru comanda ta. Vei primi un email de confirmare in cateva minute.</p>
-                        <p class="order-number">Numar Comanda: <strong id="orderNumber"></strong></p>
-                        <button class="btn btn-primary btn-lg" onclick="closeCheckout()">
-                            Inchide
-                        </button>
+                        <h2>Comanda Plasata!</h2>
+                        <p>Vei primi un email de confirmare. Te vom contacta telefonic pentru detalii.</p>
+                        <p class="order-number">Comanda: <strong id="orderNumber"></strong></p>
+                        <button class="btn btn-primary" onclick="closeCheckout()">Inchide</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- AI Assistant -->
-    <div class="ai-assistant" id="aiAssistant">
-        <div class="ai-header">
-            <div class="ai-header-info">
-                <div class="ai-avatar">
-                    <i class="fas fa-robot"></i>
-                    <span class="ai-status-dot"></span>
-                </div>
-                <div>
-                    <h3>Asistent JutaBot</h3>
-                    <span class="ai-status">Online - Gata sa te ajut</span>
-                </div>
-            </div>
-            <button class="ai-close" id="aiClose"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="ai-messages" id="aiMessages">
-            <div class="ai-message bot">
-                <div class="ai-message-avatar"><i class="fas fa-robot"></i></div>
-                <div class="ai-message-content">
-                    <p>Buna! Sunt <strong>JutaBot</strong>, asistentul tau virtual.
-                    Te pot ajuta sa gasesti produsul potrivit, sa afli informatii despre suplimente
-                    sau sa iti raspund la orice intrebare. Cu ce te pot ajuta?</p>
-                    <div class="ai-suggestions">
-                        <button class="ai-suggestion" data-query="Ce vitamine imi recomanzi?">Ce vitamine imi recomanzi?</button>
-                        <button class="ai-suggestion" data-query="Vreau ceva pentru imunitate">Ceva pentru imunitate</button>
-                        <button class="ai-suggestion" data-query="Care sunt ofertele?">Care sunt ofertele?</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ai-input-container">
-            <input type="text" id="aiInput" placeholder="Scrie un mesaj..." autocomplete="off">
-            <button class="ai-send" id="aiSend"><i class="fas fa-paper-plane"></i></button>
         </div>
     </div>
 
@@ -718,12 +373,48 @@
         </div>
     </div>
 
-    <!-- Back to Top -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+    <!-- AI Assistant - Floating Chat -->
+    <div class="ai-fab" id="aiFab">
+        <div class="ai-fab-pulse"></div>
+        <i class="fas fa-comments"></i>
+        <span class="ai-fab-label">Ajutor</span>
+    </div>
 
-    <!-- Scripts -->
+    <div class="ai-assistant" id="aiAssistant">
+        <div class="ai-header">
+            <div class="ai-header-info">
+                <div class="ai-avatar"><i class="fas fa-robot"></i><span class="ai-status-dot"></span></div>
+                <div><h3>Asistent Patricecom</h3><span class="ai-status">Online - Cauta orice produs</span></div>
+            </div>
+            <button class="ai-close" id="aiClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="ai-messages" id="aiMessages">
+            <div class="ai-message bot">
+                <div class="ai-message-avatar"><i class="fas fa-robot"></i></div>
+                <div class="ai-message-content">
+                    <p>Buna! Sunt asistentul Patricecom. Te pot ajuta sa gasesti orice produs din depozitul nostru. Ce cauti?</p>
+                    <div class="ai-suggestions">
+                        <button class="ai-suggestion" data-query="Ce vitamine aveti?">Vitamine</button>
+                        <button class="ai-suggestion" data-query="Produse pentru imunitate">Imunitate</button>
+                        <button class="ai-suggestion" data-query="Care sunt ofertele?">Oferte</button>
+                        <button class="ai-suggestion" data-query="Cum se livreaza?">Livrare</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ai-input-container">
+            <input type="text" id="aiInput" placeholder="Cauta un produs sau pune o intrebare..." autocomplete="off">
+            <button class="ai-send" id="aiSend"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Sidebar Overlay (mobile) -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Toast -->
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
     <script src="js/products.js"></script>
     <script src="js/product-images.js"></script>
     <script src="js/app.js"></script>

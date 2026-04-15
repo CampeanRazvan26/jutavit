@@ -1,16 +1,38 @@
 /* =============================================
-   JUTAVIT ROMANIA - Shop & Cart Logic
+   PATRICECOM - Shop & Cart Logic
    ============================================= */
 
 (function() {
-    let cart = JSON.parse(localStorage.getItem('jutavit_cart') || '[]');
-    let currentFilter = 'all';
+    let cart = JSON.parse(localStorage.getItem('patricecom_cart') || '[]');
+    let currentCategory = 'all';
+    let currentBrand = 'all';
     let currentSort = 'name-asc';
     let displayedCount = 0;
-    const ITEMS_PER_PAGE = 16;
+    const ITEMS_PER_PAGE = 24;
     let filteredProducts = [];
 
-    // Initialize shop
+    // Category keyword map
+    const categoryMap = {
+        'all': null,
+        'vitamine': ['vitamin', 'vitamina', 'multivitamin'],
+        'minerale': ['magneziu', 'zinc', 'seleniu', 'calciu', 'crom', 'iod', 'fier', 'potasiu', 'maximag', 'mineral'],
+        'imunitate': ['imuno', 'propolis', 'echinac', 'gripovit', 'herbal hot', 'imunitate'],
+        'omega': ['omega', 'ulei de peste', 'ulei de krill', 'lecitina'],
+        'digestie': ['probiotic', 'enzim', 'digestiv', 'lactaz', 'pelin', 'fibre', 'colon'],
+        'frumusete': ['collagen', 'hialuron', 'hair', 'colagen', 'biotin', 'frumusete'],
+        'copii': ['copii', 'kid', 'junior', 'baby', 'bebelus'],
+        'ceaiuri': ['ceai', 'tea', 'infuzie'],
+        'geluri': ['gel ', 'balsam', 'crema', 'spray', 'unguent'],
+        'igiena': ['lacalut', 'apa de gura', 'dental', 'dinti', 'periuta'],
+        'siropuri': ['sirop', 'suspensie'],
+        'relaxare': ['valeriana', 'harmony', 'antistres', 'calm', 'somn', 'relaxare', 'passiflora'],
+        'slabire': ['slim', 'slabit', 'glucomanan', 'cafea verde', 'apuretin', 'diet'],
+        'ochi': ['lutein', 'opti', 'afin', 'ochi', 'vedere'],
+        'parafarmaceutice': ['plaster', 'plasture', 'bandaj', 'termometru', 'test'],
+        'energie': ['coenzima', 'ginseng', 'energy', 'guarana', 'maca'],
+        'oferte': null
+    };
+
     function initShop() {
         if (!window.allProducts || !window.allProducts.length) {
             setTimeout(initShop, 100);
@@ -19,10 +41,84 @@
 
         filteredProducts = [...window.allProducts];
         displayedCount = 0;
+
+        updateBrandCounts();
         renderProducts();
-        setupFilters();
+        setupBrandFilters();
+        setupSort();
+        setupViewToggle();
         setupCart();
+        setupLoadMore();
         updateCartUI();
+    }
+
+    // Filter by category (called from cat-nav in app.js)
+    window.filterByCategory = function(category) {
+        currentCategory = category;
+        currentBrand = 'all';
+
+        // Reset brand filters UI
+        document.querySelectorAll('.brand-filter').forEach(b => b.classList.remove('active'));
+        document.querySelector('.brand-filter[data-brand="all"]')?.classList.add('active');
+
+        applyFilters();
+    };
+
+    function applyFilters() {
+        let products = [...window.allProducts];
+
+        // Category filter
+        if (currentCategory === 'oferte') {
+            products = products.filter(p => p.offer);
+        } else if (currentCategory !== 'all') {
+            const keywords = categoryMap[currentCategory];
+            if (keywords) {
+                products = products.filter(p =>
+                    keywords.some(kw => p.name.toLowerCase().includes(kw))
+                );
+            }
+        }
+
+        // Brand filter
+        if (currentBrand !== 'all') {
+            products = products.filter(p => p.brand.toUpperCase() === currentBrand.toUpperCase());
+        }
+
+        filteredProducts = products;
+        renderProducts(true);
+        updateResultsHeader();
+    }
+
+    function updateResultsHeader() {
+        const title = document.getElementById('resultsTitle');
+        const count = document.getElementById('resultsCount');
+        const loadMoreInfo = document.getElementById('loadMoreInfo');
+
+        if (title) {
+            if (currentCategory === 'all' && currentBrand === 'all') {
+                title.textContent = 'Toate Produsele';
+            } else if (currentCategory !== 'all') {
+                const catItem = document.querySelector(`.cat-nav-item[data-cat="${currentCategory}"] span`);
+                title.textContent = catItem ? catItem.textContent : currentCategory;
+            } else {
+                title.textContent = currentBrand;
+            }
+        }
+
+        if (count) {
+            count.textContent = `${filteredProducts.length} produse`;
+        }
+
+        if (loadMoreInfo) {
+            const sorted = sortProducts(filteredProducts, currentSort);
+            const showing = Math.min(displayedCount, sorted.length);
+            loadMoreInfo.textContent = `${showing} din ${sorted.length} produse`;
+        }
+    }
+
+    function updateBrandCounts() {
+        const totalCount = document.getElementById('totalCount');
+        if (totalCount) totalCount.textContent = window.allProducts.length;
     }
 
     // Render products
@@ -40,20 +136,21 @@
 
         batch.forEach((product, i) => {
             const card = createProductCard(product);
-            card.style.animationDelay = `${i * 0.05}s`;
+            card.style.animationDelay = `${i * 0.03}s`;
             grid.appendChild(card);
         });
 
         displayedCount += batch.length;
 
-        // Update load more button
+        // Update load more
         const loadMore = document.getElementById('loadMore');
         if (loadMore) {
             loadMore.style.display = displayedCount >= sorted.length ? 'none' : 'inline-flex';
         }
+
+        updateResultsHeader();
     }
 
-    // Create product card
     function createProductCard(product) {
         const colors = getProductColor(product.name);
         const icon = getCategoryIcon(product.name);
@@ -61,7 +158,7 @@
 
         const card = document.createElement('div');
         card.className = 'product-card';
-        card.style.animation = 'fadeInUp 0.5s ease forwards';
+        card.style.animation = 'fadeInUp 0.4s ease forwards';
         card.style.opacity = '0';
 
         const badges = [];
@@ -105,34 +202,30 @@
         return card;
     }
 
-    // Sort products
     function sortProducts(products, sort) {
         const sorted = [...products];
         switch(sort) {
-            case 'name-asc':
-                return sorted.sort((a, b) => a.name.localeCompare(b.name, 'ro'));
-            case 'name-desc':
-                return sorted.sort((a, b) => b.name.localeCompare(a.name, 'ro'));
-            case 'price-asc':
-                return sorted.sort((a, b) => (a.price || 999) - (b.price || 999));
-            case 'price-desc':
-                return sorted.sort((a, b) => (b.price || 0) - (a.price || 0));
-            default:
-                return sorted;
+            case 'name-asc': return sorted.sort((a, b) => a.name.localeCompare(b.name, 'ro'));
+            case 'name-desc': return sorted.sort((a, b) => b.name.localeCompare(a.name, 'ro'));
+            case 'price-asc': return sorted.sort((a, b) => (a.price || 999) - (b.price || 999));
+            case 'price-desc': return sorted.sort((a, b) => (b.price || 0) - (a.price || 0));
+            default: return sorted;
         }
     }
 
-    // Setup filters
-    function setupFilters() {
-        document.querySelectorAll('.filter-btn').forEach(btn => {
+    // Brand Filters
+    function setupBrandFilters() {
+        document.querySelectorAll('.brand-filter').forEach(btn => {
             btn.addEventListener('click', () => {
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.brand-filter').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-                currentFilter = btn.getAttribute('data-filter');
-                applyFilter();
+                currentBrand = btn.getAttribute('data-brand');
+                applyFilters();
             });
         });
+    }
 
+    function setupSort() {
         const sortSelect = document.getElementById('sortSelect');
         if (sortSelect) {
             sortSelect.addEventListener('change', (e) => {
@@ -140,71 +233,47 @@
                 renderProducts(true);
             });
         }
+    }
 
+    function setupLoadMore() {
         const loadMore = document.getElementById('loadMore');
         if (loadMore) {
             loadMore.addEventListener('click', () => renderProducts(false));
         }
     }
 
-    function applyFilter() {
-        if (currentFilter === 'all') {
-            filteredProducts = [...window.allProducts];
-        } else if (currentFilter === 'offer') {
-            filteredProducts = window.allProducts.filter(p => p.offer);
-        } else {
-            filteredProducts = window.allProducts.filter(p =>
-                p.brand.toUpperCase() === currentFilter.toUpperCase()
-            );
+    // View Toggle (grid/list)
+    function setupViewToggle() {
+        const gridBtn = document.getElementById('gridViewBtn');
+        const listBtn = document.getElementById('listViewBtn');
+        const grid = document.getElementById('productsGrid');
+
+        if (gridBtn && listBtn && grid) {
+            gridBtn.addEventListener('click', () => {
+                grid.classList.remove('list-view');
+                gridBtn.classList.add('active');
+                listBtn.classList.remove('active');
+            });
+            listBtn.addEventListener('click', () => {
+                grid.classList.add('list-view');
+                listBtn.classList.add('active');
+                gridBtn.classList.remove('active');
+            });
         }
-        renderProducts(true);
     }
 
-    // Filter by category (called from category cards)
-    window.filterByCategory = function(category) {
-        const categoryMap = {
-            'vitamine': ['vitamin', 'vitamina'],
-            'minerale': ['magneziu', 'zinc', 'seleniu', 'calciu', 'crom', 'iod', 'fier'],
-            'imunitate': ['imuno', 'propolis', 'echinac', 'gripovit', 'herbal hot'],
-            'digestie': ['probiotic', 'enzim', 'digestiv', 'lactaz', 'pelin'],
-            'articulatii': ['glucozamin', 'condroitin', 'colagen', 'collagen', 'msm'],
-            'frumusete': ['collagen', 'hialuron', 'hair', 'colagen', 'biotin'],
-            'energie': ['omega', 'coenzima', 'ginseng', 'lecitina', 'energy'],
-            'copii': ['copii', 'kid', 'junior', 'baby']
-        };
-
-        const keywords = categoryMap[category] || [];
-        if (keywords.length) {
-            filteredProducts = window.allProducts.filter(p =>
-                keywords.some(kw => p.name.toLowerCase().includes(kw))
-            );
-        } else {
-            filteredProducts = [...window.allProducts];
-        }
-
-        // Reset filter buttons
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        document.querySelector('.filter-btn[data-filter="all"]')?.classList.add('active');
-
-        renderProducts(true);
-    };
-
-    // Setup cart
+    // Cart
     function setupCart() {
         const cartToggle = document.getElementById('cartToggle');
         const cartOverlay = document.getElementById('cartOverlay');
         const cartClose = document.getElementById('cartClose');
-        const cartSidebar = document.getElementById('cartSidebar');
 
-        cartToggle.addEventListener('click', () => openCart());
-        cartOverlay.addEventListener('click', () => closeCart());
-        cartClose.addEventListener('click', () => closeCart());
+        if (cartToggle) cartToggle.addEventListener('click', openCart);
+        if (cartOverlay) cartOverlay.addEventListener('click', closeCart);
+        if (cartClose) cartClose.addEventListener('click', closeCart);
 
-        // Checkout
         const checkoutBtn = document.getElementById('checkoutBtn');
-        if (checkoutBtn) {
-            checkoutBtn.addEventListener('click', openCheckout);
-        }
+        if (checkoutBtn) checkoutBtn.addEventListener('click', openCheckout);
 
         const checkoutClose = document.getElementById('checkoutClose');
         if (checkoutClose) {
@@ -214,9 +283,7 @@
         }
 
         const placeOrderBtn = document.getElementById('placeOrderBtn');
-        if (placeOrderBtn) {
-            placeOrderBtn.addEventListener('click', placeOrder);
-        }
+        if (placeOrderBtn) placeOrderBtn.addEventListener('click', placeOrder);
     }
 
     function openCart() {
@@ -231,7 +298,6 @@
         document.body.style.overflow = '';
     }
 
-    // Add to cart
     window.addToCart = function(productId) {
         const product = window.allProducts.find(p => p.id === productId);
         if (!product || !product.price) return;
@@ -247,9 +313,7 @@
         updateCartUI();
         showToast(`${product.name} a fost adaugat in cos!`, 'success');
 
-        // Update button state
-        const btns = document.querySelectorAll(`.add-to-cart-btn`);
-        btns.forEach(btn => {
+        document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
             if (btn.closest('.product-card')) {
                 const cardName = btn.closest('.product-card').querySelector('.product-name')?.textContent;
                 if (cardName === product.name) {
@@ -260,21 +324,17 @@
         });
     };
 
-    // Update cart quantity
     window.updateCartQty = function(productId, delta) {
         const item = cart.find(c => c.id === productId);
         if (!item) return;
-
         item.qty += delta;
         if (item.qty <= 0) {
             cart = cart.filter(c => c.id !== productId);
         }
-
         saveCart();
         updateCartUI();
     };
 
-    // Remove from cart
     window.removeFromCart = function(productId) {
         cart = cart.filter(c => c.id !== productId);
         saveCart();
@@ -282,7 +342,7 @@
     };
 
     function saveCart() {
-        localStorage.setItem('jutavit_cart', JSON.stringify(cart));
+        localStorage.setItem('patricecom_cart', JSON.stringify(cart));
     }
 
     function updateCartUI() {
@@ -300,7 +360,6 @@
                 <div class="cart-empty">
                     <i class="fas fa-shopping-bag"></i>
                     <p>Cosul tau este gol</p>
-                    <a href="#shop" class="btn btn-primary" onclick="document.getElementById('cartSidebar').classList.remove('active'); document.getElementById('cartOverlay').classList.remove('active'); document.body.style.overflow='';">Incepe Cumparaturile</a>
                 </div>
             `;
             cartFooter.style.display = 'none';
@@ -326,20 +385,14 @@
                         <div class="cart-item-brand">${product.brand} - ${product.quantity}</div>
                         <div class="cart-item-bottom">
                             <div class="cart-item-qty">
-                                <button class="qty-btn" onclick="updateCartQty(${product.id}, -1)">
-                                    <i class="fas fa-minus"></i>
-                                </button>
+                                <button class="qty-btn" onclick="updateCartQty(${product.id}, -1)"><i class="fas fa-minus"></i></button>
                                 <span class="qty-value">${item.qty}</span>
-                                <button class="qty-btn" onclick="updateCartQty(${product.id}, 1)">
-                                    <i class="fas fa-plus"></i>
-                                </button>
+                                <button class="qty-btn" onclick="updateCartQty(${product.id}, 1)"><i class="fas fa-plus"></i></button>
                             </div>
                             <span class="cart-item-price">${itemTotal.toFixed(2)} Lei</span>
                         </div>
                     </div>
-                    <button class="cart-item-remove" onclick="removeFromCart(${product.id})">
-                        <i class="fas fa-trash-alt"></i>
-                    </button>
+                    <button class="cart-item-remove" onclick="removeFromCart(${product.id})"><i class="fas fa-trash-alt"></i></button>
                 </div>
             `;
         }).join('');
@@ -353,11 +406,15 @@
         const product = window.allProducts.find(p => p.id === productId);
         if (!product) return;
 
+        // Close search results & mobile search
+        document.getElementById('searchResults').innerHTML = '';
+        const msr = document.getElementById('mobileSearchResults');
+        if (msr) msr.innerHTML = '';
+
         const modal = document.getElementById('productModal');
         const body = document.getElementById('productModalBody');
         const colors = getProductColor(product.name);
         const icon = getCategoryIcon(product.name);
-
         const description = generateDescription(product);
         const features = generateFeatures(product);
 
@@ -377,12 +434,7 @@
                     ${product.offer ? `<div style="background:var(--accent); color:white; display:inline-block; padding:4px 14px; border-radius:50px; font-size:0.85rem; font-weight:600; margin-bottom:16px">${product.offer}</div>` : ''}
                     <p class="pm-description">${description}</p>
                     <div class="pm-features">
-                        ${features.map(f => `
-                            <div class="pm-feature">
-                                <i class="fas fa-check-circle"></i>
-                                <span>${f}</span>
-                            </div>
-                        `).join('')}
+                        ${features.map(f => `<div class="pm-feature"><i class="fas fa-check-circle"></i><span>${f}</span></div>`).join('')}
                     </div>
                     ${product.price ? `
                     <div class="pm-qty-row">
@@ -434,16 +486,15 @@
 
     function generateDescription(product) {
         const n = product.name.toLowerCase();
-        if (n.includes('vitamin c')) return 'Vitamina C contribuie la functionarea normala a sistemului imunitar si la protejarea celulelor impotriva stresului oxidativ. Esentiala pentru sanatatea pielii si absorbtia fierului.';
-        if (n.includes('vitamin d')) return 'Vitamina D contribuie la mentinerea oaselor si dintilor normali, la functionarea normala a sistemului imunitar si la absorbtia normala a calciului.';
-        if (n.includes('vitamin b')) return 'Vitaminele din complexul B contribuie la metabolismul energetic normal, la functionarea normala a sistemului nervos si la reducerea oboselii.';
-        if (n.includes('omega')) return 'Acizii grasi Omega 3 contribuie la functionarea normala a inimii, creierului si mentinerea vederii normale. Sursa naturala de EPA si DHA.';
-        if (n.includes('magneziu')) return 'Magneziul contribuie la functionarea normala a sistemului nervos, la functionarea normala a muschilor si la reducerea oboselii si extenuarii.';
-        if (n.includes('collagen') || n.includes('colagen')) return 'Colagenul este o proteina structurala esentiala pentru sanatatea pielii, articulatiilor si oaselor. Contribuie la mentinerea elasticitatii pielii.';
+        if (n.includes('vitamin c')) return 'Vitamina C contribuie la functionarea normala a sistemului imunitar si la protejarea celulelor impotriva stresului oxidativ.';
+        if (n.includes('vitamin d')) return 'Vitamina D contribuie la mentinerea oaselor si dintilor normali si la functionarea normala a sistemului imunitar.';
+        if (n.includes('vitamin b')) return 'Vitaminele din complexul B contribuie la metabolismul energetic normal si la functionarea normala a sistemului nervos.';
+        if (n.includes('omega')) return 'Acizii grasi Omega 3 contribuie la functionarea normala a inimii, creierului si mentinerea vederii normale.';
+        if (n.includes('magneziu')) return 'Magneziul contribuie la functionarea normala a sistemului nervos, a muschilor si la reducerea oboselii.';
+        if (n.includes('collagen') || n.includes('colagen')) return 'Colagenul este o proteina structurala esentiala pentru sanatatea pielii, articulatiilor si oaselor.';
         if (n.includes('probiotic')) return 'Probioticele contribuie la mentinerea echilibrului florei intestinale si la functionarea normala a sistemului digestiv.';
-        if (n.includes('zinc')) return 'Zincul contribuie la functionarea normala a sistemului imunitar, la mentinerea oaselor normale si la protejarea celulelor impotriva stresului oxidativ.';
-        if (n.includes('glucozamin')) return 'Glucozamina si condroitina contribuie la mentinerea mobilitatii articulare si la sanatatea cartilajelor. Formula complexa cu MSM.';
-        return `${product.name} de la ${product.brand} - supliment alimentar de calitate premium. Produs testat si certificat conform standardelor europene.`;
+        if (n.includes('zinc')) return 'Zincul contribuie la functionarea normala a sistemului imunitar si la protejarea celulelor impotriva stresului oxidativ.';
+        return `${product.name} de la ${product.brand} - produs de calitate premium, testat si certificat conform standardelor europene.`;
     }
 
     function generateFeatures(product) {
@@ -477,10 +528,8 @@
             if (sNum < step) s.classList.add('done');
             if (sNum === step) s.classList.add('active');
         });
-
         const panel = document.getElementById(`step${step}`);
         if (panel) panel.classList.add('active');
-
         if (step === 3) renderOrderSummary();
     }
 
@@ -494,33 +543,21 @@
             if (!product) return;
             const itemTotal = product.price * item.qty;
             total += itemTotal;
-            html += `
-                <div class="order-summary-item">
-                    <span>${product.name} x${item.qty}</span>
-                    <span>${itemTotal.toFixed(2)} Lei</span>
-                </div>
-            `;
+            html += `<div class="order-summary-item"><span>${product.name} x${item.qty}</span><span>${itemTotal.toFixed(2)} Lei</span></div>`;
         });
 
         const delivery = document.querySelector('input[name="delivery"]:checked')?.value;
         const deliveryCost = delivery === 'express' ? 29.99 : 15.99;
 
         html += `
-            <div class="order-summary-item">
-                <span>Livrare (${delivery === 'express' ? 'Express' : 'Standard'})</span>
-                <span>${deliveryCost.toFixed(2)} Lei</span>
-            </div>
-            <div class="order-summary-total">
-                <span>Total</span>
-                <span>${(total + deliveryCost).toFixed(2)} Lei</span>
-            </div>
+            <div class="order-summary-item"><span>Livrare (${delivery === 'express' ? 'Express' : 'Standard'})</span><span>${deliveryCost.toFixed(2)} Lei</span></div>
+            <div class="order-summary-total"><span>Total</span><span>${(total + deliveryCost).toFixed(2)} Lei</span></div>
         `;
-
         summary.innerHTML = html;
     }
 
     function placeOrder() {
-        const orderNumber = 'JTV-' + Date.now().toString(36).toUpperCase();
+        const orderNumber = 'PCM-' + Date.now().toString(36).toUpperCase();
         document.getElementById('orderNumber').textContent = orderNumber;
 
         document.querySelectorAll('.checkout-panel').forEach(p => p.classList.remove('active'));
@@ -537,16 +574,5 @@
         showStep(1);
     };
 
-    // CSS animation
-    const style = document.createElement('style');
-    style.textContent = `
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    `;
-    document.head.appendChild(style);
-
-    // Init
     initShop();
 })();

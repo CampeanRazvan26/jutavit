@@ -1,20 +1,12 @@
 /* =============================================
-   JUTAVIT ROMANIA - Main Application
+   PATRICECOM - Main Application
    ============================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Preloader
-    const preloader = document.getElementById('preloader');
-    window.addEventListener('load', () => {
-        setTimeout(() => preloader.classList.add('loaded'), 1600);
-    });
-    // Fallback - quick hide
-    setTimeout(() => preloader.classList.add('loaded'), 2000);
-
     // Dark Mode Toggle
     const themeToggle = document.getElementById('themeToggle');
     const themeIcon = document.getElementById('themeIcon');
-    const savedTheme = localStorage.getItem('jutavit_theme') || 'light';
+    const savedTheme = localStorage.getItem('patricecom_theme') || 'light';
     if (savedTheme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
         themeIcon.classList.replace('fa-moon', 'fa-sun');
@@ -24,215 +16,158 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isDark) {
             document.documentElement.removeAttribute('data-theme');
             themeIcon.classList.replace('fa-sun', 'fa-moon');
-            localStorage.setItem('jutavit_theme', 'light');
+            localStorage.setItem('patricecom_theme', 'light');
         } else {
             document.documentElement.setAttribute('data-theme', 'dark');
             themeIcon.classList.replace('fa-moon', 'fa-sun');
-            localStorage.setItem('jutavit_theme', 'dark');
+            localStorage.setItem('patricecom_theme', 'dark');
         }
     });
 
     // Navbar scroll effect
     const navbar = document.getElementById('navbar');
-    const handleScroll = () => {
-        navbar.classList.toggle('scrolled', window.scrollY > 50);
-        // Back to top
-        const backToTop = document.getElementById('backToTop');
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 10);
         if (backToTop) backToTop.classList.toggle('show', window.scrollY > 500);
-        // Active nav link
-        updateActiveNav();
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-
-    // Mobile menu
-    const mobileToggle = document.getElementById('mobileToggle');
-    const navMenu = document.getElementById('navMenu');
-    mobileToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        mobileToggle.classList.toggle('active');
-    });
-
-    // Close mobile menu on link click
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            mobileToggle.classList.remove('active');
-        });
-    });
-
-    // Search toggle
-    const searchToggle = document.getElementById('searchToggle');
-    const searchOverlay = document.getElementById('searchOverlay');
-    const searchClose = document.getElementById('searchClose');
-    const searchInput = document.getElementById('searchInput');
-
-    searchToggle.addEventListener('click', () => {
-        searchOverlay.classList.toggle('active');
-        if (searchOverlay.classList.contains('active')) {
-            setTimeout(() => searchInput.focus(), 300);
-        }
-    });
-
-    searchClose.addEventListener('click', () => {
-        searchOverlay.classList.remove('active');
-        searchInput.value = '';
-        document.getElementById('searchResults').innerHTML = '';
-    });
-
-    // Search functionality
-    searchInput.addEventListener('input', (e) => {
-        const query = e.target.value.toLowerCase().trim();
-        const resultsContainer = document.getElementById('searchResults');
-
-        if (query.length < 2) {
-            resultsContainer.innerHTML = '';
-            return;
-        }
-
-        const results = window.allProducts
-            ? window.allProducts.filter(p =>
-                p.name.toLowerCase().includes(query) ||
-                p.brand.toLowerCase().includes(query)
-            ).slice(0, 8)
-            : [];
-
-        resultsContainer.innerHTML = results.map(p => `
-            <div class="search-result-item" onclick="viewProduct(${p.id})">
-                <div class="search-result-icon">
-                    <i class="${getCategoryIcon(p.name)}"></i>
-                </div>
-                <div class="search-result-info">
-                    <h4>${highlightMatch(p.name, query)}</h4>
-                    <span>${p.brand} - ${p.quantity}</span>
-                </div>
-                ${p.price ? `<span class="search-result-price">${p.price.toFixed(2)} Lei</span>` : ''}
-            </div>
-        `).join('');
-    });
+    }, { passive: true });
 
     // Back to top
-    const backToTop = document.getElementById('backToTop');
     if (backToTop) {
         backToTop.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
 
-    // Active nav link on scroll
-    function updateActiveNav() {
-        const sections = document.querySelectorAll('section[id]');
-        const scrollY = window.scrollY + 100;
-        sections.forEach(section => {
-            const top = section.offsetTop;
-            const height = section.offsetHeight;
-            const id = section.getAttribute('id');
-            const link = document.querySelector(`.nav-link[href="#${id}"]`);
-            if (link) {
-                link.classList.toggle('active', scrollY >= top && scrollY < top + height);
+    // Mobile search toggle
+    const mobileSearchBtn = document.getElementById('mobileSearchBtn');
+    const mobileSearch = document.getElementById('mobileSearch');
+    const mobileSearchInput = document.getElementById('mobileSearchInput');
+    if (mobileSearchBtn && mobileSearch) {
+        mobileSearchBtn.addEventListener('click', () => {
+            mobileSearch.classList.toggle('active');
+            if (mobileSearch.classList.contains('active')) {
+                setTimeout(() => mobileSearchInput.focus(), 100);
             }
         });
     }
 
-    // Animate on scroll
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animated');
-                observer.unobserve(entry.target);
-            }
+    // Mobile menu toggle (sidebar)
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const sidebar = document.getElementById('sidebar');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+    if (mobileMenuBtn && sidebar) {
+        mobileMenuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            sidebarOverlay.classList.toggle('active');
+            document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
         });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-
-    document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
-
-    // Counter animation
-    const counterObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const counters = entry.target.querySelectorAll('.stat-number');
-                counters.forEach(counter => animateCounter(counter));
-                counterObserver.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.5 });
-
-    const heroStats = document.querySelector('.hero-stats');
-    if (heroStats) counterObserver.observe(heroStats);
-
-    function animateCounter(el) {
-        const target = parseInt(el.getAttribute('data-count'));
-        const duration = 2000;
-        const step = target / (duration / 16);
-        let current = 0;
-        const timer = setInterval(() => {
-            current += step;
-            if (current >= target) {
-                current = target;
-                clearInterval(timer);
-            }
-            el.textContent = Math.floor(current).toLocaleString();
-        }, 16);
     }
 
-    // Hero particles
-    createParticles();
+    // Filter mobile button
+    const filterMobileBtn = document.getElementById('filterMobileBtn');
+    if (filterMobileBtn && sidebar) {
+        filterMobileBtn.addEventListener('click', () => {
+            sidebar.classList.add('active');
+            sidebarOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    }
 
-    // Newsletter form
-    const newsletterForm = document.getElementById('newsletterForm');
-    if (newsletterForm) {
-        newsletterForm.addEventListener('submit', (e) => {
+    if (sidebarOverlay) {
+        sidebarOverlay.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+            sidebarOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    }
+
+    // Search functionality (shared between desktop & mobile)
+    function setupSearch(input, resultsContainer) {
+        if (!input || !resultsContainer) return;
+        input.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            if (query.length < 2) {
+                resultsContainer.innerHTML = '';
+                return;
+            }
+            const results = window.allProducts
+                ? window.allProducts.filter(p =>
+                    p.name.toLowerCase().includes(query) ||
+                    p.brand.toLowerCase().includes(query)
+                ).slice(0, 8)
+                : [];
+
+            resultsContainer.innerHTML = results.map(p => `
+                <div class="search-result-item" onclick="viewProduct(${p.id})">
+                    <div class="search-result-icon">
+                        <i class="${getCategoryIcon(p.name)}"></i>
+                    </div>
+                    <div class="search-result-info">
+                        <h4>${highlightMatch(p.name, query)}</h4>
+                        <span>${p.brand} - ${p.quantity}</span>
+                    </div>
+                    ${p.price ? `<span class="search-result-price">${p.price.toFixed(2)} Lei</span>` : ''}
+                </div>
+            `).join('');
+        });
+    }
+
+    setupSearch(
+        document.getElementById('searchInput'),
+        document.getElementById('searchResults')
+    );
+    setupSearch(
+        document.getElementById('mobileSearchInput'),
+        document.getElementById('mobileSearchResults')
+    );
+
+    // Close search on click outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.nav-search')) {
+            const sr = document.getElementById('searchResults');
+            if (sr) sr.innerHTML = '';
+        }
+        if (!e.target.closest('.mobile-search')) {
+            const msr = document.getElementById('mobileSearchResults');
+            if (msr) msr.innerHTML = '';
+        }
+    });
+
+    // Category Nav - clicks
+    const catNavItems = document.querySelectorAll('.cat-nav-item');
+    catNavItems.forEach(item => {
+        item.addEventListener('click', (e) => {
             e.preventDefault();
-            showToast('Te-ai abonat cu succes! Multumim!', 'success');
-            newsletterForm.reset();
+            catNavItems.forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+            const cat = item.getAttribute('data-cat');
+            if (typeof window.filterByCategory === 'function') {
+                window.filterByCategory(cat);
+            }
         });
-    }
+    });
 
-    // Contact form
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+    // Footer category links
+    document.querySelectorAll('.footer-links a[data-cat]').forEach(link => {
+        link.addEventListener('click', (e) => {
             e.preventDefault();
-            showToast('Mesajul a fost trimis cu succes!', 'success');
-            contactForm.reset();
-        });
-    }
-
-    // Category cards click
-    document.querySelectorAll('.category-card').forEach(card => {
-        card.addEventListener('click', () => {
-            const category = card.getAttribute('data-category');
-            document.getElementById('shop').scrollIntoView({ behavior: 'smooth' });
+            const cat = link.getAttribute('data-cat');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
             setTimeout(() => {
-                if (typeof filterByCategory === 'function') {
-                    filterByCategory(category);
+                catNavItems.forEach(i => i.classList.remove('active'));
+                const target = document.querySelector(`.cat-nav-item[data-cat="${cat}"]`);
+                if (target) target.classList.add('active');
+                if (typeof window.filterByCategory === 'function') {
+                    window.filterByCategory(cat);
                 }
-            }, 500);
+            }, 300);
         });
     });
 });
 
-// Helper functions
-function createParticles() {
-    const container = document.getElementById('heroParticles');
-    if (!container) return;
-    const colors = ['#0B6E4F', '#14A76C', '#D4A843', '#1B4965'];
-    for (let i = 0; i < 10; i++) {
-        const particle = document.createElement('div');
-        particle.className = 'hero-particle';
-        const size = Math.random() * 60 + 20;
-        particle.style.cssText = `
-            width: ${size}px;
-            height: ${size}px;
-            left: ${Math.random() * 100}%;
-            top: ${Math.random() * 100}%;
-            background: ${colors[Math.floor(Math.random() * colors.length)]};
-            animation-delay: ${Math.random() * 20}s;
-            animation-duration: ${Math.random() * 20 + 15}s;
-        `;
-        container.appendChild(particle);
-    }
-}
-
+// Helper functions (global)
 function highlightMatch(text, query) {
     const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
     return text.replace(regex, '<strong style="color:var(--primary)">$1</strong>');
@@ -244,7 +179,7 @@ function getCategoryIcon(name) {
     if (n.includes('omega') || n.includes('ulei')) return 'fas fa-fish';
     if (n.includes('magneziu') || n.includes('zinc') || n.includes('seleniu') || n.includes('calciu') || n.includes('crom')) return 'fas fa-gem';
     if (n.includes('collagen') || n.includes('hialuron') || n.includes('hair')) return 'fas fa-spa';
-    if (n.includes('probiotic') || n.includes('enzim') || n.includes('digestiv') || n.includes('lactaz')) return 'fas fa-stomach';
+    if (n.includes('probiotic') || n.includes('enzim') || n.includes('digestiv') || n.includes('lactaz')) return 'fas fa-leaf';
     if (n.includes('glucozamin') || n.includes('condroitin')) return 'fas fa-bone';
     if (n.includes('imuno') || n.includes('propolis') || n.includes('echinac')) return 'fas fa-shield-virus';
     if (n.includes('sirop') || n.includes('copii') || n.includes('kid') || n.includes('junior')) return 'fas fa-baby';
@@ -258,6 +193,7 @@ function getCategoryIcon(name) {
     if (n.includes('armurariu') || n.includes('silimarin')) return 'fas fa-leaf';
     if (n.includes('usturoi')) return 'fas fa-seedling';
     if (n.includes('merisor')) return 'fas fa-apple-alt';
+    if (n.includes('ceai') || n.includes('tea')) return 'fas fa-mug-hot';
     return 'fas fa-capsules';
 }
 
@@ -276,6 +212,7 @@ function getProductColor(name) {
     if (n.includes('coenzima')) return { bg: '#FFF3E0', color: '#E65100' };
     if (n.includes('gel') || n.includes('balsam')) return { bg: '#E0F7FA', color: '#00ACC1' };
     if (n.includes('lacalut')) return { bg: '#E3F2FD', color: '#1E88E5' };
+    if (n.includes('ceai')) return { bg: '#F1F8E9', color: '#689F38' };
     return { bg: '#E8F5F0', color: '#0B6E4F' };
 }
 
