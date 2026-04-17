@@ -373,6 +373,37 @@
     background: #1C1F2E;
 }
 
+/* Language Switcher */
+[data-theme="dark"] .lang-dropdown {
+    background: #161822;
+    border-color: #272B3D;
+}
+
+[data-theme="dark"] .lang-option:hover {
+    background: #1C1F2E;
+}
+
+[data-theme="dark"] .lang-option.active {
+    background: rgba(11, 110, 79, 0.15);
+}
+
+[data-theme="dark"] .lang-code {
+    color: #A0A8C0;
+}
+
+/* Cat Nav Arrows */
+[data-theme="dark"] .cat-nav-arrow {
+    background: #161822;
+    border-color: #272B3D;
+    color: #8B92A8;
+}
+
+[data-theme="dark"] .cat-nav-arrow:hover {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
 /* Mobile Search */
 [data-theme="dark"] .mobile-search {
     background: #0F1117;
