@@ -154,6 +154,7 @@
                 applyFilters();
                 renderSubcatFilters();
             });
+            renderMobileSubcatPanel();
             return;
         }
 
@@ -196,6 +197,74 @@
                 container.querySelectorAll('.subcat-filter').forEach(e => e.classList.remove('active'));
                 el.classList.add('active');
                 currentSubcategory = el.getAttribute('data-subcat');
+                applyFilters();
+                renderMobileSubcatPanel();
+            });
+        });
+
+        renderMobileSubcatPanel();
+    }
+
+    // Mobile inline subcategory panel (under cat-nav)
+    function renderMobileSubcatPanel() {
+        const panel = document.getElementById('mobileSubcatPanel');
+        const header = document.getElementById('mobileSubcatHeader');
+        const list = document.getElementById('mobileSubcatList');
+        if (!panel || !header || !list) return;
+
+        const lang = window.currentLang || 'ro';
+        const allLabel = lang === 'en' ? 'All' : lang === 'hu' ? 'Osszes' : lang === 'de' ? 'Alle' : 'Toate';
+
+        // Hide panel when on "all" or "oferte"
+        if (currentCategory === 'all' || currentCategory === 'oferte') {
+            panel.classList.remove('visible');
+            return;
+        }
+
+        const catMeta = window.productCategories && window.productCategories[currentCategory];
+        if (!catMeta) {
+            panel.classList.remove('visible');
+            return;
+        }
+
+        const catLabel = catMeta['name_' + lang] || catMeta.name_ro;
+        const titleIcon = catMeta.icon && catMeta.icon.startsWith('fa-') ? 'fas ' + catMeta.icon : (catMeta.icon || 'fas fa-layer-group');
+
+        header.innerHTML = `<span><i class="${titleIcon}"></i>${catLabel}</span>`;
+
+        const subs = (window.productSubcategories && window.productSubcategories[currentCategory]) || [];
+        const catProducts = window.allProducts.filter(p => p.category === currentCategory);
+
+        let html = `
+            <div class="mobile-subcat-pill ${currentSubcategory === 'all' ? 'active' : ''}" data-subcat="all">
+                <span class="pill-name"><i class="fas fa-th"></i>${allLabel}</span>
+                <span class="pill-count">${catProducts.length}</span>
+            </div>
+        `;
+
+        subs.forEach(sub => {
+            const cnt = catProducts.filter(p => p.subcategory === sub).length;
+            if (cnt === 0) return;
+            html += `
+                <div class="mobile-subcat-pill ${currentSubcategory === sub ? 'active' : ''}" data-subcat="${sub}">
+                    <span class="pill-name"><i class="fas fa-chevron-right"></i>${sub}</span>
+                    <span class="pill-count">${cnt}</span>
+                </div>
+            `;
+        });
+
+        list.innerHTML = html;
+        panel.classList.add('visible');
+
+        list.querySelectorAll('.mobile-subcat-pill').forEach(pill => {
+            pill.addEventListener('click', () => {
+                list.querySelectorAll('.mobile-subcat-pill').forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                currentSubcategory = pill.getAttribute('data-subcat');
+                // Keep sidebar in sync
+                document.querySelectorAll('.subcat-filter').forEach(e => {
+                    e.classList.toggle('active', e.getAttribute('data-subcat') === currentSubcategory);
+                });
                 applyFilters();
             });
         });

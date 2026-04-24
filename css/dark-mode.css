@@ -114,6 +114,34 @@
     color: #E8ECF4;
 }
 
+[data-theme="dark"] .mobile-subcat-panel {
+    background: #181B27;
+    border-color: #272B3D;
+}
+
+[data-theme="dark"] .mobile-subcat-header {
+    color: #C8CCD9;
+}
+
+[data-theme="dark"] .mobile-subcat-pill {
+    background: #1C1F2E;
+    color: #C8CCD9;
+}
+
+[data-theme="dark"] .mobile-subcat-pill.active {
+    background: rgba(11, 110, 79, 0.2);
+    border-color: rgba(11, 110, 79, 0.4);
+}
+
+[data-theme="dark"] .mobile-subcat-pill .pill-count {
+    background: #272B3D;
+    color: #8B92A8;
+}
+
+[data-theme="dark"] .mobile-subcat-pill .pill-name i {
+    color: #6A7088;
+}
+
 [data-theme="dark"] .subcat-filter {
     color: #C8CCD9;
 }

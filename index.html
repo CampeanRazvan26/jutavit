@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=5">
+    <link rel="stylesheet" href="css/style.css?v=6">
     <link rel="stylesheet" href="css/shop.css?v=4">
     <link rel="stylesheet" href="css/assistant.css?v=3">
-    <link rel="stylesheet" href="css/dark-mode.css?v=3">
+    <link rel="stylesheet" href="css/dark-mode.css?v=4">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
 </head>
 <body>
@@ -91,6 +91,14 @@
         <!-- Mega dropdown holder - one shared panel, positioned under hovered category -->
         <div class="cat-nav-megamenu" id="catMegamenu"></div>
     </nav>
+
+    <!-- Mobile-only inline subcategory panel -->
+    <div class="mobile-subcat-panel" id="mobileSubcatPanel">
+        <div class="container">
+            <div class="mobile-subcat-header" id="mobileSubcatHeader"></div>
+            <div class="mobile-subcat-list" id="mobileSubcatList"></div>
+        </div>
+    </div>
 
     <!-- Main Content -->
     <main class="main-content">
@@ -387,7 +395,7 @@
     <script src="js/products.js?v=4"></script>
     <script src="js/product-images.js?v=3"></script>
     <script src="js/app.js?v=6"></script>
-    <script src="js/shop.js?v=5"></script>
+    <script src="js/shop.js?v=6"></script>
     <script src="js/assistant.js?v=3"></script>
 </body>
 </html>
