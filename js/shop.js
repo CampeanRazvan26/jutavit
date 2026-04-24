@@ -5,33 +5,11 @@
 (function() {
     let cart = JSON.parse(localStorage.getItem('patricecom_cart') || '[]');
     let currentCategory = 'all';
-    let currentBrand = 'all';
+    let currentSubcategory = 'all';
     let currentSort = 'name-asc';
     let displayedCount = 0;
     const ITEMS_PER_PAGE = 24;
     let filteredProducts = [];
-
-    // Category keyword map
-    const categoryMap = {
-        'all': null,
-        'vitamine': ['vitamin', 'vitamina', 'multivitamin'],
-        'minerale': ['magneziu', 'zinc', 'seleniu', 'calciu', 'crom', 'iod', 'fier', 'potasiu', 'maximag', 'mineral'],
-        'imunitate': ['imuno', 'propolis', 'echinac', 'gripovit', 'herbal hot', 'imunitate'],
-        'omega': ['omega', 'ulei de peste', 'ulei de krill', 'lecitina'],
-        'digestie': ['probiotic', 'enzim', 'digestiv', 'lactaz', 'pelin', 'fibre', 'colon'],
-        'frumusete': ['collagen', 'hialuron', 'hair', 'colagen', 'biotin', 'frumusete'],
-        'copii': ['copii', 'kid', 'junior', 'baby', 'bebelus'],
-        'ceaiuri': ['ceai', 'tea', 'infuzie'],
-        'geluri': ['gel ', 'balsam', 'crema', 'spray', 'unguent'],
-        'igiena': ['lacalut', 'apa de gura', 'dental', 'dinti', 'periuta'],
-        'siropuri': ['sirop', 'suspensie'],
-        'relaxare': ['valeriana', 'harmony', 'antistres', 'calm', 'somn', 'relaxare', 'passiflora'],
-        'slabire': ['slim', 'slabit', 'glucomanan', 'cafea verde', 'apuretin', 'diet'],
-        'ochi': ['lutein', 'opti', 'afin', 'ochi', 'vedere'],
-        'parafarmaceutice': ['plaster', 'plasture', 'bandaj', 'termometru', 'test'],
-        'energie': ['coenzima', 'ginseng', 'energy', 'guarana', 'maca'],
-        'oferte': null
-    };
 
     function initShop() {
         if (!window.allProducts || !window.allProducts.length) {
@@ -42,9 +20,8 @@
         filteredProducts = [...window.allProducts];
         displayedCount = 0;
 
-        updateBrandCounts();
+        renderSubcatFilters();
         renderProducts();
-        setupBrandFilters();
         setupSort();
         setupViewToggle();
         setupCart();
@@ -52,36 +29,42 @@
         updateCartUI();
     }
 
-    // Filter by category (called from cat-nav in app.js)
+    // Called from app.js when a top-level category is chosen
     window.filterByCategory = function(category) {
         currentCategory = category;
-        currentBrand = 'all';
-
-        // Reset brand filters UI
-        document.querySelectorAll('.brand-filter').forEach(b => b.classList.remove('active'));
-        document.querySelector('.brand-filter[data-brand="all"]')?.classList.add('active');
-
+        currentSubcategory = 'all';
+        renderSubcatFilters();
         applyFilters();
+    };
+
+    // Called from app.js when a subcategory is clicked (mega menu or sidebar)
+    window.filterBySubcategory = function(category, subcategory) {
+        currentCategory = category;
+        currentSubcategory = subcategory;
+
+        // Sync cat-nav active state
+        document.querySelectorAll('.cat-nav-item').forEach(i => i.classList.remove('active'));
+        const navItem = document.querySelector(`.cat-nav-item[data-cat="${category}"]`);
+        if (navItem) navItem.classList.add('active');
+
+        renderSubcatFilters();
+        applyFilters();
+
+        // Scroll to products on mobile/desktop
+        const grid = document.getElementById('productsGrid');
+        if (grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
     };
 
     function applyFilters() {
         let products = [...window.allProducts];
 
-        // Category filter
         if (currentCategory === 'oferte') {
             products = products.filter(p => p.offer);
         } else if (currentCategory !== 'all') {
-            const keywords = categoryMap[currentCategory];
-            if (keywords) {
-                products = products.filter(p =>
-                    keywords.some(kw => p.name.toLowerCase().includes(kw))
-                );
+            products = products.filter(p => p.category === currentCategory);
+            if (currentSubcategory && currentSubcategory !== 'all') {
+                products = products.filter(p => p.subcategory === currentSubcategory);
             }
-        }
-
-        // Brand filter
-        if (currentBrand !== 'all') {
-            products = products.filter(p => p.brand.toUpperCase() === currentBrand.toUpperCase());
         }
 
         filteredProducts = products;
@@ -93,33 +76,136 @@
         const title = document.getElementById('resultsTitle');
         const count = document.getElementById('resultsCount');
         const loadMoreInfo = document.getElementById('loadMoreInfo');
+        const lang = window.currentLang || 'ro';
 
         if (title) {
-            if (currentCategory === 'all' && currentBrand === 'all') {
-                title.textContent = 'Toate Produsele';
-            } else if (currentCategory !== 'all') {
-                const catItem = document.querySelector(`.cat-nav-item[data-cat="${currentCategory}"] span`);
-                title.textContent = catItem ? catItem.textContent : currentCategory;
+            if (currentCategory === 'all') {
+                title.textContent = (window.translations && window.translations[lang] && window.translations[lang].resultsAll) || 'Toate Produsele';
             } else {
-                title.textContent = currentBrand;
+                const catMeta = window.productCategories && window.productCategories[currentCategory];
+                let catLabel = catMeta ? (catMeta['name_' + lang] || catMeta.name_ro) : currentCategory;
+                if (currentSubcategory && currentSubcategory !== 'all') {
+                    catLabel += ' • ' + currentSubcategory;
+                }
+                title.textContent = catLabel;
             }
         }
 
         if (count) {
-            count.textContent = `${filteredProducts.length} produse`;
+            const word = (window.translations && window.translations[lang] && window.translations[lang].resultsProducts) || 'produse';
+            count.textContent = `${filteredProducts.length} ${word}`;
         }
 
         if (loadMoreInfo) {
             const sorted = sortProducts(filteredProducts, currentSort);
             const showing = Math.min(displayedCount, sorted.length);
-            loadMoreInfo.textContent = `${showing} din ${sorted.length} produse`;
+            const ofWord = (window.translations && window.translations[lang] && window.translations[lang].loadMoreInfo) || 'din';
+            const word = (window.translations && window.translations[lang] && window.translations[lang].resultsProducts) || 'produse';
+            loadMoreInfo.textContent = `${showing} ${ofWord} ${sorted.length} ${word}`;
         }
     }
 
-    function updateBrandCounts() {
-        const totalCount = document.getElementById('totalCount');
-        if (totalCount) totalCount.textContent = window.allProducts.length;
+    // Render subcategory filters in the sidebar based on currentCategory
+    function renderSubcatFilters() {
+        const container = document.getElementById('subcatFilters');
+        const titleEl = document.getElementById('sidebarSubcatTitle');
+        if (!container) return;
+
+        const lang = window.currentLang || 'ro';
+
+        if (currentCategory === 'all' || currentCategory === 'oferte') {
+            // Show list of all categories when on "Toate" or "Oferte"
+            if (titleEl) {
+                titleEl.innerHTML = `<i class="fas fa-th-large"></i> ${lang === 'en' ? 'Categories' : lang === 'hu' ? 'Kategoriak' : lang === 'de' ? 'Kategorien' : 'Categorii'}`;
+            }
+            const cats = Object.keys(window.productCategories || {});
+            const totalCount = window.allProducts.length;
+            let html = `
+                <label class="subcat-filter ${currentSubcategory === 'all' ? 'active' : ''}" data-subcat="all">
+                    <span class="subcat-name"><i class="fas fa-th"></i>${lang === 'en' ? 'All Products' : lang === 'hu' ? 'Osszes Termek' : lang === 'de' ? 'Alle Produkte' : 'Toate Produsele'}</span>
+                    <span class="subcat-count">${totalCount}</span>
+                </label>
+            `;
+            cats.forEach(catKey => {
+                const meta = window.productCategories[catKey];
+                const label = meta['name_' + lang] || meta.name_ro;
+                const cnt = window.allProducts.filter(p => p.category === catKey).length;
+                if (cnt === 0) return;
+                html += `
+                    <label class="subcat-filter" data-cat-link="${catKey}">
+                        <span class="subcat-name"><i class="${(meta.icon && meta.icon.startsWith('fa-') ? 'fas ' + meta.icon : (meta.icon || 'fas fa-circle'))}"></i>${label}</span>
+                        <span class="subcat-count">${cnt}</span>
+                    </label>
+                `;
+            });
+            container.innerHTML = html;
+
+            container.querySelectorAll('.subcat-filter[data-cat-link]').forEach(el => {
+                el.addEventListener('click', () => {
+                    const catKey = el.getAttribute('data-cat-link');
+                    document.querySelectorAll('.cat-nav-item').forEach(i => i.classList.remove('active'));
+                    const navItem = document.querySelector(`.cat-nav-item[data-cat="${catKey}"]`);
+                    if (navItem) navItem.classList.add('active');
+                    window.filterByCategory(catKey);
+                });
+            });
+            container.querySelector('.subcat-filter[data-subcat="all"]')?.addEventListener('click', () => {
+                currentSubcategory = 'all';
+                applyFilters();
+                renderSubcatFilters();
+            });
+            return;
+        }
+
+        const catMeta = window.productCategories && window.productCategories[currentCategory];
+        const catLabel = catMeta ? (catMeta['name_' + lang] || catMeta.name_ro) : currentCategory;
+        if (titleEl) {
+            const titleIcon = catMeta && catMeta.icon ? (catMeta.icon.startsWith('fa-') ? 'fas ' + catMeta.icon : catMeta.icon) : 'fas fa-layer-group';
+            titleEl.innerHTML = `<i class="${titleIcon}"></i> ${catLabel}`;
+        }
+
+        const subs = (window.productSubcategories && window.productSubcategories[currentCategory]) || [];
+        const catProducts = window.allProducts.filter(p => p.category === currentCategory);
+
+        let html = `
+            <label class="subcat-filter ${currentSubcategory === 'all' ? 'active' : ''}" data-subcat="all">
+                <span class="subcat-name"><i class="fas fa-th"></i>${lang === 'en' ? 'All' : lang === 'hu' ? 'Osszes' : lang === 'de' ? 'Alle' : 'Toate'}</span>
+                <span class="subcat-count">${catProducts.length}</span>
+            </label>
+        `;
+
+        subs.forEach(sub => {
+            const cnt = catProducts.filter(p => p.subcategory === sub).length;
+            if (cnt === 0) return;
+            html += `
+                <label class="subcat-filter ${currentSubcategory === sub ? 'active' : ''}" data-subcat="${sub}">
+                    <span class="subcat-name"><i class="fas fa-chevron-right"></i>${sub}</span>
+                    <span class="subcat-count">${cnt}</span>
+                </label>
+            `;
+        });
+
+        if (!subs.length) {
+            html += `<div class="subcat-filters-empty">${lang === 'en' ? 'No subcategories' : lang === 'hu' ? 'Nincsenek alkategoriak' : lang === 'de' ? 'Keine Unterkategorien' : 'Fara subcategorii'}</div>`;
+        }
+
+        container.innerHTML = html;
+
+        container.querySelectorAll('.subcat-filter[data-subcat]').forEach(el => {
+            el.addEventListener('click', () => {
+                container.querySelectorAll('.subcat-filter').forEach(e => e.classList.remove('active'));
+                el.classList.add('active');
+                currentSubcategory = el.getAttribute('data-subcat');
+                applyFilters();
+            });
+        });
     }
+
+    // Re-render sidebar on language change
+    document.addEventListener('langChanged', () => {
+        renderSubcatFilters();
+        updateResultsHeader();
+    });
 
     // Render products
     function renderProducts(reset = true) {
@@ -142,7 +228,6 @@
 
         displayedCount += batch.length;
 
-        // Update load more
         const loadMore = document.getElementById('loadMore');
         if (loadMore) {
             loadMore.style.display = displayedCount >= sorted.length ? 'none' : 'inline-flex';
@@ -213,18 +298,6 @@
         }
     }
 
-    // Brand Filters
-    function setupBrandFilters() {
-        document.querySelectorAll('.brand-filter').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.brand-filter').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentBrand = btn.getAttribute('data-brand');
-                applyFilters();
-            });
-        });
-    }
-
     function setupSort() {
         const sortSelect = document.getElementById('sortSelect');
         if (sortSelect) {
@@ -242,7 +315,6 @@
         }
     }
 
-    // View Toggle (grid/list)
     function setupViewToggle() {
         const gridBtn = document.getElementById('gridViewBtn');
         const listBtn = document.getElementById('listViewBtn');
@@ -262,7 +334,6 @@
         }
     }
 
-    // Cart
     function setupCart() {
         const cartToggle = document.getElementById('cartToggle');
         const cartOverlay = document.getElementById('cartOverlay');
@@ -401,12 +472,10 @@
         cartFooter.style.display = 'block';
     }
 
-    // View product modal
     window.viewProduct = function(productId) {
         const product = window.allProducts.find(p => p.id === productId);
         if (!product) return;
 
-        // Close search results & mobile search
         document.getElementById('searchResults').innerHTML = '';
         const msr = document.getElementById('mobileSearchResults');
         if (msr) msr.innerHTML = '';
@@ -507,7 +576,6 @@
         return base;
     }
 
-    // Checkout
     function openCheckout() {
         closeCart();
         setTimeout(() => {

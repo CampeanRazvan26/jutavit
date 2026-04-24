@@ -4,7 +4,14 @@
       "Bash(pip install:*)",
       "Bash(python -c \":*)",
       "mcp__Claude_Preview__preview_start",
-      "Bash(python extract_products.py)"
+      "Bash(python extract_products.py)",
+      "Bash(python categorize_products.py)",
+      "Bash(powershell -Command \"\\(Get-Item D:\\\\Jutavit\\\\js\\\\products.js\\).Length\")",
+      "Bash(powershell -Command \"Get-Content D:\\\\Jutavit\\\\js\\\\products.js -TotalCount 5\")",
+      "PowerShell($c = Get-Content D:\\\\Jutavit\\\\js\\\\products.js -Raw; $c.IndexOf\\('window.productCategories'\\); $c.IndexOf\\('window.productSubcategories'\\))",
+      "Bash(powershell -Command \"\\(Get-Content D:\\\\Jutavit\\\\index.html\\).Count\")",
+      "Bash(powershell -Command \"\\(Get-Content D:\\\\Jutavit\\\\js\\\\app.js\\).Count; \\(Get-Content D:\\\\Jutavit\\\\js\\\\shop.js\\).Count\")",
+      "Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 8080 -ErrorAction SilentlyContinue | Select-Object -First 1 State\")"
     ]
   }
 }

@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=3">
-    <link rel="stylesheet" href="css/shop.css?v=2">
-    <link rel="stylesheet" href="css/assistant.css?v=2">
-    <link rel="stylesheet" href="css/dark-mode.css?v=2">
+    <link rel="stylesheet" href="css/style.css?v=5">
+    <link rel="stylesheet" href="css/shop.css?v=4">
+    <link rel="stylesheet" href="css/assistant.css?v=3">
+    <link rel="stylesheet" href="css/dark-mode.css?v=3">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
 </head>
 <body>
@@ -84,69 +84,23 @@
         <div class="container cat-nav-wrapper">
             <button class="cat-nav-arrow cat-nav-left" id="catNavLeft"><i class="fas fa-chevron-left"></i></button>
             <div class="cat-nav-scroll" id="catNavScroll">
-                <a href="#" class="cat-nav-item active" data-cat="all"><i class="fas fa-th"></i> <span>Toate</span></a>
-                <a href="#" class="cat-nav-item" data-cat="vitamine"><i class="fas fa-sun"></i> <span>Vitamine</span></a>
-                <a href="#" class="cat-nav-item" data-cat="minerale"><i class="fas fa-gem"></i> <span>Minerale</span></a>
-                <a href="#" class="cat-nav-item" data-cat="imunitate"><i class="fas fa-shield-virus"></i> <span>Imunitate</span></a>
-                <a href="#" class="cat-nav-item" data-cat="omega"><i class="fas fa-fish"></i> <span>Omega</span></a>
-                <a href="#" class="cat-nav-item" data-cat="digestie"><i class="fas fa-leaf"></i> <span>Digestie</span></a>
-                <a href="#" class="cat-nav-item" data-cat="frumusete"><i class="fas fa-spa"></i> <span>Frumusete</span></a>
-                <a href="#" class="cat-nav-item" data-cat="copii"><i class="fas fa-baby"></i> <span>Copii</span></a>
-                <a href="#" class="cat-nav-item" data-cat="ceaiuri"><i class="fas fa-mug-hot"></i> <span>Ceaiuri</span></a>
-                <a href="#" class="cat-nav-item" data-cat="geluri"><i class="fas fa-pump-medical"></i> <span>Geluri & Creme</span></a>
-                <a href="#" class="cat-nav-item" data-cat="igiena"><i class="fas fa-tooth"></i> <span>Igiena Orala</span></a>
-                <a href="#" class="cat-nav-item" data-cat="siropuri"><i class="fas fa-prescription-bottle"></i> <span>Siropuri</span></a>
-                <a href="#" class="cat-nav-item" data-cat="relaxare"><i class="fas fa-moon"></i> <span>Relaxare</span></a>
-                <a href="#" class="cat-nav-item" data-cat="slabire"><i class="fas fa-weight"></i> <span>Slabire</span></a>
-                <a href="#" class="cat-nav-item" data-cat="ochi"><i class="fas fa-eye"></i> <span>Ochi</span></a>
-                <a href="#" class="cat-nav-item" data-cat="parafarmaceutice"><i class="fas fa-first-aid"></i> <span>Parafarmaceutice</span></a>
-                <a href="#" class="cat-nav-item" data-cat="energie"><i class="fas fa-bolt"></i> <span>Energie</span></a>
-                <a href="#" class="cat-nav-item" data-cat="oferte"><i class="fas fa-tags"></i> <span>Oferte</span></a>
+                <!-- Populated dynamically from window.productCategories + window.productSubcategories -->
             </div>
             <button class="cat-nav-arrow cat-nav-right" id="catNavRight"><i class="fas fa-chevron-right"></i></button>
         </div>
+        <!-- Mega dropdown holder - one shared panel, positioned under hovered category -->
+        <div class="cat-nav-megamenu" id="catMegamenu"></div>
     </nav>
 
     <!-- Main Content -->
     <main class="main-content">
         <div class="container main-grid">
-            <!-- Sidebar - Brand Filters -->
+            <!-- Sidebar - Subcategory Filters -->
             <aside class="sidebar" id="sidebar">
                 <div class="sidebar-section">
-                    <h3><i class="fas fa-building"></i> Branduri</h3>
-                    <div class="brand-filters" id="brandFilters">
-                        <label class="brand-filter active" data-brand="all">
-                            <span class="brand-name">Toate Brandurile</span>
-                            <span class="brand-count" id="totalCount">804</span>
-                        </label>
-                        <label class="brand-filter" data-brand="JUTAVIT">
-                            <span class="brand-name">Jutavit</span>
-                            <span class="brand-count">84</span>
-                        </label>
-                        <label class="brand-filter" data-brand="HOFIGAL">
-                            <span class="brand-name">Hofigal</span>
-                            <span class="brand-count">198</span>
-                        </label>
-                        <label class="brand-filter" data-brand="LARIX">
-                            <span class="brand-name">Larix</span>
-                            <span class="brand-count">170</span>
-                        </label>
-                        <label class="brand-filter" data-brand="ZDROVIT">
-                            <span class="brand-name">Zdrovit</span>
-                            <span class="brand-count">140</span>
-                        </label>
-                        <label class="brand-filter" data-brand="BIOEEL">
-                            <span class="brand-name">Bioeel</span>
-                            <span class="brand-count">127</span>
-                        </label>
-                        <label class="brand-filter" data-brand="FARES">
-                            <span class="brand-name">Fares</span>
-                            <span class="brand-count">68</span>
-                        </label>
-                        <label class="brand-filter" data-brand="MEDICA">
-                            <span class="brand-name">Medica</span>
-                            <span class="brand-count">17</span>
-                        </label>
+                    <h3 id="sidebarSubcatTitle"><i class="fas fa-layer-group"></i> Subcategorii</h3>
+                    <div class="subcat-filters" id="subcatFilters">
+                        <!-- Populated dynamically based on current category -->
                     </div>
                 </div>
                 <div class="sidebar-section">
@@ -430,10 +384,10 @@
     <!-- Back to Top -->
     <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
 
-    <script src="js/products.js?v=2"></script>
-    <script src="js/product-images.js?v=2"></script>
-    <script src="js/app.js?v=3"></script>
-    <script src="js/shop.js?v=2"></script>
-    <script src="js/assistant.js?v=2"></script>
+    <script src="js/products.js?v=4"></script>
+    <script src="js/product-images.js?v=3"></script>
+    <script src="js/app.js?v=6"></script>
+    <script src="js/shop.js?v=5"></script>
+    <script src="js/assistant.js?v=3"></script>
 </body>
 </html>

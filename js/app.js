@@ -171,9 +171,10 @@ window.currentLang = localStorage.getItem('patricecom_lang') || 'ro';
 window.applyTranslations = function(lang) {
     const t = window.translations[lang];
     if (!t) return;
-    currentLang = lang;
+    window.currentLang = lang;
     localStorage.setItem('patricecom_lang', lang);
     document.documentElement.lang = lang === 'hu' ? 'hu' : lang === 'de' ? 'de' : lang === 'en' ? 'en' : 'ro';
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang } }));
 
     // Top bar
     const topSpans = document.querySelectorAll('.top-bar-inner span');
@@ -191,25 +192,12 @@ window.applyTranslations = function(lang) {
     const msi = document.getElementById('mobileSearchInput');
     if (msi) msi.placeholder = t.searchMobilePlaceholder;
 
-    // Cat nav
-    const catMap = {
-        all: t.catAll, vitamine: t.catVitamine, minerale: t.catMinerale, imunitate: t.catImunitate,
-        omega: t.catOmega, digestie: t.catDigestie, frumusete: t.catFrumusete, copii: t.catCopii,
-        ceaiuri: t.catCeaiuri, geluri: t.catGeluri, igiena: t.catIgiena, siropuri: t.catSiropuri,
-        relaxare: t.catRelaxare, slabire: t.catSlabire, ochi: t.catOchi,
-        parafarmaceutice: t.catParafarmaceutice, energie: t.catEnergie, oferte: t.catOferte
-    };
-    document.querySelectorAll('.cat-nav-item').forEach(item => {
-        const cat = item.getAttribute('data-cat');
-        const span = item.querySelector('span');
-        if (span && catMap[cat]) span.textContent = catMap[cat];
-    });
+    // Cat nav - rebuild items with labels from window.productCategories
+    if (typeof window.buildCategoryNav === 'function') {
+        window.buildCategoryNav(lang);
+    }
 
-    // Sidebar
-    const brandH = document.querySelector('.sidebar-section h3');
-    if (brandH) brandH.innerHTML = `<i class="fas fa-building"></i> ${t.sidebarBrands}`;
-    const allBrandLabel = document.querySelector('.brand-filter[data-brand="all"] .brand-name');
-    if (allBrandLabel) allBrandLabel.textContent = t.sidebarAllBrands;
+    // Sidebar subcat filters rerender is handled by shop.js on langChanged event.
     const sortH = document.querySelectorAll('.sidebar-section h3')[1];
     if (sortH) sortH.innerHTML = `<i class="fas fa-sort"></i> ${t.sidebarSort}`;
     const sortOpts = document.querySelectorAll('#sortSelect option');
@@ -360,10 +348,119 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // === Build Category Nav dynamically from window.productCategories ===
+    window.buildCategoryNav = function(lang) {
+        lang = lang || window.currentLang || 'ro';
+        const scroll = document.getElementById('catNavScroll');
+        if (!scroll || !window.productCategories) return;
+
+        const t = (window.translations && window.translations[lang]) || {};
+        const allLabel = t.catAll || 'Toate';
+        const offersLabel = t.catOferte || 'Oferte';
+
+        const prevActive = scroll.querySelector('.cat-nav-item.active')?.getAttribute('data-cat') || 'all';
+
+        let html = `<a href="#" class="cat-nav-item ${prevActive==='all'?'active':''}" data-cat="all"><i class="fas fa-th"></i><span>${allLabel}</span></a>`;
+
+        Object.keys(window.productCategories).forEach(catKey => {
+            const meta = window.productCategories[catKey];
+            const label = meta['name_' + lang] || meta.name_ro;
+            html += `<a href="#" class="cat-nav-item ${prevActive===catKey?'active':''}" data-cat="${catKey}"><i class="${(meta.icon && meta.icon.startsWith('fa-') ? 'fas ' + meta.icon : (meta.icon || 'fas fa-circle'))}"></i><span>${label}</span></a>`;
+        });
+
+        html += `<a href="#" class="cat-nav-item ${prevActive==='oferte'?'active':''}" data-cat="oferte"><i class="fas fa-tags"></i><span>${offersLabel}</span></a>`;
+
+        scroll.innerHTML = html;
+
+        setupCatNavInteractions();
+        setTimeout(() => updateCatNavArrows && updateCatNavArrows(), 50);
+    };
+
     // Category Nav Scroll Arrows
     const catNavScroll = document.getElementById('catNavScroll');
     const catNavLeft = document.getElementById('catNavLeft');
     const catNavRight = document.getElementById('catNavRight');
+    const catMegamenu = document.getElementById('catMegamenu');
+    let megamenuHideTimer = null;
+
+    function openMegamenu(catKey, anchorEl) {
+        if (!catMegamenu || !window.productSubcategories) return;
+        clearTimeout(megamenuHideTimer);
+        const lang = window.currentLang || 'ro';
+        const meta = window.productCategories && window.productCategories[catKey];
+        if (!meta) {
+            catMegamenu.classList.remove('open');
+            return;
+        }
+        const subs = window.productSubcategories[catKey] || [];
+        if (!subs.length) {
+            catMegamenu.classList.remove('open');
+            return;
+        }
+        const catLabel = meta['name_' + lang] || meta.name_ro;
+        const catProducts = (window.allProducts || []).filter(p => p.category === catKey);
+
+        let html = `<div class="cat-nav-megamenu-inner"><div class="cat-nav-megamenu-title"><i class="${(meta.icon && meta.icon.startsWith('fa-') ? 'fas ' + meta.icon : (meta.icon || 'fas fa-circle'))}"></i> ${catLabel}</div>`;
+        subs.forEach(sub => {
+            const cnt = catProducts.filter(p => p.subcategory === sub).length;
+            if (cnt === 0) return;
+            html += `<a href="#" class="cat-nav-megamenu-link" data-cat="${catKey}" data-sub="${sub}"><i class="fas fa-chevron-right"></i><span>${sub}</span><span class="sub-count">${cnt}</span></a>`;
+        });
+        html += `</div>`;
+        catMegamenu.innerHTML = html;
+        catMegamenu.classList.add('open');
+
+        catMegamenu.querySelectorAll('.cat-nav-megamenu-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const c = link.getAttribute('data-cat');
+                const s = link.getAttribute('data-sub');
+                catMegamenu.classList.remove('open');
+                if (typeof window.filterBySubcategory === 'function') {
+                    window.filterBySubcategory(c, s);
+                }
+            });
+        });
+    }
+
+    function scheduleCloseMegamenu() {
+        clearTimeout(megamenuHideTimer);
+        megamenuHideTimer = setTimeout(() => {
+            if (catMegamenu) catMegamenu.classList.remove('open');
+        }, 200);
+    }
+
+    if (catMegamenu) {
+        catMegamenu.addEventListener('mouseenter', () => clearTimeout(megamenuHideTimer));
+        catMegamenu.addEventListener('mouseleave', scheduleCloseMegamenu);
+    }
+
+    function setupCatNavInteractions() {
+        const items = document.querySelectorAll('.cat-nav-item');
+        items.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                items.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+                const cat = item.getAttribute('data-cat');
+                if (catMegamenu) catMegamenu.classList.remove('open');
+                if (typeof window.filterByCategory === 'function') {
+                    window.filterByCategory(cat);
+                }
+            });
+
+            item.addEventListener('mouseenter', () => {
+                const cat = item.getAttribute('data-cat');
+                if (cat === 'all' || cat === 'oferte') {
+                    if (catMegamenu) catMegamenu.classList.remove('open');
+                    return;
+                }
+                openMegamenu(cat, item);
+            });
+
+            item.addEventListener('mouseleave', scheduleCloseMegamenu);
+        });
+    }
 
     function updateCatNavArrows() {
         if (!catNavScroll || !catNavLeft || !catNavRight) return;
@@ -482,19 +579,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Category Nav - clicks
-    const catNavItems = document.querySelectorAll('.cat-nav-item');
-    catNavItems.forEach(item => {
-        item.addEventListener('click', (e) => {
-            e.preventDefault();
-            catNavItems.forEach(i => i.classList.remove('active'));
-            item.classList.add('active');
-            const cat = item.getAttribute('data-cat');
-            if (typeof window.filterByCategory === 'function') {
-                window.filterByCategory(cat);
-            }
-        });
-    });
+    // Initial build of cat nav (click + hover handlers added by setupCatNavInteractions)
+    function tryBuildCatNav() {
+        if (window.productCategories) {
+            window.buildCategoryNav(window.currentLang || 'ro');
+        } else {
+            setTimeout(tryBuildCatNav, 80);
+        }
+    }
+    tryBuildCatNav();
 
     // Footer category links
     document.querySelectorAll('.footer-links a[data-cat]').forEach(link => {
@@ -503,7 +596,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const cat = link.getAttribute('data-cat');
             window.scrollTo({ top: 0, behavior: 'smooth' });
             setTimeout(() => {
-                catNavItems.forEach(i => i.classList.remove('active'));
+                document.querySelectorAll('.cat-nav-item').forEach(i => i.classList.remove('active'));
                 const target = document.querySelector(`.cat-nav-item[data-cat="${cat}"]`);
                 if (target) target.classList.add('active');
                 if (typeof window.filterByCategory === 'function') {
