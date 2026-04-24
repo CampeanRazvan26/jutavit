@@ -11,7 +11,13 @@
       "PowerShell($c = Get-Content D:\\\\Jutavit\\\\js\\\\products.js -Raw; $c.IndexOf\\('window.productCategories'\\); $c.IndexOf\\('window.productSubcategories'\\))",
       "Bash(powershell -Command \"\\(Get-Content D:\\\\Jutavit\\\\index.html\\).Count\")",
       "Bash(powershell -Command \"\\(Get-Content D:\\\\Jutavit\\\\js\\\\app.js\\).Count; \\(Get-Content D:\\\\Jutavit\\\\js\\\\shop.js\\).Count\")",
-      "Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 8080 -ErrorAction SilentlyContinue | Select-Object -First 1 State\")"
+      "Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 8080 -ErrorAction SilentlyContinue | Select-Object -First 1 State\")",
+      "Bash(python -c \"from duckduckgo_search import DDGS; print\\('ok'\\)\")",
+      "Bash(python -c \"from duckduckgo_search import DDGS; r = list\\(DDGS\\(\\).images\\('Jutavit Vitamina C 1000mg', max_results=3\\)\\); print\\(r[0] if r else 'none'\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(python D:\\\\Jutavit\\\\fetch_product_images.py)",
+      "Bash(python fetch_product_images.py)",
+      "Bash(python merge_images.py)"
     ]
   }
 }

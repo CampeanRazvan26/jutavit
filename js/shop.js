@@ -324,7 +324,7 @@
             ${badges.length ? `<div class="product-badge">${badges.join('')}</div>` : ''}
             <div class="product-image" onclick="viewProduct(${product.id})">
                 <div class="product-image-bg" style="background:${colors.bg}">
-                    ${window.getProductImage ? `<img src="${window.getProductImage(product)}" alt="${product.name}" style="width:100%;height:100%;object-fit:contain;" loading="lazy"/>` : `<i class="${icon}" style="color:${colors.color}"></i>`}
+                    ${product.image ? `<img src="${product.image}" alt="${product.name}" style="width:100%;height:100%;object-fit:contain;" loading="lazy" onerror="this.onerror=null;this.outerHTML='<i class=\\'${icon}\\' style=\\'color:${colors.color}\\'></i>'"/>` : (window.getProductImage ? `<img src="${window.getProductImage(product)}" alt="${product.name}" style="width:100%;height:100%;object-fit:contain;" loading="lazy"/>` : `<i class="${icon}" style="color:${colors.color}"></i>`)}
                 </div>
                 <div class="product-quick-actions">
                     <button class="quick-action-btn" onclick="event.stopPropagation(); viewProduct(${product.id})" title="Detalii">
@@ -518,7 +518,7 @@
             return `
                 <div class="cart-item">
                     <div class="cart-item-image" style="background:${colors.bg}; overflow:hidden">
-                        ${window.getProductImage ? `<img src="${window.getProductImage(product)}" alt="" style="width:100%;height:100%;object-fit:contain;"/>` : `<i class="${icon}" style="color:${colors.color}"></i>`}
+                        ${product.image ? `<img src="${product.image}" alt="" style="width:100%;height:100%;object-fit:contain;" onerror="this.onerror=null;this.outerHTML='<i class=\\'${icon}\\' style=\\'color:${colors.color}\\'></i>'"/>` : (window.getProductImage ? `<img src="${window.getProductImage(product)}" alt="" style="width:100%;height:100%;object-fit:contain;"/>` : `<i class="${icon}" style="color:${colors.color}"></i>`)}
                     </div>
                     <div class="cart-item-info">
                         <div class="cart-item-name">${product.name}</div>
@@ -559,7 +559,7 @@
         body.innerHTML = `
             <div class="pm-grid">
                 <div class="pm-image" style="background:${colors.bg};">
-                    ${window.getProductImage ? `<img src="${window.getProductImage(product)}" alt="${product.name}" style="width:100%;height:100%;object-fit:contain;border-radius:var(--radius)"/>` : `<i class="${icon}" style="color:${colors.color}; font-size:5rem"></i>`}
+                    ${product.image ? `<img src="${product.image}" alt="${product.name}" style="width:100%;height:100%;object-fit:contain;border-radius:var(--radius)" onerror="this.onerror=null;this.outerHTML='<i class=\\'${icon}\\' style=\\'color:${colors.color}; font-size:5rem\\'></i>'"/>` : (window.getProductImage ? `<img src="${window.getProductImage(product)}" alt="${product.name}" style="width:100%;height:100%;object-fit:contain;border-radius:var(--radius)"/>` : `<i class="${icon}" style="color:${colors.color}; font-size:5rem"></i>`)}
                 </div>
                 <div class="pm-info">
                     <span class="pm-brand">${product.brand}</span>
