@@ -6,6 +6,12 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "8080"],
       "port": 8080
+    },
+    {
+      "name": "smartlogis",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["-e", "setInterval(()=>{},1000)"],
+      "port": 5173
     }
   ]
 }

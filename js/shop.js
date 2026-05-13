@@ -214,9 +214,44 @@
 
         const lang = window.currentLang || 'ro';
         const allLabel = lang === 'en' ? 'All' : lang === 'hu' ? 'Osszes' : lang === 'de' ? 'Alle' : 'Toate';
+        const allProductsLabel = lang === 'en' ? 'All Products' : lang === 'hu' ? 'Osszes Termek' : lang === 'de' ? 'Alle Produkte' : 'Toate Produsele';
+        const catsHeaderLabel = lang === 'en' ? 'Categories' : lang === 'hu' ? 'Kategoriak' : lang === 'de' ? 'Kategorien' : 'Categorii';
 
-        // Hide panel when on "all" or "oferte"
-        if (currentCategory === 'all' || currentCategory === 'oferte') {
+        // When on "all": show full categories list
+        if (currentCategory === 'all') {
+            header.innerHTML = `<span><i class="fas fa-th-large"></i>${catsHeaderLabel}</span>`;
+            const cats = Object.keys(window.productCategories || {});
+            let html = '';
+            cats.forEach(catKey => {
+                const meta = window.productCategories[catKey];
+                const label = meta['name_' + lang] || meta.name_ro;
+                const cnt = window.allProducts.filter(p => p.category === catKey).length;
+                if (cnt === 0) return;
+                const icon = meta.icon && meta.icon.startsWith('fa-') ? 'fas ' + meta.icon : (meta.icon || 'fas fa-circle');
+                html += `
+                    <div class="mobile-subcat-pill" data-cat-link="${catKey}">
+                        <span class="pill-name"><i class="${icon}"></i>${label}</span>
+                        <span class="pill-count">${cnt}</span>
+                    </div>
+                `;
+            });
+            list.innerHTML = html;
+            panel.classList.add('visible');
+
+            list.querySelectorAll('.mobile-subcat-pill[data-cat-link]').forEach(pill => {
+                pill.addEventListener('click', () => {
+                    const catKey = pill.getAttribute('data-cat-link');
+                    document.querySelectorAll('.cat-nav-item').forEach(i => i.classList.remove('active'));
+                    const navItem = document.querySelector(`.cat-nav-item[data-cat="${catKey}"]`);
+                    if (navItem) navItem.classList.add('active');
+                    window.filterByCategory(catKey);
+                });
+            });
+            return;
+        }
+
+        // Hide panel when on "oferte"
+        if (currentCategory === 'oferte') {
             panel.classList.remove('visible');
             return;
         }

@@ -17,7 +17,8 @@
       "Bash(python -c ' *)",
       "Bash(python D:\\\\Jutavit\\\\fetch_product_images.py)",
       "Bash(python fetch_product_images.py)",
-      "Bash(python merge_images.py)"
+      "Bash(python merge_images.py)",
+      "Bash(npm run *)"
     ]
   }
 }
