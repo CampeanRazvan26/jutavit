@@ -18,7 +18,11 @@
       "Bash(python D:\\\\Jutavit\\\\fetch_product_images.py)",
       "Bash(python fetch_product_images.py)",
       "Bash(python merge_images.py)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(python full_products.py)",
+      "Bash(python strict_image_fetch.py)",
+      "Bash(python -c \"import json; d=json.load\\(open\\(r'D:\\\\\\\\Jutavit\\\\\\\\strict_images.json'\\)\\); print\\('cached:', len\\(d\\), 'with_url:', sum\\(1 for v in d.values\\(\\) if v\\), 'blank:', sum\\(1 for v in d.values\\(\\) if not v\\)\\)\")",
+      "Bash(python probe_search.py)"
     ]
   }
 }

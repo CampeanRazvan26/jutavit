@@ -5,7 +5,7 @@ Preserves the existing window.productCategories and window.productSubcategories 
 import json, re
 
 PRODUCTS_JS = r'D:\Jutavit\js\products.js'
-CACHE_JSON  = r'D:\Jutavit\product_images.json'
+CACHE_JSON  = r'D:\Jutavit\strict_images.json'
 
 with open(PRODUCTS_JS, 'r', encoding='utf-8') as f:
     content = f.read()
@@ -25,8 +25,7 @@ for p in products:
         p['image'] = url
         hit += 1
     else:
-        # remove any stale image to keep JSON clean
-        p.pop('image', None)
+        p['image'] = ''
 
 print(f'Attached image to {hit}/{len(products)} products.')
 

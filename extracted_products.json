@@ -1,0 +1,6896 @@
+[
+ {
+  "name": "9 vita 100drj",
+  "price": 26.02,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ALCOL SANITAR X500ML ROAPOTECA",
+  "price": 5.75,
+  "brand": "PATRICECOM",
+  "quantity": "500ml"
+ },
+ {
+  "name": "ALCOOL BORICAT 4% 20 GR",
+  "price": 6.17,
+  "brand": "PATRICECOM",
+  "quantity": "20 gr"
+ },
+ {
+  "name": "Bandaj autoadeziv elastic 10cm x4.5m",
+  "price": 9.8,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "Bandaj autoadeziv elastic 15cm x4.5m",
+  "price": 15.73,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "Bandaj autoadeziv elastic 2,5 x4.5m",
+  "price": 3.87,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "Bandaj autoadeziv elastic 5cm x4.5m",
+  "price": 6.66,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "Bandaj autoadeziv elastic 7,5cm x4.5m",
+  "price": 8.47,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "CALCIU+D3 50 compr",
+  "price": 0.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "CALCIU+D3 50 comprimate",
+  "price": 35.7,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "CALCIU+MG+ZN+vit.C-50 compr zdrovit",
+  "price": 42.35,
+  "brand": "ZDROVIT",
+  "quantity": ""
+ },
+ {
+  "name": "CALCIU,MAG,ZN,C x50cpr zdrovit",
+  "price": 0.01,
+  "brand": "ZDROVIT",
+  "quantity": "50cpr"
+ },
+ {
+  "name": "CAPSULA PROSTAYoL k 023",
+  "price": 50.82,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "CARBOVITA S001",
+  "price": 10.41,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "CEAI PROSTATA-DOZE fares",
+  "price": 9.99,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "CEAI VERDE CPS 30cps 1+1 fmn",
+  "price": 23.6,
+  "brand": "PATRICECOM",
+  "quantity": "30cps"
+ },
+ {
+  "name": "CREMA ARNICA LARIX 40 gr",
+  "price": 10.29,
+  "brand": "LARIX",
+  "quantity": "40 gr"
+ },
+ {
+  "name": "CREMA SUNATOARE LARIX 40 gr",
+  "price": 6.17,
+  "brand": "LARIX",
+  "quantity": "40 gr"
+ },
+ {
+  "name": "CREVIL VITAL GEL PUTEREA CALULUI+CANNABIS 250 ml",
+  "price": 18.15,
+  "brand": "CREVIL",
+  "quantity": "250 ml"
+ },
+ {
+  "name": "Ceai anason",
+  "price": 5.55,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "Ceai hapciu-antiraceala",
+  "price": 8.33,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "Crema catina 40 gr -larix",
+  "price": 8.23,
+  "brand": "LARIX",
+  "quantity": "40 gr"
+ },
+ {
+  "name": "Detrical D3 2000 IU*60cpr",
+  "price": 45.98,
+  "brand": "PATRICECOM",
+  "quantity": "60cpr"
+ },
+ {
+  "name": "Dischete demachiante 70/pac",
+  "price": 4.72,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "GEL MASAJ bingo 500 ml",
+  "price": 22.02,
+  "brand": "PATRICECOM",
+  "quantity": "500 ml"
+ },
+ {
+  "name": "GRIPOVIT JUNIOR 10plicuri",
+  "price": 43.56,
+  "brand": "GRIPOVIT",
+  "quantity": ""
+ },
+ {
+  "name": "INDULCITOR-erythriol+xylitol+stevia 250 gr",
+  "price": 17.76,
+  "brand": "PATRICECOM",
+  "quantity": "250 gr"
+ },
+ {
+  "name": "INSTALATORI STICLA CU POMPA CAUCIUC",
+  "price": 1.33,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "JB baby lotion 300 ml",
+  "price": 15.73,
+  "brand": "PATRICECOM",
+  "quantity": "300 ml"
+ },
+ {
+  "name": "JB oils -regular 300 ml",
+  "price": 16.34,
+  "brand": "PATRICECOM",
+  "quantity": "300 ml"
+ },
+ {
+  "name": "JUTAVIT B COMPLEX+ACID FOLIC 100 BUC/CUTIE",
+  "price": 23.96,
+  "brand": "JUTAVIT",
+  "quantity": "100 buc"
+ },
+ {
+  "name": "Jutavit Magneziu eff 275mg 16tb",
+  "price": 19.97,
+  "brand": "JUTAVIT",
+  "quantity": "16tb"
+ },
+ {
+  "name": "Jutavit extract de curcuma 60 caps",
+  "price": 33.88,
+  "brand": "JUTAVIT",
+  "quantity": "60 caps"
+ },
+ {
+  "name": "Jutavit lecitin pro 1200mg 30 buc",
+  "price": 22.99,
+  "brand": "JUTAVIT",
+  "quantity": "30 buc"
+ },
+ {
+  "name": "Jutavit prostalong 320mg 60 buc/cut",
+  "price": 46.59,
+  "brand": "JUTAVIT",
+  "quantity": "60 buc"
+ },
+ {
+  "name": "Jutavit scortisoara+crom+ghimbir+marar 120 tb",
+  "price": 36.91,
+  "brand": "JUTAVIT",
+  "quantity": "120 tb"
+ },
+ {
+  "name": "Jutavit vit.C 1000mg efervescenta 20/cut",
+  "price": 20.33,
+  "brand": "JUTAVIT",
+  "quantity": ""
+ },
+ {
+  "name": "Jutavit vit.C 200mg -gust portocale 100 b",
+  "price": 31.46,
+  "brand": "JUTAVIT",
+  "quantity": ""
+ },
+ {
+  "name": "Jutavit vit.C 500mg +d3+zn+ex.maciese-100tb",
+  "price": 35.7,
+  "brand": "JUTAVIT",
+  "quantity": "100tb"
+ },
+ {
+  "name": "Jutavit vit.C 500mg -masticabil +d3 si ex.maciese-100tb",
+  "price": 34.49,
+  "brand": "JUTAVIT",
+  "quantity": "100tb"
+ },
+ {
+  "name": "Jutavit vit.C+maciese+ex.acerola 1500ml/100tb",
+  "price": 53.85,
+  "brand": "JUTAVIT",
+  "quantity": "1500ml"
+ },
+ {
+  "name": "Jutavit vit.D3 3000 ne 100 capsule",
+  "price": 37.51,
+  "brand": "JUTAVIT",
+  "quantity": ""
+ },
+ {
+  "name": "Jutavit vit.D3 4000 ne cu ulei de masline",
+  "price": 41.02,
+  "brand": "JUTAVIT",
+  "quantity": ""
+ },
+ {
+  "name": "KIN PERIUTA DE DINTI MEDIUM",
+  "price": 0.0,
+  "brand": "KIN",
+  "quantity": ""
+ },
+ {
+  "name": "KIT GLUCOMETRU DR LIFE 2cutii teste 2 cutii ace 1 glucometru",
+  "price": 52.64,
+  "brand": "LIFE",
+  "quantity": ""
+ },
+ {
+  "name": "Kidimag 3ani+ magneziu ionic 20 plicuri",
+  "price": 39.32,
+  "brand": "KIDIMAG",
+  "quantity": ""
+ },
+ {
+  "name": "Kit pentru indepartarea capuselor de life",
+  "price": 18.15,
+  "brand": "LIFE",
+  "quantity": ""
+ },
+ {
+  "name": "LiSTERIN-apa de gura 500ml spermint",
+  "price": 18.15,
+  "brand": "LISTERIN",
+  "quantity": "500ml"
+ },
+ {
+  "name": "LiSTERIN-apa de gura 500ml mild minty",
+  "price": 18.15,
+  "brand": "LISTERIN",
+  "quantity": "500ml"
+ },
+ {
+  "name": "MARATON 4 pt cresterea potentei",
+  "price": 72.6,
+  "brand": "MARATON",
+  "quantity": ""
+ },
+ {
+  "name": "MARATON FOTRE 20 pt cresterea potentei",
+  "price": 290.4,
+  "brand": "MARATON",
+  "quantity": ""
+ },
+ {
+  "name": "MY HAIR ser stop cadere",
+  "price": 30.86,
+  "brand": "MY HAIR",
+  "quantity": ""
+ },
+ {
+  "name": "MY HAIR no grei- ser stop incaruntire",
+  "price": 28.44,
+  "brand": "MY HAIR",
+  "quantity": ""
+ },
+ {
+  "name": "MY HAIR strong- ser stop despicare",
+  "price": 23.65,
+  "brand": "MY HAIR",
+  "quantity": ""
+ },
+ {
+  "name": "MY HAIR clean-ser stop matreata",
+  "price": 33.88,
+  "brand": "MY HAIR",
+  "quantity": ""
+ },
+ {
+  "name": "Mini irigator medo",
+  "price": 6.29,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "NEGRO-classic 79gr",
+  "price": 7.02,
+  "brand": "NEGRO",
+  "quantity": "79gr"
+ },
+ {
+  "name": "NEGRO-extra 79 grame",
+  "price": 7.02,
+  "brand": "NEGRO",
+  "quantity": ""
+ },
+ {
+  "name": "NEGRO-mentol 79 gr",
+  "price": 7.02,
+  "brand": "NEGRO",
+  "quantity": "79 gr"
+ },
+ {
+  "name": "NEGRO-miere 79 grame",
+  "price": 7.02,
+  "brand": "NEGRO",
+  "quantity": ""
+ },
+ {
+  "name": "NOAPTE BUNA 30 CPS",
+  "price": 35.52,
+  "brand": "PATRICECOM",
+  "quantity": "30 cps"
+ },
+ {
+  "name": "PD.colgate max white cristal 100 ml",
+  "price": 8.35,
+  "brand": "COLGATE",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "PROSTAGOOD ON 30 CPS*625MG",
+  "price": 62.92,
+  "brand": "PROSTAGOOD",
+  "quantity": "30 cps"
+ },
+ {
+  "name": "PROSTAGOOD on 60comp 625mg",
+  "price": 102.85,
+  "brand": "PROSTAGOOD",
+  "quantity": ""
+ },
+ {
+  "name": "PROSTAGOOD FORTE 30 comp 1520mg",
+  "price": 89.54,
+  "brand": "PROSTAGOOD",
+  "quantity": ""
+ },
+ {
+  "name": "PROSTAGOOD 30 comp 1520mg",
+  "price": 25.41,
+  "brand": "PROSTAGOOD",
+  "quantity": ""
+ },
+ {
+  "name": "Plosca medicala",
+  "price": 18.15,
+  "brand": "MEDICA",
+  "quantity": ""
+ },
+ {
+  "name": "SENI SOFT super 90 X60 A-5",
+  "price": 75.61,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "SENI SOFT 90/60A 30 BUC",
+  "price": 56.87,
+  "brand": "SENI",
+  "quantity": "30 buc"
+ },
+ {
+  "name": "SENI SOFT NORMAL 60/60 *30",
+  "price": 108.78,
+  "brand": "SENI",
+  "quantity": "60/60"
+ },
+ {
+  "name": "SENI SOFT SUPER 90/170 30 BUC",
+  "price": 15.97,
+  "brand": "SENI",
+  "quantity": "30 buc"
+ },
+ {
+  "name": "SENSODYNE-BLANCHEUR 75 ML",
+  "price": 15.97,
+  "brand": "SENSODYNE",
+  "quantity": "75 ml"
+ },
+ {
+  "name": "SENSODYNE-complet protection 75 ML",
+  "price": 23.6,
+  "brand": "SENSODYNE",
+  "quantity": "75 ml"
+ },
+ {
+  "name": "SIROP TUSE 100-ML Vitalia",
+  "price": 212.36,
+  "brand": "VITALIA",
+  "quantity": ""
+ },
+ {
+  "name": "SN biocrema arnica ice cu efect rece,dozator 500 ml",
+  "price": 141.57,
+  "brand": "SN",
+  "quantity": "500 ml"
+ },
+ {
+  "name": "SN biocrema arnica ice cu efect rece 250 ml",
+  "price": 62.92,
+  "brand": "SN",
+  "quantity": "250 ml"
+ },
+ {
+  "name": "SN biocrema arnica ice cu efect rece flacon airless*100 ml",
+  "price": 181.5,
+  "brand": "SN",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "SN gel arnica extra cu glucozamina,boswellia si gh diavolului*500ml",
+  "price": 180.9,
+  "brand": "SN",
+  "quantity": "500ml"
+ },
+ {
+  "name": "SN biogel arnica 99% 500 ml",
+  "price": 62.92,
+  "brand": "SN",
+  "quantity": "500 ml"
+ },
+ {
+  "name": "SN biogel calendula 90 % flacon airless*100 ml",
+  "price": 102.85,
+  "brand": "SN",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "SN biounguent rxtract de salvie de melc 50% flacon airless*75 ml",
+  "price": 13.61,
+  "brand": "SN",
+  "quantity": "75 ml"
+ },
+ {
+  "name": "SOLITEINT DERMAX SAPUN LICHID 300 ML",
+  "price": 9.67,
+  "brand": "SOLITEINT",
+  "quantity": "300 ml"
+ },
+ {
+  "name": "SOLITEINT FOND DE TEN NR 2 BEIGE 30 ml",
+  "price": 9.67,
+  "brand": "SOLITEINT",
+  "quantity": "30 ml"
+ },
+ {
+  "name": "SOLITEINT FOND DE TEN NR 4 NOON 30 ml",
+  "price": 9.67,
+  "brand": "SOLITEINT",
+  "quantity": "30 ml"
+ },
+ {
+  "name": "SOLITEINT FOND DE TEN NR 5 HONEY 30 ml",
+  "price": 76.23,
+  "brand": "SOLITEINT",
+  "quantity": "30 ml"
+ },
+ {
+  "name": "STOP TICK SET",
+  "price": 43.12,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "Seni care crema curatare corp 3 in 1 1000ml",
+  "price": 35.09,
+  "brand": "SENI",
+  "quantity": "1000ml"
+ },
+ {
+  "name": "Spray cu d-panthenol 5% santaderm 100 ml",
+  "price": 24.08,
+  "brand": "SANTADERM",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "Spray pentru gat septiclean-20 ml",
+  "price": 360.58,
+  "brand": "PATRICECOM",
+  "quantity": "20 ml"
+ },
+ {
+  "name": "TERMOMETRU CU INFRAROSU",
+  "price": 6.66,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "TETINA SILICON gat larg bt104 nr 1 +18 luni",
+  "price": 6.05,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "TETINA SILICON anatomica anticolica bt099 nr 1 0-6 luni",
+  "price": 41.14,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "Test rapid proteina C reactiva",
+  "price": 47.19,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "Test rapid Strip A",
+  "price": 58.08,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "Test rapid intoleranta gluten",
+  "price": 83.49,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "Wortie sprai-50 ml contra negilor",
+  "price": 24.2,
+  "brand": "PATRICECOM",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "acnesol-lotiune antiacneica 60",
+  "price": 0.11,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "acoperitor pantofi 100",
+  "price": 17.54,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "afin 60 cps medica",
+  "price": 3.99,
+  "brand": "MEDICA",
+  "quantity": "60 cps"
+ },
+ {
+  "name": "alcol sanitar Mona 200 ML 70%",
+  "price": 19.97,
+  "brand": "PATRICECOM",
+  "quantity": "200 ml"
+ },
+ {
+  "name": "alifie cu galbenele alpifresch-250",
+  "price": 16.65,
+  "brand": "ALPIFRESCH",
+  "quantity": ""
+ },
+ {
+  "name": "antistres FORTE cps 60cps",
+  "price": 11.86,
+  "brand": "PATRICECOM",
+  "quantity": "60cps"
+ },
+ {
+  "name": "apa de mare izotona septimar baby-30 ml",
+  "price": 19.97,
+  "brand": "PATRICECOM",
+  "quantity": "30 ml"
+ },
+ {
+  "name": "apa micelara 300 ml vitamin C PLUS",
+  "price": 14.52,
+  "brand": "PATRICECOM",
+  "quantity": "300 ml"
+ },
+ {
+  "name": "apa oxigenata 3% 1000ml",
+  "price": 4.6,
+  "brand": "PATRICECOM",
+  "quantity": "1000ml"
+ },
+ {
+  "name": "apa oxigenata 3% 200 ml",
+  "price": 6.9,
+  "brand": "PATRICECOM",
+  "quantity": "200 ml"
+ },
+ {
+  "name": "apa oxigenata 3% cu pulverizator 200g",
+  "price": 16.34,
+  "brand": "PATRICECOM",
+  "quantity": "200g"
+ },
+ {
+  "name": "apasator limba lemn steril 100 buc",
+  "price": 66.55,
+  "brand": "PATRICECOM",
+  "quantity": "100 buc"
+ },
+ {
+  "name": "apuretin SLIM*60cps zdrovit",
+  "price": 9.56,
+  "brand": "ZDROVIT",
+  "quantity": "60cps"
+ },
+ {
+  "name": "aspirator nazal MEDDO",
+  "price": 11.25,
+  "brand": "MEDDO",
+  "quantity": ""
+ },
+ {
+  "name": "aspirator nazal minut",
+  "price": 9.68,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "aspirator nazal-34005 bt185",
+  "price": 15.73,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "aspirator nazal-asp.bucala minut",
+  "price": 53.85,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "bakuchiol anti-ageing elixir-serum",
+  "price": 52.64,
+  "brand": "BAKUCHIOL",
+  "quantity": ""
+ },
+ {
+  "name": "bakuchiol hydra&firming cream",
+  "price": 55.66,
+  "brand": "BAKUCHIOL",
+  "quantity": ""
+ },
+ {
+  "name": "bakuchiol wrinkle repair cream",
+  "price": 6.66,
+  "brand": "BAKUCHIOL",
+  "quantity": ""
+ },
+ {
+  "name": "balsam 27 ml",
+  "price": 8.11,
+  "brand": "PATRICECOM",
+  "quantity": "27 ml"
+ },
+ {
+  "name": "balsam buze cu ulei de jojoba 5.5 ml vegan",
+  "price": 8.47,
+  "brand": "PATRICECOM",
+  "quantity": "5 ml"
+ },
+ {
+  "name": "balsam buze cu acid hialuronic 5.5 ml vegan",
+  "price": 8.23,
+  "brand": "PATRICECOM",
+  "quantity": "5 ml"
+ },
+ {
+  "name": "balsam buze cu vit e spf-30",
+  "price": 0.73,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "balsam china 3 G",
+  "price": 7.26,
+  "brand": "PATRICECOM",
+  "quantity": "3 g"
+ },
+ {
+  "name": "balsam china 18 g",
+  "price": 6.05,
+  "brand": "PATRICECOM",
+  "quantity": "18 g"
+ },
+ {
+  "name": "balsam cu ex de musetel",
+  "price": 6.05,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "balsam cu extract galg+propolis",
+  "price": 8.59,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "balsam cu galbenele 30 ml",
+  "price": 7.14,
+  "brand": "PATRICECOM",
+  "quantity": "30 ml"
+ },
+ {
+  "name": "bandaj elastic autoadeziv MINUT 10CM*4.5M neutru",
+  "price": 9.07,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "bandaj elastic autoadeziv MINUT 7.5cm*4.5m",
+  "price": 7.5,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "batista bebelusului",
+  "price": 32.97,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "batiste FINE LIFE 10/SET",
+  "price": 5.69,
+  "brand": "LIFE",
+  "quantity": ""
+ },
+ {
+  "name": "bavete copii 2",
+  "price": 0.02,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "bazna relax gel 150 ml",
+  "price": 12.74,
+  "brand": "PATRICECOM",
+  "quantity": "150 ml"
+ },
+ {
+  "name": "bebble crema pt fundulet rosu 60 ml",
+  "price": 25.41,
+  "brand": "BEBBLE",
+  "quantity": "60 ml"
+ },
+ {
+  "name": "bebble gel gingival 20 ml",
+  "price": 28.44,
+  "brand": "BEBBLE",
+  "quantity": "20 ml"
+ },
+ {
+  "name": "bebble sampon si gel de dus pentru corp musetel si tei 400 ml",
+  "price": 20.81,
+  "brand": "BEBBLE",
+  "quantity": "400 ml"
+ },
+ {
+  "name": "bebble sampon si gel pentru baita 2 in 1 200 ml",
+  "price": 15.13,
+  "brand": "BEBBLE",
+  "quantity": "200 ml"
+ },
+ {
+  "name": "bebble sampon si gel pentru baita 2 in 1 400 ml",
+  "price": 25.41,
+  "brand": "BEBBLE",
+  "quantity": "400 ml"
+ },
+ {
+  "name": "bebble sapun crema cu lavanda 75 gr",
+  "price": 6.29,
+  "brand": "BEBBLE",
+  "quantity": "75 gr"
+ },
+ {
+  "name": "bebble sapun crema cu musetel 75 gr",
+  "price": 6.29,
+  "brand": "BEBBLE",
+  "quantity": "75 gr"
+ },
+ {
+  "name": "bebble ulei pentru corp 150 ml",
+  "price": 17.91,
+  "brand": "BEBBLE",
+  "quantity": "150 ml"
+ },
+ {
+  "name": "bella tampo mini*16",
+  "price": 11.62,
+  "brand": "BELLA",
+  "quantity": ""
+ },
+ {
+  "name": "bella tampo regular*16",
+  "price": 11.62,
+  "brand": "BELLA",
+  "quantity": ""
+ },
+ {
+  "name": "benzi curatate pori nas cu carbune 6 buc",
+  "price": 13.31,
+  "brand": "PATRICECOM",
+  "quantity": "6 buc"
+ },
+ {
+  "name": "benzi de nas cu extract de arbore de ceai 6 buc",
+  "price": 13.92,
+  "brand": "PATRICECOM",
+  "quantity": "6 buc"
+ },
+ {
+  "name": "benzi natale respiri usor 10 buc",
+  "price": 11.62,
+  "brand": "PATRICECOM",
+  "quantity": "10 buc"
+ },
+ {
+  "name": "betisoare cu ata interdentara cu carbune",
+  "price": 9.07,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "betisoare urechi copii minut 55/cut",
+  "price": 3.99,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "betisoare urechi cutie de soleil-100 buc",
+  "price": 2.66,
+  "brand": "SOLEIL",
+  "quantity": "100 buc"
+ },
+ {
+  "name": "betisoare urechi cutie*200 dr soleil",
+  "price": 4.6,
+  "brand": "SOLEIL",
+  "quantity": ""
+ },
+ {
+  "name": "biberon sticla borosilicat 250ml 3+ minut",
+  "price": 16.34,
+  "brand": "MINUT",
+  "quantity": "250ml"
+ },
+ {
+  "name": "biberon 125cu maner minut",
+  "price": 13.07,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "biberon 125ml simplu minut",
+  "price": 9.92,
+  "brand": "MINUT",
+  "quantity": "125ml"
+ },
+ {
+  "name": "biberon 250cu maner minut",
+  "price": 15.49,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "biberon 250ml simplu minut",
+  "price": 11.62,
+  "brand": "MINUT",
+  "quantity": "250ml"
+ },
+ {
+  "name": "biberon borosilicat 125 ml minut",
+  "price": 13.92,
+  "brand": "MINUT",
+  "quantity": "125 ml"
+ },
+ {
+  "name": "biberon cu maner 125 ml",
+  "price": 10.65,
+  "brand": "PATRICECOM",
+  "quantity": "125 ml"
+ },
+ {
+  "name": "biberon cu maner 250 ml",
+  "price": 10.77,
+  "brand": "PATRICECOM",
+  "quantity": "250 ml"
+ },
+ {
+  "name": "biberon cutie 250 ml tr101-02",
+  "price": 10.89,
+  "brand": "PATRICECOM",
+  "quantity": "250 ml"
+ },
+ {
+  "name": "biberon gat larg,tetina,manere 150ml 0+",
+  "price": 14.52,
+  "brand": "PATRICECOM",
+  "quantity": "150ml"
+ },
+ {
+  "name": "biberon gat larg,tetina,manere 270ml 3+",
+  "price": 15.73,
+  "brand": "PATRICECOM",
+  "quantity": "270ml"
+ },
+ {
+  "name": "biberon pp cu maner BT 070 150 ML",
+  "price": 14.28,
+  "brand": "PATRICECOM",
+  "quantity": "150 ml"
+ },
+ {
+  "name": "biberon pp cu maner BT069 250 ml",
+  "price": 15.25,
+  "brand": "PATRICECOM",
+  "quantity": "250 ml"
+ },
+ {
+  "name": "biberon pp cu maner BT065 250 ml",
+  "price": 11.13,
+  "brand": "PATRICECOM",
+  "quantity": "250 ml"
+ },
+ {
+  "name": "biberon ppcu tetina silicon 250 ml",
+  "price": 10.77,
+  "brand": "PATRICECOM",
+  "quantity": "250 ml"
+ },
+ {
+  "name": "bicarbonat de sodiu 50 gr",
+  "price": 2.54,
+  "brand": "PATRICECOM",
+  "quantity": "50 gr"
+ },
+ {
+  "name": "bingo gel 500ml pic,grele,vene si varice",
+  "price": 22.02,
+  "brand": "PATRICECOM",
+  "quantity": "500ml"
+ },
+ {
+  "name": "biomicin forte cps",
+  "price": 38.85,
+  "brand": "BIOMICIN",
+  "quantity": ""
+ },
+ {
+  "name": "biomicin urinar cps moi",
+  "price": 37.74,
+  "brand": "BIOMICIN",
+  "quantity": ""
+ },
+ {
+  "name": "bisglicinat de magneziu 1000mg 3bls x 10cpr film",
+  "price": 42.35,
+  "brand": "BISGLICINAT",
+  "quantity": "10cpr"
+ },
+ {
+  "name": "bitter 'Taina Plantelor , 200 ml -cu balsam taina plantelor",
+  "price": 38.12,
+  "brand": "BITTER",
+  "quantity": "200 ml"
+ },
+ {
+  "name": "bitter 'Taina Plantelor , fara alcool",
+  "price": 50.82,
+  "brand": "BITTER",
+  "quantity": ""
+ },
+ {
+  "name": "boneta antipaduchi 2 buc-multicare",
+  "price": 0.15,
+  "brand": "PATRICECOM",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "boneta medicala cu elastic u.f.",
+  "price": 3.51,
+  "brand": "MEDICA",
+  "quantity": ""
+ },
+ {
+  "name": "bratara antitantari",
+  "price": 15.13,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "bratara aromatica piele -2 buc",
+  "price": 15.73,
+  "brand": "PATRICECOM",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "bratara aromatica silicon *2 rez",
+  "price": 7.2,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "bratara aromatizata minut -roz",
+  "price": 7.2,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "bratara aromatizata minut -verde",
+  "price": 16.34,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "cana cu maner si cioc silicon 6+ 300ml min2019026",
+  "price": 19.97,
+  "brand": "PATRICECOM",
+  "quantity": "300ml"
+ },
+ {
+  "name": "cana cu pai si manere 210 ml min2018006 6+",
+  "price": 10.29,
+  "brand": "PATRICECOM",
+  "quantity": "210 ml"
+ },
+ {
+  "name": "cana decorata cu manere,cioc rabatabil",
+  "price": 163.35,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "cantar electronic bebelusi king2510805",
+  "price": 68.97,
+  "brand": "KIN",
+  "quantity": ""
+ },
+ {
+  "name": "caps.PROBICUM 7FORTE 60buc",
+  "price": 60.5,
+  "brand": "PROBICUM",
+  "quantity": "60buc"
+ },
+ {
+  "name": "caps.KURKUMA KOLLAGEN FORTE K144",
+  "price": 62.92,
+  "brand": "KURKUMA",
+  "quantity": ""
+ },
+ {
+  "name": "capsula ceai virgin forte 80 caps",
+  "price": 30.25,
+  "brand": "PATRICECOM",
+  "quantity": "80 caps"
+ },
+ {
+  "name": "capsule cu usturoi-paducel+vasc 30cps 1+1 gratis",
+  "price": 6.77,
+  "brand": "PATRICECOM",
+  "quantity": "30cps"
+ },
+ {
+  "name": "ceai earl grey suprapilc",
+  "price": 0.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai Hepatil-af hepato-bil. LARIX",
+  "price": 8.88,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai Laxativ L",
+  "price": 8.47,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai MIX 6sortimente sprapilc",
+  "price": 14.99,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai afine frunze larix",
+  "price": 7.26,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai anghinare",
+  "price": 5.93,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai antiadipos Yong Kang",
+  "price": 12.15,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai antiadipos cu ginseng",
+  "price": 7.02,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai antiadipos sanye",
+  "price": 9.68,
+  "brand": "SANYE",
+  "quantity": ""
+ },
+ {
+  "name": "ceai antiadipos strong",
+  "price": 6.78,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai antibronsitic doze",
+  "price": 7.33,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai antistres-FARES af.minore",
+  "price": 10.16,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai armurariu",
+  "price": 5.02,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai babycalm-doze",
+  "price": 7.44,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai chimion",
+  "price": 5.88,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai cimbrisor",
+  "price": 5.33,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai coada calului larix",
+  "price": 5.32,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai coada calului-doze LARIX",
+  "price": 4.6,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai coada soricelului",
+  "price": 5.32,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai coada soricelului doze",
+  "price": 4.72,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai colesterol doze",
+  "price": 10.55,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai colon sanatos punga fares",
+  "price": 15.43,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai cozi cirese DOZE-larix",
+  "price": 5.57,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai cozi de cirese",
+  "price": 6.53,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai cretisoara pg 50gr",
+  "price": 10.53,
+  "brand": "PATRICECOM",
+  "quantity": "50gr"
+ },
+ {
+  "name": "ceai crusin doze",
+  "price": 4.6,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai crusin vrac-larix",
+  "price": 5.08,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai cu afine-doze fares",
+  "price": 5.44,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai cu fructe de padure fares",
+  "price": 11.13,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai curatare colon doze -fares",
+  "price": 7.22,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai de iarna fares",
+  "price": 8.33,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai digestie usoara 20 pl'",
+  "price": 8.83,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai digestiv doze -larix",
+  "price": 11.66,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai diurosept-doze fares",
+  "price": 5.45,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai fenicul",
+  "price": 11.98,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai fructe de catina",
+  "price": 4.77,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai fructe de padure doze",
+  "price": 6.88,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai fructe de padure suprapilc",
+  "price": 6.17,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai galbenele Larix",
+  "price": 4.6,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai galbenele doze LARIX",
+  "price": 10.43,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai gastric doze FARES",
+  "price": 8.33,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai ghimbir cu lamaie larix",
+  "price": 4.77,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai ghimbir vrac hypericum",
+  "price": 17.3,
+  "brand": "HYPERICUM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai ghimpe",
+  "price": 4.11,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai glicostat-doze fares",
+  "price": 9.25,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai hepatocol doze fares",
+  "price": 8.71,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai larediab DOZE",
+  "price": 8.88,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai larediab vrac",
+  "price": 7.66,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai laricol contra colici copii",
+  "price": 4.9,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai laxativ-doze larix",
+  "price": 9.77,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai laxativ-doze larix b",
+  "price": 8.88,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai maciese",
+  "price": 4.84,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai maciese - 75 gr",
+  "price": 7.14,
+  "brand": "PATRICECOM",
+  "quantity": "75 gr"
+ },
+ {
+  "name": "ceai mar-scortisoara larix",
+  "price": 6.99,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai matase de porumb-FARES DOZE",
+  "price": 7.26,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai menta",
+  "price": 4.6,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai menta suprapilc",
+  "price": 6.9,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai menta vrac",
+  "price": 5.69,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai momordica-vrac hypericum",
+  "price": 11.66,
+  "brand": "HYPERICUM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai muguri de pin larix",
+  "price": 2.78,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai musetel",
+  "price": 4.6,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai musetel vrac-LARIX",
+  "price": 9.25,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai obligeana",
+  "price": 6.41,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai paducel",
+  "price": 5.93,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai paducel doze",
+  "price": 4.6,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai papadie frunze Larix",
+  "price": 5.81,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai pedicuta vrac-hypericum",
+  "price": 12.77,
+  "brand": "HYPERICUM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai pelin vrac hypericum",
+  "price": 7.44,
+  "brand": "HYPERICUM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai plantusin DOZE-FARES",
+  "price": 9.66,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai prostatic",
+  "price": 7.66,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai prostatic doze-larix",
+  "price": 8.88,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai prostatic-vrac",
+  "price": 8.35,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai pufulita cu flori mici",
+  "price": 5.81,
+  "brand": "PUFULITA",
+  "quantity": ""
+ },
+ {
+  "name": "ceai pufulita cu flori mici FARES-DOZE",
+  "price": 6.29,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai renal L",
+  "price": 7.55,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai renal-doze larix",
+  "price": 8.88,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai roinita larix",
+  "price": 4.6,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai salvie larix",
+  "price": 5.32,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai salvie doze",
+  "price": 4.6,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai senna fz fares",
+  "price": 9.07,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai silueta perfecta +drenaj",
+  "price": 8.1,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai silueta perfecta contra greutatii",
+  "price": 9.56,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai soc-flori 50 gr",
+  "price": 5.81,
+  "brand": "PATRICECOM",
+  "quantity": "50 gr"
+ },
+ {
+  "name": "ceai somn limistit",
+  "price": 9.21,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai stimularea lactatiei",
+  "price": 8.44,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai sunatoare",
+  "price": 4.6,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai sveltaflor- doze-fares",
+  "price": 10.65,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai sveltaflor-punga fares",
+  "price": 10.88,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai tei doze-larix",
+  "price": 7.5,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai tei vrac",
+  "price": 11.5,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai tensiune-doze fares",
+  "price": 10.99,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai trei frati patati larix",
+  "price": 4.9,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "ceai urzica",
+  "price": 5.32,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai urzica doze",
+  "price": 4.6,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai vasc- FARES",
+  "price": 10.16,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "ceai verde",
+  "price": 4.33,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai verde cu lamaie",
+  "price": 4.22,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai verde lamaie suprapilc",
+  "price": 6.33,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai verde frunze 100 gr",
+  "price": 6.53,
+  "brand": "PATRICECOM",
+  "quantity": "100 gr"
+ },
+ {
+  "name": "ceai zmeura si capsuni- suprapilc",
+  "price": 6.99,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ceai zmeura si capsuni-LARIX doze",
+  "price": 4.22,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "chelstop 200 ml hofigal",
+  "price": 22.99,
+  "brand": "HOFIGAL",
+  "quantity": "200 ml"
+ },
+ {
+  "name": "cheltuieli de expeditie",
+  "price": 16.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "cicoare solubila 75 gr",
+  "price": 7.88,
+  "brand": "PATRICECOM",
+  "quantity": "75 gr"
+ },
+ {
+  "name": "clipAir dilatator nazal*3 S,M,L diminueaza congestia nazala si sforaitul",
+  "price": 72.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "coprocultor cu spatula pe meddo",
+  "price": 0.73,
+  "brand": "MEDDO",
+  "quantity": ""
+ },
+ {
+  "name": "cotiera L minut-2 buc",
+  "price": 12.71,
+  "brand": "MINUT",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "cotiera M minut-2 buc",
+  "price": 12.71,
+  "brand": "MINUT",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "cotiera S minut-2 buc",
+  "price": 12.71,
+  "brand": "MINUT",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "cr.anticelulita-200ml termoactiva cu ardei iute",
+  "price": 23.6,
+  "brand": "PATRICECOM",
+  "quantity": "200ml"
+ },
+ {
+  "name": "cr.pt.depigmentare-hid. me%mom 50ml",
+  "price": 22.39,
+  "brand": "PATRICECOM",
+  "quantity": "50ml"
+ },
+ {
+  "name": "cr.reparatoare pt maini galbenele",
+  "price": 15.49,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "creion nazal creioneel",
+  "price": 8.95,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema albire cu efect instant spf 20",
+  "price": 56.87,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema albirea tenului galbenele",
+  "price": 19.12,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema antiacnee cu salvie si sulf 50 ml",
+  "price": 16.7,
+  "brand": "PATRICECOM",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "crema anticelulita 500 ml",
+  "price": 33.88,
+  "brand": "PATRICECOM",
+  "quantity": "500 ml"
+ },
+ {
+  "name": "crema anticelulita forte cu ex de cafea verde",
+  "price": 22.39,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema antirid colagen plus SPF 15",
+  "price": 30.25,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema antirid -galbenele+pantenol 50 ml",
+  "price": 18.51,
+  "brand": "PATRICECOM",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "crema antirid nutritiva cu ulei de masline si vit A E F",
+  "price": 22.39,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema antirid tonifianta cu acid hialuronic si bujor",
+  "price": 24.2,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema antirid-ulei catina+masline de noapte",
+  "price": 17.54,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema calcaie crapate 50ml santaderm",
+  "price": 19.36,
+  "brand": "SANTADERM",
+  "quantity": "50ml"
+ },
+ {
+  "name": "crema calciie-tub 100 ml cosmetic",
+  "price": 15.13,
+  "brand": "PATRICECOM",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "crema contur ochi Q10 mineral complex-30ml",
+  "price": 23.6,
+  "brand": "PATRICECOM",
+  "quantity": "30ml"
+ },
+ {
+  "name": "crema contur ochi anticearcan -catina",
+  "price": 19.97,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema corp hranitoare omega plus",
+  "price": 19.36,
+  "brand": "OMEGA PLUS",
+  "quantity": ""
+ },
+ {
+  "name": "crema cu galbenele santaderm 50 ml",
+  "price": 11.98,
+  "brand": "SANTADERM",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "crema cu untul pamantului 70 ML",
+  "price": 19.36,
+  "brand": "PATRICECOM",
+  "quantity": "70 ml"
+ },
+ {
+  "name": "crema cu uree 15% santaderm 50 ml",
+  "price": 18.15,
+  "brand": "SANTADERM",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "crema cu uree 30% santaderm 50 ml",
+  "price": 20.57,
+  "brand": "SANTADERM",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "crema cu vit A 40 ML",
+  "price": 11.01,
+  "brand": "PATRICECOM",
+  "quantity": "40 ml"
+ },
+ {
+  "name": "crema cu vitamina A+E+C santaderm 50 ml",
+  "price": 18.15,
+  "brand": "SANTADERM",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "crema fundulet me%mom 150 ml",
+  "price": 23.38,
+  "brand": "PATRICECOM",
+  "quantity": "150 ml"
+ },
+ {
+  "name": "crema galbenele larix 20 gr",
+  "price": 7.38,
+  "brand": "LARIX",
+  "quantity": "20 gr"
+ },
+ {
+  "name": "crema galbenele larix 40 gr",
+  "price": 9.92,
+  "brand": "LARIX",
+  "quantity": "40 gr"
+ },
+ {
+  "name": "crema gel hidratare colagen plus",
+  "price": 29.04,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema hidratanta calmanta cu musetel si alantoina",
+  "price": 21.18,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema hidratanta delicata ci acid hialuronic si bujor",
+  "price": 24.2,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema hidratanta nutritiva cu ulei de masline si pantenol",
+  "price": 22.87,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema hidratanta-galb+pantenol 50 ml",
+  "price": 18.51,
+  "brand": "PATRICECOM",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "crema maini Q10 mineral complex 100 ml cp",
+  "price": 13.07,
+  "brand": "PATRICECOM",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "crema maini hidratanta bujor si vit e",
+  "price": 12.83,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema maini intens hidratanta miere",
+  "price": 13.07,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema maini si unghii argan cp",
+  "price": 12.71,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema noapte miere si laptisor matca",
+  "price": 19.36,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema noapte Q10mineral complex 50 ml",
+  "price": 24.2,
+  "brand": "PATRICECOM",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "crema panthenol forte 6% santaderm 50 ml",
+  "price": 21.18,
+  "brand": "SANTADERM",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "crema plaja copii ozon spf50",
+  "price": 26.62,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema propolis larix 40 gr",
+  "price": 9.07,
+  "brand": "LARIX",
+  "quantity": "40 gr"
+ },
+ {
+  "name": "crema propolis&galbebele 40 gr",
+  "price": 10.04,
+  "brand": "PATRICECOM",
+  "quantity": "40 gr"
+ },
+ {
+  "name": "crema protectiva antimicrobiana permetrina 5% -50 ml parasstes",
+  "price": 32.07,
+  "brand": "PATRICECOM",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "crema pt ingrijirea calcaielor 40 ml",
+  "price": 10.29,
+  "brand": "PATRICECOM",
+  "quantity": "40 ml"
+ },
+ {
+  "name": "crema regeneranta zi argan+aloe vera 40 ml",
+  "price": 22.39,
+  "brand": "PATRICECOM",
+  "quantity": "40 ml"
+ },
+ {
+  "name": "crema restructuranta noapte argan+aloe vera",
+  "price": 22.39,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema rostopasca larix 40 gr",
+  "price": 7.87,
+  "brand": "LARIX",
+  "quantity": "40 gr"
+ },
+ {
+  "name": "crema tataneasa larix 40 gr",
+  "price": 8.47,
+  "brand": "LARIX",
+  "quantity": "40 gr"
+ },
+ {
+  "name": "crema vitaminizanta ulei catina+masline",
+  "price": 17.54,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema zi catifelanta miere si laptisor matca",
+  "price": 21.78,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crevil crema venifera 250 ml-",
+  "price": 18.76,
+  "brand": "CREVIL",
+  "quantity": "250 ml"
+ },
+ {
+  "name": "crevil-forta ursului polar 250 gr",
+  "price": 18.76,
+  "brand": "CREVIL",
+  "quantity": "250 gr"
+ },
+ {
+  "name": "crevil-gheara dracului 250 gr-balsam",
+  "price": 16.94,
+  "brand": "CREVIL",
+  "quantity": "250 gr"
+ },
+ {
+  "name": "crevil-gheara dracului 250 gr-gel",
+  "price": 16.94,
+  "brand": "CREVIL",
+  "quantity": "250 gr"
+ },
+ {
+  "name": "crevil-puterea calului 250 gr",
+  "price": 17.54,
+  "brand": "CREVIL",
+  "quantity": "250 gr"
+ },
+ {
+  "name": "crevil-puterea calului chili 250 gr",
+  "price": 29.97,
+  "brand": "CREVIL",
+  "quantity": "250 gr"
+ },
+ {
+  "name": "curcuma plus 60cps-medica",
+  "price": 25.53,
+  "brand": "MEDICA",
+  "quantity": "60cps"
+ },
+ {
+  "name": "curcuma x60 cps medica",
+  "price": 0.88,
+  "brand": "MEDICA",
+  "quantity": "60 cps"
+ },
+ {
+  "name": "cutii farmaceutice 10 ml",
+  "price": 1.63,
+  "brand": "PATRICECOM",
+  "quantity": "10 ml"
+ },
+ {
+  "name": "cutii farmaceutice 100 ml",
+  "price": 1.82,
+  "brand": "PATRICECOM",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "cutii farmaceutice 150 ml",
+  "price": 1.11,
+  "brand": "PATRICECOM",
+  "quantity": "150 ml"
+ },
+ {
+  "name": "cutii farmaceutice 20 gr",
+  "price": 1.33,
+  "brand": "PATRICECOM",
+  "quantity": "20 gr"
+ },
+ {
+  "name": "cutii farmaceutice 30 gr",
+  "price": 1.33,
+  "brand": "PATRICECOM",
+  "quantity": "30 gr"
+ },
+ {
+  "name": "cutii farmaceutice 50 gr",
+  "price": 18.39,
+  "brand": "PATRICECOM",
+  "quantity": "50 gr"
+ },
+ {
+  "name": "dalin spray pieptanare usoara 200 ml",
+  "price": 17.54,
+  "brand": "DALIN",
+  "quantity": "200 ml"
+ },
+ {
+  "name": "decasept 24 cpr",
+  "price": 26.62,
+  "brand": "PATRICECOM",
+  "quantity": "24 cpr"
+ },
+ {
+  "name": "decasept SPRAY 20 ML",
+  "price": 15.97,
+  "brand": "PATRICECOM",
+  "quantity": "20 ml"
+ },
+ {
+  "name": "decasept cu propolis 24 cpr",
+  "price": 26.62,
+  "brand": "PATRICECOM",
+  "quantity": "24 cpr"
+ },
+ {
+  "name": "decasept junior SPRAY 20 ML",
+  "price": 16.34,
+  "brand": "PATRICECOM",
+  "quantity": "20 ml"
+ },
+ {
+  "name": "decasept lamaie 24cpr",
+  "price": 0.0,
+  "brand": "PATRICECOM",
+  "quantity": "24cpr"
+ },
+ {
+  "name": "deo dove 150 original",
+  "price": 14.28,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "depil cr.cu ex.galbenele",
+  "price": 14.28,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "depil cr.cu ex.musetel",
+  "price": 14.28,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "depil cr.rapida cu ex de aloe vera cp",
+  "price": 14.28,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "dezarcit sol.tratament ciuperca unghiei 5 ml",
+  "price": 96.8,
+  "brand": "PATRICECOM",
+  "quantity": "5 ml"
+ },
+ {
+  "name": "discount rectostop ointment unguent pharmacy laboratories",
+  "price": 11.6,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "discount unguent b-cure 75 ml",
+  "price": 8.29,
+  "brand": "PATRICECOM",
+  "quantity": "75 ml"
+ },
+ {
+  "name": "dischete demachiante 120 buc",
+  "price": 7.14,
+  "brand": "PATRICECOM",
+  "quantity": "120 buc"
+ },
+ {
+  "name": "dispozitiv curatare urechi demicso",
+  "price": 73.81,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "distonoplant-cps fares",
+  "price": 54.95,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "durex love 3 buc",
+  "price": 9.07,
+  "brand": "DUREX",
+  "quantity": "3 buc"
+ },
+ {
+  "name": "dus gel dove 450 ml fresch cucumbe",
+  "price": 15.73,
+  "brand": "PATRICECOM",
+  "quantity": "450 ml"
+ },
+ {
+  "name": "emulsie plaja adulti FP 30",
+  "price": 19.35,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "frectie galenica 100 ml",
+  "price": 13.31,
+  "brand": "PATRICECOM",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "frectie cu hamamelis*100 1 DIANA",
+  "price": 24.22,
+  "brand": "DIANA",
+  "quantity": ""
+ },
+ {
+  "name": "fructe de goji 100 g",
+  "price": 9.44,
+  "brand": "PATRICECOM",
+  "quantity": "100 g"
+ },
+ {
+  "name": "garlicaps-30 caps 1+1 FMN",
+  "price": 16.31,
+  "brand": "PATRICECOM",
+  "quantity": "30 caps"
+ },
+ {
+  "name": "gel aloe vera larix",
+  "price": 15.55,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "gel antiacneic busuioc 30 ml",
+  "price": 16.34,
+  "brand": "PATRICECOM",
+  "quantity": "30 ml"
+ },
+ {
+  "name": "gel anticelulitic larix",
+  "price": 15.73,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "gel antireumatic 100ml larix",
+  "price": 16.34,
+  "brand": "LARIX",
+  "quantity": "100ml"
+ },
+ {
+  "name": "gel arnika-larix 150 ml",
+  "price": 13.92,
+  "brand": "LARIX",
+  "quantity": "150 ml"
+ },
+ {
+  "name": "gel calmant pt intepaturi si insecte santaderm-30 ml",
+  "price": 27.83,
+  "brand": "SANTADERM",
+  "quantity": "30 ml"
+ },
+ {
+  "name": "gel cu tataneasa 350 gr",
+  "price": 21.18,
+  "brand": "PATRICECOM",
+  "quantity": "350 gr"
+ },
+ {
+  "name": "gel din tataneasa 200 ml",
+  "price": 18.15,
+  "brand": "PATRICECOM",
+  "quantity": "200 ml"
+ },
+ {
+  "name": "gel igiena intima-cu ex de nalba DR.SOLEIL 300 ml",
+  "price": 16.34,
+  "brand": "SOLEIL",
+  "quantity": "300 ml"
+ },
+ {
+  "name": "gel impotriva intep,de insecte roll on 10 ml",
+  "price": 24.08,
+  "brand": "PATRICECOM",
+  "quantity": "10 ml"
+ },
+ {
+  "name": "gel picioare usoare 150ml larix",
+  "price": 14.52,
+  "brand": "LARIX",
+  "quantity": "150ml"
+ },
+ {
+  "name": "gel pt baturi-santanderm 20 ml",
+  "price": 21.78,
+  "brand": "SANTADERM",
+  "quantity": "20 ml"
+ },
+ {
+  "name": "gel pt curatarea fetei HYDRA GEL DR.SOLEIL -200 ml",
+  "price": 13.07,
+  "brand": "SOLEIL",
+  "quantity": "200 ml"
+ },
+ {
+  "name": "gel pt iritatii fesiere bebelus baby calm",
+  "price": 13.07,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "gel taina ursilor alpifresch-250",
+  "price": 18.76,
+  "brand": "ALPIFRESCH",
+  "quantity": ""
+ },
+ {
+  "name": "gel tataneasa-150 ml larix",
+  "price": 14.52,
+  "brand": "LARIX",
+  "quantity": "150 ml"
+ },
+ {
+  "name": "gel-balsam ghiara diavolului 250-alpifresch",
+  "price": 15.37,
+  "brand": "ALPIFRESCH",
+  "quantity": ""
+ },
+ {
+  "name": "gemod.mladite de catina hofigal",
+  "price": 18.09,
+  "brand": "HOFIGAL",
+  "quantity": ""
+ },
+ {
+  "name": "genunchiera MINUT L-2 BUC",
+  "price": 14.88,
+  "brand": "MINUT",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "genunchiera MINUT SMOLL",
+  "price": 14.46,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "genunchiera MINUT medie-2 buc",
+  "price": 15.13,
+  "brand": "MINUT",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "gingo b.&Ginseng & royal jelly 1000+200+300mg",
+  "price": 17.54,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "gingo biloba&ginseng 10 fiole/10ml 1000+1500mg",
+  "price": 17.42,
+  "brand": "PATRICECOM",
+  "quantity": "10ml"
+ },
+ {
+  "name": "ginseng and royal jelly 10fi/10ml 200+300mg",
+  "price": 17.54,
+  "brand": "PATRICECOM",
+  "quantity": "10ml"
+ },
+ {
+  "name": "glezniera MINUT L-2 buc",
+  "price": 15.13,
+  "brand": "MINUT",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "glezniera MINUT M 2 BUC",
+  "price": 15.13,
+  "brand": "MINUT",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "glezniera MINUT S 2 BUC",
+  "price": 15.13,
+  "brand": "MINUT",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "glicerina boraxata 10% 25 gr",
+  "price": 5.32,
+  "brand": "PATRICECOM",
+  "quantity": "25 gr"
+ },
+ {
+  "name": "good skin-gleansing gel",
+  "price": 21.78,
+  "brand": "KIN",
+  "quantity": ""
+ },
+ {
+  "name": "good skin-hydra boost gel-crem",
+  "price": 19.91,
+  "brand": "KIN",
+  "quantity": ""
+ },
+ {
+  "name": "good skin-protect &mattify cream",
+  "price": 24.74,
+  "brand": "KIN",
+  "quantity": ""
+ },
+ {
+  "name": "gripovit MAX C hot lemon 10plicuri",
+  "price": 43.56,
+  "brand": "GRIPOVIT",
+  "quantity": ""
+ },
+ {
+  "name": "gripovit MAX C hot lemon fara zahar-10 pl",
+  "price": 43.56,
+  "brand": "GRIPOVIT",
+  "quantity": ""
+ },
+ {
+  "name": "hyper stevia rebaudiana 170 tablete",
+  "price": 14.43,
+  "brand": "HYPER STEVIA",
+  "quantity": ""
+ },
+ {
+  "name": "hyper stevia rebaudiana HYPERICUM-50 ml",
+  "price": 14.99,
+  "brand": "HYPERICUM",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "inel dentitie cu apa tru 3+",
+  "price": 8.11,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "irigator",
+  "price": 15.73,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "irigator burduf deea",
+  "price": 12.1,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "irigator nazal tip seringa 2 buc minut",
+  "price": 10.65,
+  "brand": "MINUT",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "jutavit BISGLICINAT DE MAGNEZIU 100 CPS",
+  "price": 60.26,
+  "brand": "JUTAVIT",
+  "quantity": "100 cps"
+ },
+ {
+  "name": "jutavit DIGESTIVE ENZYME 30 CPS",
+  "price": 30.25,
+  "brand": "JUTAVIT",
+  "quantity": "30 cps"
+ },
+ {
+  "name": "jutavit CALCIU+D3 GUMATA gust de zmeura fara zahar-50 buc",
+  "price": 27.83,
+  "brand": "JUTAVIT",
+  "quantity": "50 buc"
+ },
+ {
+  "name": "jutavit Glucomannan",
+  "price": 48.4,
+  "brand": "JUTAVIT",
+  "quantity": ""
+ },
+ {
+  "name": "jutavit K2 120mg+D3 2200NE+K1 700ug 60 cps",
+  "price": 46.59,
+  "brand": "JUTAVIT",
+  "quantity": "60 cps"
+ },
+ {
+  "name": "jutavit Magneziu 250mg+B6+D3 retard 45 tab",
+  "price": 22.99,
+  "brand": "JUTAVIT",
+  "quantity": "45 tab"
+ },
+ {
+  "name": "jutavit VIT D3 2000UI masline 100 cps",
+  "price": 32.67,
+  "brand": "JUTAVIT",
+  "quantity": "100 cps"
+ },
+ {
+  "name": "jutavit biotina B7 900mcg 100 tb",
+  "price": 39.57,
+  "brand": "JUTAVIT",
+  "quantity": "100 tb"
+ },
+ {
+  "name": "jutavit calciu 550mg efervescent gust lamaie 16 buc",
+  "price": 18.76,
+  "brand": "JUTAVIT",
+  "quantity": "16 buc"
+ },
+ {
+  "name": "jutavit caps,usturoi 420mg*100/cut",
+  "price": 22.99,
+  "brand": "JUTAVIT",
+  "quantity": ""
+ },
+ {
+  "name": "jutavit coenzima Q10+E 35mg 40 cps",
+  "price": 50.82,
+  "brand": "JUTAVIT",
+  "quantity": "40 cps"
+ },
+ {
+  "name": "jutavit collagen complex 60 tb",
+  "price": 39.32,
+  "brand": "JUTAVIT",
+  "quantity": "60 tb"
+ },
+ {
+  "name": "jutavit collagen gumat+hialuron acid fara zahar x60",
+  "price": 48.04,
+  "brand": "JUTAVIT",
+  "quantity": ""
+ },
+ {
+  "name": "jutavit complex sirop MERISOR+ex.splinuta 150 ml",
+  "price": 33.88,
+  "brand": "JUTAVIT",
+  "quantity": "150 ml"
+ },
+ {
+  "name": "jutavit cpr.de supt gust lamaie-24tb",
+  "price": 21.54,
+  "brand": "JUTAVIT",
+  "quantity": "24tb"
+ },
+ {
+  "name": "jutavit crema dernored 100 g",
+  "price": 22.99,
+  "brand": "JUTAVIT",
+  "quantity": "100 g"
+ },
+ {
+  "name": "jutavit enzima lactaza 6500FCCU 60 tab",
+  "price": 29.65,
+  "brand": "JUTAVIT",
+  "quantity": "60 tab"
+ },
+ {
+  "name": "jutavit fier organic 18mg+acid folic+zinc+vit c",
+  "price": 35.09,
+  "brand": "JUTAVIT",
+  "quantity": ""
+ },
+ {
+  "name": "jutavit gumata C gust de banane 60tb",
+  "price": 32.07,
+  "brand": "JUTAVIT",
+  "quantity": "60tb"
+ },
+ {
+  "name": "jutavit gumataD3 gust de zmeura 60tb",
+  "price": 32.67,
+  "brand": "JUTAVIT",
+  "quantity": "60tb"
+ },
+ {
+  "name": "jutavit hair caps plus 60 cps moi",
+  "price": 35.09,
+  "brand": "JUTAVIT",
+  "quantity": "60 cps"
+ },
+ {
+  "name": "jutavit herbal hot drink 12 plicuri",
+  "price": 36.06,
+  "brand": "JUTAVIT",
+  "quantity": ""
+ },
+ {
+  "name": "jutavit herbal hot drink kids 12 plicuri",
+  "price": 36.06,
+  "brand": "JUTAVIT",
+  "quantity": ""
+ },
+ {
+  "name": "jutavit omega 3 kid 45 tb moi gust portocala",
+  "price": 29.04,
+  "brand": "JUTAVIT",
+  "quantity": "45 tb"
+ },
+ {
+  "name": "jutavit omega 3 ulei peste 120mg+vit E 100cps",
+  "price": 39.33,
+  "brand": "JUTAVIT",
+  "quantity": "100cps"
+ },
+ {
+  "name": "jutavit picaturi D3 30 ml",
+  "price": 19.97,
+  "brand": "JUTAVIT",
+  "quantity": "30 ml"
+ },
+ {
+  "name": "jutavit picaturi vitamina c 30 ml",
+  "price": 19.97,
+  "brand": "JUTAVIT",
+  "quantity": "30 ml"
+ },
+ {
+  "name": "jutavit prosta intense 60cps",
+  "price": 45.98,
+  "brand": "JUTAVIT",
+  "quantity": "60cps"
+ },
+ {
+  "name": "jutavit sirop patlagina ingusta 150 ml",
+  "price": 22.99,
+  "brand": "JUTAVIT",
+  "quantity": "150 ml"
+ },
+ {
+  "name": "jutavit vit .C 1000mg ex maciese+D3*60 tb",
+  "price": 34.39,
+  "brand": "JUTAVIT",
+  "quantity": "60 tb"
+ },
+ {
+  "name": "jutavit vit .C 1000mg-retard ex maciese+D3*100 tb",
+  "price": 36.3,
+  "brand": "JUTAVIT",
+  "quantity": "100 tb"
+ },
+ {
+  "name": "jutavit vit. B12 1000ug 60tb",
+  "price": 34.49,
+  "brand": "JUTAVIT",
+  "quantity": "60tb"
+ },
+ {
+  "name": "jutavit vit. B6 12mg 100tb",
+  "price": 20.57,
+  "brand": "JUTAVIT",
+  "quantity": "100tb"
+ },
+ {
+  "name": "jutavit vit.c 1000mg ex maciese+D3*45buc",
+  "price": 27.84,
+  "brand": "JUTAVIT",
+  "quantity": "45buc"
+ },
+ {
+  "name": "jutavit vitamina B1-10MG 60 TAB",
+  "price": 20.57,
+  "brand": "JUTAVIT",
+  "quantity": "60 tab"
+ },
+ {
+  "name": "jutavit vitamina A 10000NE 50 caps",
+  "price": 33.88,
+  "brand": "JUTAVIT",
+  "quantity": "50 caps"
+ },
+ {
+  "name": "kartilin crema 50 ml",
+  "price": 11.5,
+  "brand": "KARTILIN",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "kin apa de gura fluorkin calcium 500 ml",
+  "price": 44.17,
+  "brand": "KIN",
+  "quantity": "500 ml"
+ },
+ {
+  "name": "kin apa de gura sensikin 250 ml",
+  "price": 37.51,
+  "brand": "KIN",
+  "quantity": "250 ml"
+ },
+ {
+  "name": "kin oro tablete de curatare 30 buc",
+  "price": 35.7,
+  "brand": "KIN",
+  "quantity": "30 buc"
+ },
+ {
+  "name": "kin apa de gura gingival complex 2 x 1 litru",
+  "price": 205.7,
+  "brand": "KIN",
+  "quantity": ""
+ },
+ {
+  "name": "kin apa de gura periokin 250ml 0.20%clorhexidina+0.1% cpc",
+  "price": 66.55,
+  "brand": "KIN",
+  "quantity": "250ml"
+ },
+ {
+  "name": "kin gel pentru gingii periokin 30ml",
+  "price": 34.39,
+  "brand": "KIN",
+  "quantity": "30ml"
+ },
+ {
+  "name": "kin gel pentru gingii periokin acid hialuronic 1% 30ml",
+  "price": 79.86,
+  "brand": "KIN",
+  "quantity": "30ml"
+ },
+ {
+  "name": "kin gel pt gingii Sensikin 15ml",
+  "price": 23.96,
+  "brand": "KIN",
+  "quantity": "15ml"
+ },
+ {
+  "name": "kin pasta de dinti fluorkin calcium 75 ml",
+  "price": 22.39,
+  "brand": "KIN",
+  "quantity": "75 ml"
+ },
+ {
+  "name": "kin pasta de dinti gingival complex 75 ml",
+  "price": 36.06,
+  "brand": "KIN",
+  "quantity": "75 ml"
+ },
+ {
+  "name": "kin pasta de dinti pentru albire progresiva 75 ml",
+  "price": 27.84,
+  "brand": "KIN",
+  "quantity": "75 ml"
+ },
+ {
+  "name": "kin pasta de dinti sensikin 75 ml",
+  "price": 19.1,
+  "brand": "KIN",
+  "quantity": "75 ml"
+ },
+ {
+  "name": "kin periuta de dinti medium",
+  "price": 0.0,
+  "brand": "KIN",
+  "quantity": ""
+ },
+ {
+  "name": "kin periuta de dinti JUNIOR",
+  "price": 0.0,
+  "brand": "KIN",
+  "quantity": ""
+ },
+ {
+  "name": "kin periuta de dinti SOFT",
+  "price": 19.1,
+  "brand": "KIN",
+  "quantity": ""
+ },
+ {
+  "name": "kin periuta de dinti si gingii",
+  "price": 3.02,
+  "brand": "KIN",
+  "quantity": ""
+ },
+ {
+  "name": "kit coprocultor",
+  "price": 5.2,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "kit coprocultor cu mediu CARRY BLAIR",
+  "price": 27.83,
+  "brand": "CARRY BLAIR",
+  "quantity": ""
+ },
+ {
+  "name": "lacalut SENSITIV apa de gura micelara 500 ml",
+  "price": 24.2,
+  "brand": "LACALUT",
+  "quantity": "500 ml"
+ },
+ {
+  "name": "lacalut aktiv set pasta*75ml+balsam buze",
+  "price": 27.83,
+  "brand": "LACALUT",
+  "quantity": "75ml"
+ },
+ {
+  "name": "lacalut sensitive antiplaque apa 300 ml",
+  "price": 24.2,
+  "brand": "LACALUT",
+  "quantity": "300 ml"
+ },
+ {
+  "name": "lacalut sensitive+ata dentara 75 ml",
+  "price": 25.41,
+  "brand": "LACALUT",
+  "quantity": "75 ml"
+ },
+ {
+  "name": "ladies dream 2 cps",
+  "price": 8.47,
+  "brand": "PATRICECOM",
+  "quantity": "2 cps"
+ },
+ {
+  "name": "lantisor rotund pt suzete minut2018014",
+  "price": 16.34,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "lapte demach.vitaminizant cu catina",
+  "price": 14.52,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "lecitina forte 1+1 30capsule",
+  "price": 9.32,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "lingurita cu varf de silicon 4+ minut",
+  "price": 33.88,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "lipostop 60cps 1+1",
+  "price": 19.36,
+  "brand": "LIPOSTOP",
+  "quantity": "60cps"
+ },
+ {
+  "name": "lot. pt. picioare-mebra",
+  "price": 18.76,
+  "brand": "MEBRA",
+  "quantity": ""
+ },
+ {
+  "name": "lotiune antiacneica-busuioc cosm. plant",
+  "price": 17.54,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "lotiune astringenta cu ulei de salvie",
+  "price": 21.18,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "lotiune corp hidratanta complex de hidratare si bujor",
+  "price": 17.54,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "lotiune picioare cosm.plant",
+  "price": 17.54,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "lotiune tonica -castraveti 200 ml",
+  "price": 0.0,
+  "brand": "PATRICECOM",
+  "quantity": "200 ml"
+ },
+ {
+  "name": "lotiune tonifianta par-spray 150ml cosm plant",
+  "price": 15.97,
+  "brand": "PATRICECOM",
+  "quantity": "150ml"
+ },
+ {
+  "name": "lubrifiant natural cu 100 ml- virde",
+  "price": 12.22,
+  "brand": "PATRICECOM",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "lubrigrl-gel lubrifiant DR.SOLEIL-100 ml",
+  "price": 11.37,
+  "brand": "SOLEIL",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "mami&bebe,biosept 30CAPS",
+  "price": 41.07,
+  "brand": "MAMI&BEBE",
+  "quantity": "30caps"
+ },
+ {
+  "name": "mami&bebe,biosept SIROP FRUCTOZA 100 ML",
+  "price": 42.96,
+  "brand": "MAMI&BEBE",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "manseta cu deget minut L",
+  "price": 13.07,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "manseta cu deget minut M",
+  "price": 13.07,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "manseta cu deget minut S",
+  "price": 13.07,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "manseta-MINUT L",
+  "price": 9.56,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "manseta-MINUT MEDIE",
+  "price": 12.1,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "manseta-MINUT SMOOL",
+  "price": 9.98,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "manusi ex.latex pudrate 5.0g L minut",
+  "price": 21.78,
+  "brand": "MINUT",
+  "quantity": "0g"
+ },
+ {
+  "name": "manusi examinare nitri nepudrate XS",
+  "price": 18.76,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "maraton gel 50 ml",
+  "price": 30.25,
+  "brand": "MARATON",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "masca chirurg.-cu elastic",
+  "price": 0.24,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "masca oxigen adulti",
+  "price": 4.11,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "microclisme adulti alphalax",
+  "price": 29.04,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "microperfuzoare 21 G",
+  "price": 0.54,
+  "brand": "PATRICECOM",
+  "quantity": "21 g"
+ },
+ {
+  "name": "microperfuzoare 23 g",
+  "price": 0.53,
+  "brand": "PATRICECOM",
+  "quantity": "23 g"
+ },
+ {
+  "name": "mini benzi cu ceara dep.la rece 36 buc",
+  "price": 12.1,
+  "brand": "PATRICECOM",
+  "quantity": "36 buc"
+ },
+ {
+  "name": "mixtura mentolata vitalia 100 ml",
+  "price": 7.26,
+  "brand": "VITALIA",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "mobilin gel calmant ROLL-ON 50 ML",
+  "price": 27.83,
+  "brand": "MOBILIN",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "molekin imuno 4 ani+ 12 acadele cu aroma de citrice",
+  "price": 42.96,
+  "brand": "KIN",
+  "quantity": ""
+ },
+ {
+  "name": "narcis bandaj elastic autoadeziv 4.5cm/4.5cm",
+  "price": 5.74,
+  "brand": "NARCIS",
+  "quantity": ""
+ },
+ {
+  "name": "narcis bandaj elastic autoadeziv 5cm/4.5m",
+  "price": 4.04,
+  "brand": "NARCIS",
+  "quantity": ""
+ },
+ {
+  "name": "nebulizator compact",
+  "price": 145.2,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "nebulizator delfin",
+  "price": 145.2,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "nebulizator minut handyneb classic cu piston",
+  "price": 155.85,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "negro coacaze negre 79 GR-",
+  "price": 7.02,
+  "brand": "NEGRO",
+  "quantity": "79 gr"
+ },
+ {
+  "name": "nivea gel dus 500ml",
+  "price": 11.8,
+  "brand": "NIVEA",
+  "quantity": "500ml"
+ },
+ {
+  "name": "nosko mouth-aspirator nazal",
+  "price": 35.94,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "nosko ser fiziologic 20 monodoze*5ml",
+  "price": 28.44,
+  "brand": "PATRICECOM",
+  "quantity": "5ml"
+ },
+ {
+  "name": "omega 3ulei de peste 1+1 parapharm",
+  "price": 16.34,
+  "brand": "PARAPHARM",
+  "quantity": ""
+ },
+ {
+  "name": "omega plus-balsam si masca reparator si protector cu omega 3,6,7,9%ulei de avocado",
+  "price": 18.39,
+  "brand": "OMEGA PLUS",
+  "quantity": ""
+ },
+ {
+  "name": "omega plus-crema antirid hranitoare si rev cu omega 3,6,7,9%ulei de avocado",
+  "price": 30.25,
+  "brand": "OMEGA PLUS",
+  "quantity": ""
+ },
+ {
+  "name": "omega plus-crema hid.emolienta,catifelanta cu omega 3,6,7,9%ulei de avocado",
+  "price": 30.25,
+  "brand": "OMEGA PLUS",
+  "quantity": ""
+ },
+ {
+  "name": "omega plus-crema maini",
+  "price": 0.12,
+  "brand": "OMEGA PLUS",
+  "quantity": ""
+ },
+ {
+  "name": "omega plus-crema maini hranitoare",
+  "price": 11.5,
+  "brand": "OMEGA PLUS",
+  "quantity": ""
+ },
+ {
+  "name": "omega plus-sampon reparator si protector cu omega 3,6,7,9%ulei de avocado",
+  "price": 18.76,
+  "brand": "OMEGA PLUS",
+  "quantity": ""
+ },
+ {
+  "name": "oral-B pasta complete protect&clin 75 ml",
+  "price": 9.8,
+  "brand": "ORAL-B",
+  "quantity": "75 ml"
+ },
+ {
+  "name": "oral-B pasta kids 0-6 ani 50 ml",
+  "price": 11.13,
+  "brand": "ORAL-B",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "oto cleaner HA 50 ml",
+  "price": 4.84,
+  "brand": "PATRICECOM",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "organizator med.zilnic sana",
+  "price": 16.34,
+  "brand": "SANA",
+  "quantity": ""
+ },
+ {
+  "name": "organizator medicamente 7/14 zile",
+  "price": 9.07,
+  "brand": "MEDICA",
+  "quantity": "7/14"
+ },
+ {
+  "name": "organizator medicamente liniar",
+  "price": 24.2,
+  "brand": "MEDICA",
+  "quantity": ""
+ },
+ {
+  "name": "panax ginseng 2000mg 10 fiole *10 ml",
+  "price": 17.54,
+  "brand": "PANAX",
+  "quantity": "10 ml"
+ },
+ {
+  "name": "parasoftin sosete exfoliante",
+  "price": 42.35,
+  "brand": "PARASOFT",
+  "quantity": ""
+ },
+ {
+  "name": "pasta dinti cu carbune activ 125 ml",
+  "price": 11.5,
+  "brand": "PATRICECOM",
+  "quantity": "125 ml"
+ },
+ {
+  "name": "pd colgate baby strawberry 50 ml 0-2 ani",
+  "price": 0.0,
+  "brand": "COLGATE",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "pd.colgate Advanced white 100ml",
+  "price": 8.23,
+  "brand": "COLGATE",
+  "quantity": "100ml"
+ },
+ {
+  "name": "pd.colgate triple action 100 ml",
+  "price": 7.14,
+  "brand": "COLGATE",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "pediform*100 ml bioeell",
+  "price": 21.78,
+  "brand": "BIOEEL",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "penseta pt scos capuse dr schick",
+  "price": 16.7,
+  "brand": "DR SCHICK",
+  "quantity": ""
+ },
+ {
+  "name": "pepon-caps.cu ulei de dovleac 30cps 1+1",
+  "price": 27.23,
+  "brand": "PEPON",
+  "quantity": "30cps"
+ },
+ {
+  "name": "peri de dinti colgate clasic",
+  "price": 3.09,
+  "brand": "COLGATE",
+  "quantity": ""
+ },
+ {
+  "name": "peri de dinti colgate extra clean mediu",
+  "price": 3.21,
+  "brand": "COLGATE",
+  "quantity": ""
+ },
+ {
+  "name": "peri de dinti colgate premier",
+  "price": 2.84,
+  "brand": "COLGATE",
+  "quantity": ""
+ },
+ {
+  "name": "perie biberon+tetina minut baby pl307",
+  "price": 7.87,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "perii dinti colgate zig zag mediu",
+  "price": 3.75,
+  "brand": "COLGATE",
+  "quantity": ""
+ },
+ {
+  "name": "periuta copii pinguin 2 buc",
+  "price": 9.56,
+  "brand": "PATRICECOM",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "periuta de dinti cu carbune ultra",
+  "price": 6.96,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "periuta interdentara +10 micro capete",
+  "price": 11.37,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "picaturi propolis 30 ml",
+  "price": 21.78,
+  "brand": "PATRICECOM",
+  "quantity": "30 ml"
+ },
+ {
+  "name": "picaturi propolis glicolic 30 ml",
+  "price": 21.78,
+  "brand": "PATRICECOM",
+  "quantity": "30 ml"
+ },
+ {
+  "name": "plantusin 0.25 ml",
+  "price": 32.07,
+  "brand": "PATRICECOM",
+  "quantity": "25 ml"
+ },
+ {
+  "name": "plantusin forte 0.25 ml",
+  "price": 41.14,
+  "brand": "PATRICECOM",
+  "quantity": "25 ml"
+ },
+ {
+  "name": "plast .sutura*8 buc",
+  "price": 5.2,
+  "brand": "PATRICECOM",
+  "quantity": "8 buc"
+ },
+ {
+  "name": "plast .sutura*8 BUC 5-3x75mm; 3-6.4x80mm",
+  "price": 4.96,
+  "brand": "PATRICECOM",
+  "quantity": "8 buc"
+ },
+ {
+  "name": "plast .sutura*8 BUC 5-64x108mm;--12,7-108mm",
+  "price": 7.99,
+  "brand": "PATRICECOM",
+  "quantity": "8 buc"
+ },
+ {
+  "name": "plast.aquastop elastic 20 buc",
+  "price": 5.2,
+  "brand": "PATRICECOM",
+  "quantity": "20 buc"
+ },
+ {
+  "name": "plast.aquastop transparent 4 buc",
+  "price": 6.53,
+  "brand": "PATRICECOM",
+  "quantity": "4 buc"
+ },
+ {
+  "name": "plast.clasici 20 buc",
+  "price": 3.63,
+  "brand": "PATRICECOM",
+  "quantity": "20 buc"
+ },
+ {
+  "name": "plast.clasici cu pans. antiseptic 30 buc",
+  "price": 5.57,
+  "brand": "PATRICECOM",
+  "quantity": "30 buc"
+ },
+ {
+  "name": "plast.clasici cu pans.hemostatic 30 buc",
+  "price": 5.45,
+  "brand": "PATRICECOM",
+  "quantity": "30 buc"
+ },
+ {
+  "name": "plast.hidroclorid pt vezicule si bataturi",
+  "price": 8.17,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "plast.impotriva durerii mensruale barza-3 buc",
+  "price": 33.88,
+  "brand": "BARZA",
+  "quantity": "3 buc"
+ },
+ {
+  "name": "plasture economic de prim ajutor octacare 5 buc",
+  "price": 5.08,
+  "brand": "OCTACARE",
+  "quantity": "5 buc"
+ },
+ {
+  "name": "plasture impotriva acneei octacare 36buc",
+  "price": 27.35,
+  "brand": "OCTACARE",
+  "quantity": "36buc"
+ },
+ {
+  "name": "plasture prim ajutor sensitivi 15/25mm*72mm octacare 14 buc",
+  "price": 5.08,
+  "brand": "OCTACARE",
+  "quantity": "14 buc"
+ },
+ {
+  "name": "plasture antireumatic -HOT AND STRONG 12*18",
+  "price": 2.66,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "plasture impotriva durerii-mobilin cu ulei natural de pelin",
+  "price": 27.23,
+  "brand": "MOBILIN",
+  "quantity": ""
+ },
+ {
+  "name": "plasturi cu desene de prim ajutor octacare 20*amb",
+  "price": 3.75,
+  "brand": "OCTACARE",
+  "quantity": ""
+ },
+ {
+  "name": "plasturi de prim ajutor asortati octacare 20*amb",
+  "price": 5.08,
+  "brand": "OCTACARE",
+  "quantity": ""
+ },
+ {
+  "name": "plasturi de prim ajutor colorat octacare 20*amb",
+  "price": 5.38,
+  "brand": "OCTACARE",
+  "quantity": ""
+ },
+ {
+  "name": "plasturi rotunzi de prim ajutor octacare 20*amb",
+  "price": 3.21,
+  "brand": "OCTACARE",
+  "quantity": ""
+ },
+ {
+  "name": "plasturi copii pt rani emoticon*20 buc",
+  "price": 5.08,
+  "brand": "PATRICECOM",
+  "quantity": "20 buc"
+ },
+ {
+  "name": "plasturi cu arnica si gh.draculuui 9*14",
+  "price": 2.78,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "plasturi medicinali Minut Plast 12 buc/cutie",
+  "price": 1.82,
+  "brand": "MINUT",
+  "quantity": "12 buc"
+ },
+ {
+  "name": "plasturi pt ochii adulti 10/cut MINUT",
+  "price": 9.44,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "plasturi pt ochii copii 10/cut MINUT",
+  "price": 9.2,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "plasturi rotunzi de injectie 100/cutie",
+  "price": 7.14,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "plasturi standard prim ajutor 19mm*72mm octacare 20*amb",
+  "price": 4.6,
+  "brand": "OCTACARE",
+  "quantity": ""
+ },
+ {
+  "name": "plasturi sterili 15/9CM octa care",
+  "price": 2.0,
+  "brand": "PATRICECOM",
+  "quantity": "15/9"
+ },
+ {
+  "name": "plasturi sterili 7.5cm*5cm octa care",
+  "price": 0.76,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "pompa lapte MEDDO",
+  "price": 15.73,
+  "brand": "MEDDO",
+  "quantity": ""
+ },
+ {
+  "name": "pompa piriforma nr 11 minut 210 ml",
+  "price": 13.31,
+  "brand": "MINUT",
+  "quantity": "210 ml"
+ },
+ {
+  "name": "pompa piriforma nr 9 minut 135 ml",
+  "price": 11.92,
+  "brand": "MINUT",
+  "quantity": "135 ml"
+ },
+ {
+  "name": "pompa san electrica cu bloc de comanda digital dr life",
+  "price": 140.36,
+  "brand": "LIFE",
+  "quantity": ""
+ },
+ {
+  "name": "pompa san manuala MINUT",
+  "price": 87.12,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "poxclin-spray contra varicelei 100 ml",
+  "price": 72.0,
+  "brand": "PATRICECOM",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "pres servicii marketing conorm contract",
+  "price": 0.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "prevomit KIDS*3ani+ 6 acadele-aroma de lamaie",
+  "price": 30.25,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "propolis cu galbenele spray 25 ml",
+  "price": 21.18,
+  "brand": "PATRICECOM",
+  "quantity": "25 ml"
+ },
+ {
+  "name": "pudra antimicotica 75 gr",
+  "price": 10.84,
+  "brand": "PATRICECOM",
+  "quantity": "75 gr"
+ },
+ {
+  "name": "pudra corp baby CAONATUR 100gr",
+  "price": 10.65,
+  "brand": "PATRICECOM",
+  "quantity": "100gr"
+ },
+ {
+  "name": "pudra cu propolis MEBRA 75 gr",
+  "price": 10.29,
+  "brand": "MEBRA",
+  "quantity": "75 gr"
+ },
+ {
+  "name": "pudra fructata",
+  "price": 10.29,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "pudra mentolata",
+  "price": 10.29,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "pudra mentolata impotriva transpiratiei",
+  "price": 17.32,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "pufulita*60CPS medica",
+  "price": 0.64,
+  "brand": "MEDICA",
+  "quantity": "60cps"
+ },
+ {
+  "name": "punga urina pediatrica 100 ml",
+  "price": 2.24,
+  "brand": "PATRICECOM",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "pungi urina cu valva se scurgere Germanmed- in T",
+  "price": 10.77,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "quartett balsam gh diavolului 250 ml",
+  "price": 12.95,
+  "brand": "PATRICECOM",
+  "quantity": "250 ml"
+ },
+ {
+  "name": "quartett melkfett unguent vaselina+galbenele 250ml",
+  "price": 58.08,
+  "brand": "PATRICECOM",
+  "quantity": "250ml"
+ },
+ {
+  "name": "raniseptol arsuri spuma 150nl",
+  "price": 0.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "reducere",
+  "price": 0.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "reducere luna iunie nr 58",
+  "price": 0.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "revista hofigal nr 58",
+  "price": 4.84,
+  "brand": "HOFIGAL",
+  "quantity": ""
+ },
+ {
+  "name": "rivanol 1% - vitalia 200 g",
+  "price": 7.87,
+  "brand": "VITALIA",
+  "quantity": "200 g"
+ },
+ {
+  "name": "rivanol 1% -cu pulverizator vitalia 200 g",
+  "price": 7.87,
+  "brand": "VITALIA",
+  "quantity": "200 g"
+ },
+ {
+  "name": "royal jelly extractum 300mg-10fiole-",
+  "price": 17.42,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "salprogel 20 ml",
+  "price": 24.56,
+  "brand": "PATRICECOM",
+  "quantity": "20 ml"
+ },
+ {
+  "name": "sampon antimatreata sulf + urzica",
+  "price": 16.94,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "sampon antiparaitar DR.SOLEIL",
+  "price": 22.39,
+  "brand": "SOLEIL",
+  "quantity": ""
+ },
+ {
+  "name": "sampon fortifiant cu nuc",
+  "price": 15.97,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "sampon pentru par gras larix musetel si urzica",
+  "price": 10.77,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "sampon pentru par uscat larix cimbrisor si aloe vera",
+  "price": 10.65,
+  "brand": "LARIX",
+  "quantity": ""
+ },
+ {
+  "name": "sampon regenerator cu ulei de argan BIO",
+  "price": 18.15,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "sampon seboreglator cosmetic plant",
+  "price": 20.57,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "sampon tratament paduchi santaderm 150 ml",
+  "price": 58.08,
+  "brand": "SANTADERM",
+  "quantity": "150 ml"
+ },
+ {
+  "name": "sampon tratament paduchi santaderm 50 ml",
+  "price": 29.04,
+  "brand": "SANTADERM",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "sana cotiera L x 2buc",
+  "price": 21.78,
+  "brand": "SANA",
+  "quantity": "2buc"
+ },
+ {
+  "name": "sana cotiera M- 2 buc lot 535",
+  "price": 22.39,
+  "brand": "SANA",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "sana cotiera S-2 buc lot 535",
+  "price": 19.97,
+  "brand": "SANA",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "sana genunchiera EL XL X2",
+  "price": 25.41,
+  "brand": "SANA",
+  "quantity": ""
+ },
+ {
+  "name": "sana genunchiera EL large x2",
+  "price": 25.41,
+  "brand": "SANA",
+  "quantity": ""
+ },
+ {
+  "name": "sana genunchiera EL medium x2buc",
+  "price": 25.41,
+  "brand": "SANA",
+  "quantity": "2buc"
+ },
+ {
+  "name": "sana genunchiera EL smoll x2",
+  "price": 25.41,
+  "brand": "SANA",
+  "quantity": ""
+ },
+ {
+  "name": "sana spray impotriva tantarilor-capuse",
+  "price": 16.94,
+  "brand": "SANA",
+  "quantity": ""
+ },
+ {
+  "name": "santaderm roll on repelent tantari & capuse 60ml",
+  "price": 32.71,
+  "brand": "SANTADERM",
+  "quantity": "60ml"
+ },
+ {
+  "name": "sapun cu sulf 100 gr",
+  "price": 8.47,
+  "brand": "PATRICECOM",
+  "quantity": "100 gr"
+ },
+ {
+  "name": "sapun lichid cu galbenele 500 ml",
+  "price": 9.56,
+  "brand": "PATRICECOM",
+  "quantity": "500 ml"
+ },
+ {
+  "name": "sapun protex cream 4*90gr",
+  "price": 15.13,
+  "brand": "PATRICECOM",
+  "quantity": "90gr"
+ },
+ {
+  "name": "sapun protex deo 4*90gr",
+  "price": 15.13,
+  "brand": "PATRICECOM",
+  "quantity": "90gr"
+ },
+ {
+  "name": "sapun vegetal -hofigal",
+  "price": 21.78,
+  "brand": "HOFIGAL",
+  "quantity": ""
+ },
+ {
+  "name": "sare amara 125 gr,springmarkt",
+  "price": 7.77,
+  "brand": "PATRICECOM",
+  "quantity": "125 gr"
+ },
+ {
+  "name": "sare amara 500 gr,springmarkt",
+  "price": 20.54,
+  "brand": "PATRICECOM",
+  "quantity": "500 gr"
+ },
+ {
+  "name": "sare terapeutica de bazna 900 gr",
+  "price": 30.25,
+  "brand": "PATRICECOM",
+  "quantity": "900 gr"
+ },
+ {
+  "name": "scutec adulti-dr comfort jumbo CHILOT LARGE*30",
+  "price": 94.38,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "scutec adulti-dr comfort jumbo CHILOT MEDIU*30",
+  "price": 83.49,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "scutec adulti-dr comfort jumbo LARGE 30/pac",
+  "price": 78.65,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "scutec adulti-dr comfort jumbo MEDIU 30/pac",
+  "price": 73.81,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "semite chia 100 gr",
+  "price": 4.77,
+  "brand": "PATRICECOM",
+  "quantity": "100 gr"
+ },
+ {
+  "name": "semite chia 500 grame",
+  "price": 21.65,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "semite chia pg 1 kg",
+  "price": 38.85,
+  "brand": "PATRICECOM",
+  "quantity": "1 kg"
+ },
+ {
+  "name": "seminte de dovleac 100 gr",
+  "price": 6.27,
+  "brand": "SEMINTE",
+  "quantity": "100 gr"
+ },
+ {
+  "name": "seni Man super level 5 15+",
+  "price": 29.04,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni activ clasic*30 chilot* SMALL",
+  "price": 89.54,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni activ clasic*30 extra large",
+  "price": 114.95,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni activ clasic*30 large",
+  "price": 102.85,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni activ clasic*30 mediu",
+  "price": 94.38,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni care emulsie piele uscata 500 ml",
+  "price": 32.67,
+  "brand": "SENI",
+  "quantity": "500 ml"
+ },
+ {
+  "name": "seni care-servetele umede *48",
+  "price": 15.73,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "septiclean sol.hidroalcolica cu apa oxigenata 100ml",
+  "price": 18.45,
+  "brand": "PATRICECOM",
+  "quantity": "100ml"
+ },
+ {
+  "name": "ser antirid intens hidratant collagen plus",
+  "price": 33.88,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ser fiziologic 60 monodoze X 5 ML",
+  "price": 0.12,
+  "brand": "PATRICECOM",
+  "quantity": "5 ml"
+ },
+ {
+  "name": "serv.umede BARZA cu bicarbonat de sodiu 12 buc",
+  "price": 0.0,
+  "brand": "BARZA",
+  "quantity": "12 buc"
+ },
+ {
+  "name": "serv.umede antib.clasic 15 buc",
+  "price": 2.42,
+  "brand": "PATRICECOM",
+  "quantity": "15 buc"
+ },
+ {
+  "name": "serv.umede antib.kids 15 buc",
+  "price": 2.42,
+  "brand": "PATRICECOM",
+  "quantity": "15 buc"
+ },
+ {
+  "name": "serv.umede pt curatat ochelarii 30 buc",
+  "price": 7.87,
+  "brand": "PATRICECOM",
+  "quantity": "30 buc"
+ },
+ {
+  "name": "servetele intime bella sensitive A 20",
+  "price": 6.9,
+  "brand": "BELLA",
+  "quantity": ""
+ },
+ {
+  "name": "servetele umede copii capac Naturel monuk'all-72buc",
+  "price": 4.11,
+  "brand": "PATRICECOM",
+  "quantity": "72buc"
+ },
+ {
+  "name": "servetele umede copii pink monuk'all-72buc",
+  "price": 4.11,
+  "brand": "PATRICECOM",
+  "quantity": "72buc"
+ },
+ {
+  "name": "servetele umede demachiante 25 buc",
+  "price": 3.03,
+  "brand": "PATRICECOM",
+  "quantity": "25 buc"
+ },
+ {
+  "name": "servetele umede intime 20 buc",
+  "price": 44.77,
+  "brand": "PATRICECOM",
+  "quantity": "20 buc"
+ },
+ {
+  "name": "set cadou VIT C plus set ingrijire skin boost 30+",
+  "price": 47.19,
+  "brand": "KIN",
+  "quantity": ""
+ },
+ {
+  "name": "set cadou VIT C plus set ingrijire skin boost 40+",
+  "price": 47.19,
+  "brand": "KIN",
+  "quantity": ""
+ },
+ {
+  "name": "set cadou VIT C plus set ingrijire skin boost 50+",
+  "price": 10.53,
+  "brand": "KIN",
+  "quantity": ""
+ },
+ {
+  "name": "set manichiura 3 piese tr10805",
+  "price": 26.62,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "sirop afin 500ml",
+  "price": 24.98,
+  "brand": "PATRICECOM",
+  "quantity": "500ml"
+ },
+ {
+  "name": "sirop afin fara zahar 500ml",
+  "price": 23.6,
+  "brand": "PATRICECOM",
+  "quantity": "500ml"
+ },
+ {
+  "name": "sirop brad cu zahar 500ml hypericum",
+  "price": 24.81,
+  "brand": "HYPERICUM",
+  "quantity": "500ml"
+ },
+ {
+  "name": "sirop catina alba cu zahar-500 ml",
+  "price": 24.42,
+  "brand": "PATRICECOM",
+  "quantity": "500 ml"
+ },
+ {
+  "name": "sirop catina alba fara zahar 500 ml",
+  "price": 26.62,
+  "brand": "PATRICECOM",
+  "quantity": "500 ml"
+ },
+ {
+  "name": "sirop coacaz negru 500 ml",
+  "price": 24.42,
+  "brand": "PATRICECOM",
+  "quantity": "500 ml"
+ },
+ {
+  "name": "sirop coacaz negru fara zahar 500 ml",
+  "price": 23.31,
+  "brand": "PATRICECOM",
+  "quantity": "500 ml"
+ },
+ {
+  "name": "sirop contra tusei-250ml fara zahar",
+  "price": 21.78,
+  "brand": "PATRICECOM",
+  "quantity": "250ml"
+ },
+ {
+  "name": "sirop contra tusei-250ml hypericum",
+  "price": 35.09,
+  "brand": "HYPERICUM",
+  "quantity": "250ml"
+ },
+ {
+  "name": "sirop laxativ 100 ml lot 01",
+  "price": 21.18,
+  "brand": "PATRICECOM",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "sirop merisor cu zahar 500 ml",
+  "price": 18.76,
+  "brand": "PATRICECOM",
+  "quantity": "500 ml"
+ },
+ {
+  "name": "sirop muguri de pin si brad vitalia 100 ml",
+  "price": 25.41,
+  "brand": "VITALIA",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "sirop muguri pin FARES",
+  "price": 15.13,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "sirop patlagina 100 ml vitalia",
+  "price": 23.6,
+  "brand": "VITALIA",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "sirop patlagina FARES",
+  "price": 50.82,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "slabofitcat SLIM 30 cps",
+  "price": 9.92,
+  "brand": "SLABOFIT",
+  "quantity": "30 cps"
+ },
+ {
+  "name": "spliter pastile cu depozitare",
+  "price": 9.07,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "spray antibacterian TOUCH 59 ml",
+  "price": 9.07,
+  "brand": "PATRICECOM",
+  "quantity": "59 ml"
+ },
+ {
+  "name": "spray antibacterian TOUCH 59 ml-exotic",
+  "price": 29.04,
+  "brand": "PATRICECOM",
+  "quantity": "59 ml"
+ },
+ {
+  "name": "spray antimicotic pt picioare 4feet -santaderm",
+  "price": 0.0,
+  "brand": "SANTADERM",
+  "quantity": ""
+ },
+ {
+  "name": "stand BEBBLE",
+  "price": 0.0,
+  "brand": "BEBBLE",
+  "quantity": ""
+ },
+ {
+  "name": "stand OCHELARI NARCIS 30 BUC",
+  "price": 0.0,
+  "brand": "NARCIS",
+  "quantity": "30 buc"
+ },
+ {
+  "name": "stand octacare",
+  "price": 20.57,
+  "brand": "OCTACARE",
+  "quantity": ""
+ },
+ {
+  "name": "stick calm pentru capk 3.6g",
+  "price": 49.95,
+  "brand": "PATRICECOM",
+  "quantity": "6g"
+ },
+ {
+  "name": "stomac sanatos-63 cps D49",
+  "price": 13.01,
+  "brand": "SANA",
+  "quantity": "63 cps"
+ },
+ {
+  "name": "supozitoare Laxaclean adulti *10 buc",
+  "price": 12.77,
+  "brand": "PATRICECOM",
+  "quantity": "10 buc"
+ },
+ {
+  "name": "supozitoare Laxaclean copii 10 buc",
+  "price": 9.07,
+  "brand": "PATRICECOM",
+  "quantity": "10 buc"
+ },
+ {
+  "name": "suzeta silicon 6+ minut",
+  "price": 6.53,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "suzeta silicon 0+ ro339",
+  "price": 9.07,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "suzeta silicon 0+ tr2011460",
+  "price": 9.07,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "suzeta silicon 3+ tr2011460",
+  "price": 6.53,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "suzeta silicon 6+ ro337",
+  "price": 8.95,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "suzeta silicon ortodontica 12+ minut baby",
+  "price": 8.71,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "suzeta silicon rotunda minut baby 0-6 luni",
+  "price": 8.95,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "suzeta silicon rotunda minut baby 12 +luni",
+  "price": 7.38,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "suzeta silicon rotunda tr-ppp005 0+",
+  "price": 7.38,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "suzeta silicon rotunda tr-ppp005 3+",
+  "price": 53.24,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "tab.maciese vit C 1200MG X 80cps",
+  "price": 5.93,
+  "brand": "PATRICECOM",
+  "quantity": "80cps"
+ },
+ {
+  "name": "tamp.discreet 20 ocean",
+  "price": 7.5,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "tamp.libresse-10 FRESCH natural",
+  "price": 8.71,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "tampoane cu alcol 100buc/cutie",
+  "price": 16.94,
+  "brand": "PATRICECOM",
+  "quantity": "100buc"
+ },
+ {
+  "name": "tampoane pentru sani 30buc",
+  "price": 0.22,
+  "brand": "PATRICECOM",
+  "quantity": "30buc"
+ },
+ {
+  "name": "taxa termo verde/buc. cat 5.5 term.infrarosu",
+  "price": 128.26,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "tensiometru atomat pt brat DLRAK 289",
+  "price": 217.8,
+  "brand": "DLRAK",
+  "quantity": ""
+ },
+ {
+  "name": "tensiometru auromat de brat CU VOCE dr life RAK298",
+  "price": 72.6,
+  "brand": "LIFE",
+  "quantity": ""
+ },
+ {
+  "name": "tensiometru cu stetoscom-minut",
+  "price": 145.2,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "tensiometru digital atomat pt brat dr life DLRAK288",
+  "price": 151.25,
+  "brand": "LIFE",
+  "quantity": ""
+ },
+ {
+  "name": "tensiometru pentru brat dr life",
+  "price": 107.69,
+  "brand": "LIFE",
+  "quantity": ""
+ },
+ {
+  "name": "tensiometru pt.incheietura mainii dr. life",
+  "price": 6.53,
+  "brand": "LIFE",
+  "quantity": ""
+ },
+ {
+  "name": "termometre camera lemn Minut temp",
+  "price": 4.84,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "termometre camera suport plastic Minut",
+  "price": 8.23,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "termometru baie 504",
+  "price": 8.17,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "termometru camera copii-minut",
+  "price": 17.06,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "termometru clasic cu disp.de resreare cool med",
+  "price": 14.52,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "termometru digital cool med varf flexibil",
+  "price": 15.13,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "termometru digital flexibil copii- termax",
+  "price": 102.85,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "termometru digital infrarosu MINUT",
+  "price": 335.78,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "termometru digital infrarosu berrcom",
+  "price": 19.36,
+  "brand": "BERRCOM",
+  "quantity": ""
+ },
+ {
+  "name": "termometru digital varf flexibil cap animalete dr life",
+  "price": 9.32,
+  "brand": "LIFE",
+  "quantity": ""
+ },
+ {
+  "name": "termometru frigider",
+  "price": 26.62,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "test Veneris de infectie urinara",
+  "price": 10.65,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "test antigen rapid SAFECARE COMBO gripa A/B si covid 19",
+  "price": 16.94,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "test menopauza BARZA banda",
+  "price": 14.52,
+  "brand": "BARZA",
+  "quantity": ""
+ },
+ {
+  "name": "test ovulatie minut 5buc+test sarcina",
+  "price": 32.67,
+  "brand": "MINUT",
+  "quantity": "5buc"
+ },
+ {
+  "name": "test rapid depistare droguri 10 parametri din urina",
+  "price": 0.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "test rapid vitamina D",
+  "price": 71.39,
+  "brand": "VITAMINA",
+  "quantity": ""
+ },
+ {
+  "name": "test rapid vitamina D self care",
+  "price": 0.0,
+  "brand": "VITAMINA",
+  "quantity": ""
+ },
+ {
+  "name": "test sarcina BARZA-caseta ultrasensibil+serv.intime",
+  "price": 18.15,
+  "brand": "BARZA",
+  "quantity": ""
+ },
+ {
+  "name": "teste de sarcina -BARZA",
+  "price": 0.0,
+  "brand": "BARZA",
+  "quantity": ""
+ },
+ {
+  "name": "teste de sarcina -BARZA BANDA",
+  "price": 12.1,
+  "brand": "BARZA",
+  "quantity": ""
+ },
+ {
+  "name": "teste de sarcina -BARZA CASETA",
+  "price": 15.13,
+  "brand": "BARZA",
+  "quantity": ""
+ },
+ {
+  "name": "teste de sarcina -BARZA CASETA -ULTRASENSIBIL",
+  "price": 17.71,
+  "brand": "BARZA",
+  "quantity": ""
+ },
+ {
+  "name": "teste de sarcina -BARZA CASETA -p",
+  "price": 0.01,
+  "brand": "BARZA",
+  "quantity": ""
+ },
+ {
+  "name": "teste de sarcina -BARZA CASETA*ULTRASENSIBIL",
+  "price": 0.01,
+  "brand": "BARZA",
+  "quantity": ""
+ },
+ {
+  "name": "teste de sarcina -BARZA STILOU",
+  "price": 19.36,
+  "brand": "BARZA",
+  "quantity": ""
+ },
+ {
+  "name": "teste de sarcina -BARZA ultrasensibil banda",
+  "price": 15.1,
+  "brand": "BARZA",
+  "quantity": ""
+ },
+ {
+  "name": "teste de sarcina -BARZA ultrasensibil banda-p",
+  "price": 0.01,
+  "brand": "BARZA",
+  "quantity": ""
+ },
+ {
+  "name": "teste sarcina blue dream",
+  "price": 1.73,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "tetina latex-rotunda 1-2 buc",
+  "price": 6.05,
+  "brand": "PATRICECOM",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "tetina silicon x 2 tr2011006 0+",
+  "price": 8.95,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "tetina silicon x 2 tr2011006 3+",
+  "price": 9.07,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "tetina silicon x 2 tr2011006 6+",
+  "price": 8.95,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "tetina silicon 442 6+ luni3/bl",
+  "price": 7.99,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "tetina silicon orto 0+ minut",
+  "price": 8.47,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "tetina silicon orto 3+ minut",
+  "price": 8.47,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "tetina silicon orto 6+ minut",
+  "price": 8.47,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "tetina silicon super fin 3+ MINUT",
+  "price": 7.99,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "tetina silicon super fin 6+ minut",
+  "price": 7.99,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "tinctura antialcol",
+  "price": 16.34,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "tinctura de iod 2% vitalia 40 g",
+  "price": 7.26,
+  "brand": "VITALIA",
+  "quantity": "40 g"
+ },
+ {
+  "name": "trusa mica chirurgie SUTURI steril set",
+  "price": 9.68,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "uRINAR CU PALNIE MEDDO",
+  "price": 18.15,
+  "brand": "MEDDO",
+  "quantity": ""
+ },
+ {
+  "name": "ulei de argan virgin 10 ml",
+  "price": 9.8,
+  "brand": "PATRICECOM",
+  "quantity": "10 ml"
+ },
+ {
+  "name": "ulei de levantica macerat cps",
+  "price": 27.75,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ulei de masaj cu vit.E si ulei din sambure de stru 260 ml",
+  "price": 21.18,
+  "brand": "PATRICECOM",
+  "quantity": "260 ml"
+ },
+ {
+  "name": "ulei de parafina 40 gr",
+  "price": 4.36,
+  "brand": "PATRICECOM",
+  "quantity": "40 gr"
+ },
+ {
+  "name": "ulei de ricin-40 gr vitalia",
+  "price": 6.29,
+  "brand": "VITALIA",
+  "quantity": "40 gr"
+ },
+ {
+  "name": "ulei de salvie macerat cps moi-hofigal",
+  "price": 17.18,
+  "brand": "HOFIGAL",
+  "quantity": ""
+ },
+ {
+  "name": "ung galbenele-20gr viva",
+  "price": 3.33,
+  "brand": "VIVA",
+  "quantity": "20gr"
+ },
+ {
+  "name": "ung.pt ameliorare arsuri b-cure 75 ml",
+  "price": 11.5,
+  "brand": "PATRICECOM",
+  "quantity": "75 ml"
+ },
+ {
+  "name": "unghiera inox xl",
+  "price": 8.47,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "unguent cu sulf 10% santaderm 30 ml",
+  "price": 16.94,
+  "brand": "SANTADERM",
+  "quantity": "30 ml"
+ },
+ {
+  "name": "unguent ihtiolat*30 ml santaderm 10% lot 01",
+  "price": 15.49,
+  "brand": "SANTADERM",
+  "quantity": "30 ml"
+ },
+ {
+  "name": "urinar meddo",
+  "price": 16.94,
+  "brand": "MEDDO",
+  "quantity": ""
+ },
+ {
+  "name": "urocultoare sterile 120 ml",
+  "price": 0.87,
+  "brand": "PATRICECOM",
+  "quantity": "120 ml"
+ },
+ {
+  "name": "urocultoare sterile 60 ml cu eticheta",
+  "price": 0.82,
+  "brand": "PATRICECOM",
+  "quantity": "60 ml"
+ },
+ {
+  "name": "valeriana - 40 CPS",
+  "price": 20.54,
+  "brand": "PATRICECOM",
+  "quantity": "40 cps"
+ },
+ {
+  "name": "vapour rub 50GR adulti si copii 3 an+",
+  "price": 18.15,
+  "brand": "PATRICECOM",
+  "quantity": "50gr"
+ },
+ {
+  "name": "vapour rub 6luni+ 50 gr",
+  "price": 18.15,
+  "brand": "PATRICECOM",
+  "quantity": "50 gr"
+ },
+ {
+  "name": "vata med,tip BC IZIS 100 gr",
+  "price": 5.02,
+  "brand": "PATRICECOM",
+  "quantity": "100 gr"
+ },
+ {
+  "name": "vata med,tip BC IZIS 200 gr",
+  "price": 8.41,
+  "brand": "PATRICECOM",
+  "quantity": "200 gr"
+ },
+ {
+  "name": "violet de gentiana vitalia 25 g",
+  "price": 4.48,
+  "brand": "VITALIA",
+  "quantity": "25 g"
+ },
+ {
+  "name": "vivapore pansament adeziv steril 10cm/9cm",
+  "price": 1.69,
+  "brand": "VIVA",
+  "quantity": ""
+ },
+ {
+  "name": "vivapore pansament adeziv steril 15cm x9 cm",
+  "price": 2.3,
+  "brand": "VIVA",
+  "quantity": ""
+ },
+ {
+  "name": "vivapore pansament adeziv steril 20 cm x10 cm",
+  "price": 3.21,
+  "brand": "VIVA",
+  "quantity": ""
+ },
+ {
+  "name": "vivapore pansament adeziv steril 5cm x 7 cm",
+  "price": 0.97,
+  "brand": "VIVA",
+  "quantity": ""
+ },
+ {
+  "name": "vivapore pansament adeziv steril 6 cm/10cm",
+  "price": 1.39,
+  "brand": "VIVA",
+  "quantity": ""
+ },
+ {
+  "name": "vizik allergy pic.de ochi 10 ml",
+  "price": 49.61,
+  "brand": "PATRICECOM",
+  "quantity": "10 ml"
+ },
+ {
+  "name": "DUREX- 3 BUC extra safe",
+  "price": 9.07,
+  "brand": "DUREX",
+  "quantity": "3 buc"
+ },
+ {
+  "name": "DUREX- 3 BUC pleasuremax",
+  "price": 8.83,
+  "brand": "DUREX",
+  "quantity": "3 buc"
+ },
+ {
+  "name": "DUREX- 6 buc extended pleasure",
+  "price": 15.13,
+  "brand": "DUREX",
+  "quantity": "6 buc"
+ },
+ {
+  "name": "JUTAVIT COMPLEX D-MANDOZA 500mg 90 tb",
+  "price": 49.61,
+  "brand": "JUTAVIT",
+  "quantity": "90 tb"
+ },
+ {
+  "name": "PULSOXIMETRU CU BATERI",
+  "price": 66.55,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "Plasturi THERAPY STOPDOL tensiuni musculare artrit 10*13 cm",
+  "price": 5.32,
+  "brand": "THERAPY",
+  "quantity": ""
+ },
+ {
+  "name": "QPlaster transparent *16 buc",
+  "price": 4.84,
+  "brand": "QPLASTER",
+  "quantity": "16 buc"
+ },
+ {
+  "name": "Semimasca bumbac doua straturi",
+  "price": 8.29,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "Seni care servetele umede alantoina&vit.E*80",
+  "price": 22.87,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "Servetele umede copii fresch qcare*56",
+  "price": 5.2,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "Servetele umede copii sensitive qcare*56",
+  "price": 5.2,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "Servetele umede copii soft qcare*56",
+  "price": 5.2,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "Set perie si piaptan primi pasi",
+  "price": 8.71,
+  "brand": "PRIMI PASI",
+  "quantity": ""
+ },
+ {
+  "name": "absorbante Bella perfecta slim BLUE A10",
+  "price": 8.35,
+  "brand": "BELLA",
+  "quantity": ""
+ },
+ {
+  "name": "absorbante zilnice panty soft *20",
+  "price": 5.45,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "absorbante zilnice soft deo *20",
+  "price": 5.45,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "alezin plus crema 50 g",
+  "price": 9.68,
+  "brand": "PATRICECOM",
+  "quantity": "50 g"
+ },
+ {
+  "name": "always tampone sens 10 buc ultra plus",
+  "price": 10.29,
+  "brand": "PATRICECOM",
+  "quantity": "10 buc"
+ },
+ {
+  "name": "ata interdentara ceruita 100 m",
+  "price": 10.59,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "balsam buze ARGAN",
+  "price": 6.17,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "balsam buze BIO fructe",
+  "price": 6.17,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "beb039 my friend spray pt pieptanare usoara 150 ml",
+  "price": 18.76,
+  "brand": "PATRICECOM",
+  "quantity": "150 ml"
+ },
+ {
+  "name": "beb042 my friend sampon si dus gel 2 in 1 250 ml pepene verde",
+  "price": 17.54,
+  "brand": "PATRICECOM",
+  "quantity": "250 ml"
+ },
+ {
+  "name": "biberon forma broasca,ursulet ,rata 250 ml",
+  "price": 10.16,
+  "brand": "PATRICECOM",
+  "quantity": "250 ml"
+ },
+ {
+  "name": "biberon PP decor 125 ml",
+  "price": 7.02,
+  "brand": "PATRICECOM",
+  "quantity": "125 ml"
+ },
+ {
+  "name": "biberon pp decor 250 ml",
+  "price": 7.26,
+  "brand": "PATRICECOM",
+  "quantity": "250 ml"
+ },
+ {
+  "name": "boneta cu sampon multi care comfort",
+  "price": 18.15,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "brozz spray max imp.tantari si capuse 90 ml F2",
+  "price": 21.18,
+  "brand": "PATRICECOM",
+  "quantity": "90 ml"
+ },
+ {
+  "name": "cana anticurgere cu maner si capac primi pasi",
+  "price": 10.53,
+  "brand": "PRIMI PASI",
+  "quantity": ""
+ },
+ {
+  "name": "cana cu maner si cioc silicon anticurgere 250ml",
+  "price": 12.1,
+  "brand": "PATRICECOM",
+  "quantity": "250ml"
+ },
+ {
+  "name": "cana cu pai primi pasi",
+  "price": 10.89,
+  "brand": "PRIMI PASI",
+  "quantity": ""
+ },
+ {
+  "name": "caola balsam de maini 300 ML",
+  "price": 22.39,
+  "brand": "CAOLA",
+  "quantity": "300 ml"
+ },
+ {
+  "name": "caola pudra talk ALOE VERA 100GR",
+  "price": 10.84,
+  "brand": "CAOLA",
+  "quantity": "100gr"
+ },
+ {
+  "name": "caola pudra talk musetel 100 gr",
+  "price": 11.19,
+  "brand": "CAOLA",
+  "quantity": "100 gr"
+ },
+ {
+  "name": "cimmerin plus gel 7 g",
+  "price": 11.5,
+  "brand": "PATRICECOM",
+  "quantity": "7 g"
+ },
+ {
+  "name": "cliseu digital eticheta zarinil",
+  "price": 578.38,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "creion pt.rani minore dup barbierit",
+  "price": 7.5,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema galbenele-schmees 250ml",
+  "price": 11.86,
+  "brand": "SCHMEES",
+  "quantity": "250ml"
+ },
+ {
+  "name": "crema gh dracului 250 ML herbamedicus",
+  "price": 10.65,
+  "brand": "HERBAMEDICUS",
+  "quantity": "250 ml"
+ },
+ {
+  "name": "crema protectoare pt fata OLIV spf 50",
+  "price": 28.44,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "crema zi Q10-50ML mineral complex",
+  "price": 24.2,
+  "brand": "PATRICECOM",
+  "quantity": "50ml"
+ },
+ {
+  "name": "gel aloe vera cu d-pantenol 200 ml",
+  "price": 19.36,
+  "brand": "PATRICECOM",
+  "quantity": "200 ml"
+ },
+ {
+  "name": "halls colors",
+  "price": 3.03,
+  "brand": "HALLS",
+  "quantity": ""
+ },
+ {
+  "name": "halls coolwave",
+  "price": 3.33,
+  "brand": "HALLS",
+  "quantity": ""
+ },
+ {
+  "name": "halls honey lemon",
+  "price": 3.33,
+  "brand": "HALLS",
+  "quantity": ""
+ },
+ {
+  "name": "halls lime fresh",
+  "price": 3.57,
+  "brand": "HALLS",
+  "quantity": ""
+ },
+ {
+  "name": "halls-cola",
+  "price": 3.57,
+  "brand": "HALLS",
+  "quantity": ""
+ },
+ {
+  "name": "halls-extra strong",
+  "price": 3.03,
+  "brand": "HALLS",
+  "quantity": ""
+ },
+ {
+  "name": "halls-fructe de padure",
+  "price": 3.57,
+  "brand": "HALLS",
+  "quantity": ""
+ },
+ {
+  "name": "halls-miere si lamaie",
+  "price": 3.57,
+  "brand": "HALLS",
+  "quantity": ""
+ },
+ {
+  "name": "halls-original",
+  "price": 3.57,
+  "brand": "HALLS",
+  "quantity": ""
+ },
+ {
+  "name": "jutavit Natural K2 120mg 60TB",
+  "price": 39.32,
+  "brand": "JUTAVIT",
+  "quantity": "60tb"
+ },
+ {
+  "name": "jutavit calcimax forte 60 tab",
+  "price": 31.46,
+  "brand": "JUTAVIT",
+  "quantity": "60 tab"
+ },
+ {
+  "name": "jutavit caps.pt.sanatatea ficatului armurariu- 60 cps",
+  "price": 38.72,
+  "brand": "JUTAVIT",
+  "quantity": "60 cps"
+ },
+ {
+  "name": "jutavit colagen +hialuron articulati 400 g capsuni si zmeura",
+  "price": 84.7,
+  "brand": "JUTAVIT",
+  "quantity": "400 g"
+ },
+ {
+  "name": "jutavit colagen +hialuron articulati 400 g fructe de padure",
+  "price": 84.7,
+  "brand": "JUTAVIT",
+  "quantity": "400 g"
+ },
+ {
+  "name": "jutavit colagen ananas 400 g",
+  "price": 110.11,
+  "brand": "JUTAVIT",
+  "quantity": "400 g"
+ },
+ {
+  "name": "jutavit diosmin+hesperidina 30 tb",
+  "price": 39.32,
+  "brand": "JUTAVIT",
+  "quantity": "30 tb"
+ },
+ {
+  "name": "jutavit glucozamina condroitina +colagen+msm",
+  "price": 50.82,
+  "brand": "JUTAVIT",
+  "quantity": ""
+ },
+ {
+  "name": "jutavit glucozamina condroitina +colagen+msm-120 buc",
+  "price": 78.65,
+  "brand": "JUTAVIT",
+  "quantity": "120 buc"
+ },
+ {
+  "name": "jutavit lutein forte 12 mg 60cps",
+  "price": 50.82,
+  "brand": "JUTAVIT",
+  "quantity": "60cps"
+ },
+ {
+  "name": "jutavit multiv.50+ 45 buc/cut",
+  "price": 31.46,
+  "brand": "JUTAVIT",
+  "quantity": "45 buc"
+ },
+ {
+  "name": "jutavit multiv.imunocomplex pt copii-45buc.masticabil",
+  "price": 30.25,
+  "brand": "JUTAVIT",
+  "quantity": "45buc"
+ },
+ {
+  "name": "jutavit multivitamina adulti retard 45 buc/cut",
+  "price": 33.88,
+  "brand": "JUTAVIT",
+  "quantity": "45 buc"
+ },
+ {
+  "name": "jutavit multivitamine gumate gust zahar-50 buc",
+  "price": 29.04,
+  "brand": "JUTAVIT",
+  "quantity": "50 buc"
+ },
+ {
+  "name": "jutavit pic.suedeze 40plante fara alcol",
+  "price": 23.6,
+  "brand": "JUTAVIT",
+  "quantity": ""
+ },
+ {
+  "name": "jutavit probium+inulina 15 cps",
+  "price": 33.88,
+  "brand": "JUTAVIT",
+  "quantity": "15 cps"
+ },
+ {
+  "name": "jutavit seleniu organic 100ug 100 tab",
+  "price": 36.3,
+  "brand": "JUTAVIT",
+  "quantity": "100 tab"
+ },
+ {
+  "name": "jutavit ulei de dovleac 600mg/100 buc",
+  "price": 82.28,
+  "brand": "JUTAVIT",
+  "quantity": "100 buc"
+ },
+ {
+  "name": "jutavit ulei krill 1500mg 60cps",
+  "price": 23.6,
+  "brand": "JUTAVIT",
+  "quantity": "60cps"
+ },
+ {
+  "name": "jutavit valeriana 45 caps",
+  "price": 35.7,
+  "brand": "JUTAVIT",
+  "quantity": "45 caps"
+ },
+ {
+  "name": "jutavit zinc organic 25 mg*100 tb",
+  "price": 5.75,
+  "brand": "JUTAVIT",
+  "quantity": "100 tb"
+ },
+ {
+  "name": "lingurita moale pt biberon primi pasi",
+  "price": 49.01,
+  "brand": "PRIMI PASI",
+  "quantity": ""
+ },
+ {
+  "name": "litorsal SENIOR *24 cpr eff.",
+  "price": 47.19,
+  "brand": "SENI",
+  "quantity": "24 cpr"
+ },
+ {
+  "name": "litorsal electroliti GRAPEFRUIT *24 cpr eff.",
+  "price": 21.66,
+  "brand": "PATRICECOM",
+  "quantity": "24 cpr"
+ },
+ {
+  "name": "manusi ex.nitril 12 cuti M",
+  "price": 0.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "masina etichetat metro 50.0s",
+  "price": 0.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "matrita dubla PET 300 ml",
+  "price": 31.22,
+  "brand": "PATRICECOM",
+  "quantity": "300 ml"
+ },
+ {
+  "name": "mixer electric biberon ro902",
+  "price": 41.75,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "nail repel myco clean stift 3 ml",
+  "price": 2.78,
+  "brand": "PATRICECOM",
+  "quantity": "3 ml"
+ },
+ {
+  "name": "pansament steril MINUT PORE 10 cm x30 cm",
+  "price": 11.5,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "pasta de dinti pt copii active oral care fresch&fr cu fluor ,fara zahar x100ml",
+  "price": 11.5,
+  "brand": "PATRICECOM",
+  "quantity": "100ml"
+ },
+ {
+  "name": "pasta dinti curatare zilnica si completa a dintilor fumatorilor",
+  "price": 11.5,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "pasta dinti protectie zilnica a smaltului dintilor sensibili *100 ml",
+  "price": 9.56,
+  "brand": "PATRICECOM",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "periuta de dinti voiaj 2 buc",
+  "price": 21.78,
+  "brand": "PATRICECOM",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "picaturi grapefruit 30 ml",
+  "price": 5.32,
+  "brand": "PATRICECOM",
+  "quantity": "30 ml"
+ },
+ {
+  "name": "plast.indepartare bataturi 6buc",
+  "price": 14.52,
+  "brand": "PATRICECOM",
+  "quantity": "6buc"
+ },
+ {
+  "name": "plasture antiherpetic 15 buc",
+  "price": 2.6,
+  "brand": "PATRICECOM",
+  "quantity": "15 buc"
+ },
+ {
+  "name": "plasture antireumatic mentol 12/18 minut",
+  "price": 2.6,
+  "brand": "MINUT",
+  "quantity": "12/18"
+ },
+ {
+  "name": "plasture antireumatic mentol 12/18 minut bis",
+  "price": 4.24,
+  "brand": "MINUT",
+  "quantity": "12/18"
+ },
+ {
+  "name": "plasture cu aloe vera *25 buc",
+  "price": 7.14,
+  "brand": "PATRICECOM",
+  "quantity": "25 buc"
+ },
+ {
+  "name": "plasturi pt flictene(basici) 5buc minut",
+  "price": 16.94,
+  "brand": "MINUT",
+  "quantity": "5buc"
+ },
+ {
+  "name": "protectie din silicon pt mamelon minut baby",
+  "price": 3.15,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "protectoare auditive spuma-cu snur",
+  "price": 1.75,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "protectoare auditive spuma-fara snur",
+  "price": 22.99,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "punga cu gel terapie cald-rece",
+  "price": 0.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "samp.gel bubchen 230-copii",
+  "price": 24.81,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "sampon antiparazitar-DR HAPPY +piapten gratis",
+  "price": 2.78,
+  "brand": "DR HAPPY",
+  "quantity": ""
+ },
+ {
+  "name": "sanitaband-plasturi antirematici ardei iute",
+  "price": 10.89,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "schmees balsam puterea ursului 250ml",
+  "price": 19.0,
+  "brand": "SCHMEES",
+  "quantity": "250ml"
+ },
+ {
+  "name": "schmees balsam-500ml herbamedicus",
+  "price": 21.78,
+  "brand": "SCHMEES",
+  "quantity": "500ml"
+ },
+ {
+  "name": "schmees balsam-500ml herbamedicus-HOT",
+  "price": 11.62,
+  "brand": "SCHMEES",
+  "quantity": "500ml"
+ },
+ {
+  "name": "schmees cr.herbamedicus castane+vita de vie 250ml",
+  "price": 11.62,
+  "brand": "SCHMEES",
+  "quantity": "250ml"
+ },
+ {
+  "name": "schmees glucosamin crema 250ml",
+  "price": 84.1,
+  "brand": "SCHMEES",
+  "quantity": "250ml"
+ },
+ {
+  "name": "seni activ plus 2 XL*10",
+  "price": 41.14,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni active pull up normal small*10",
+  "price": 55.66,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni active'clasic chilot extralarge*10",
+  "price": 49.01,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni active'clasic chilot large*10",
+  "price": 44.17,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni active'clasic chilot mediun*10",
+  "price": 56.27,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni active'pull up' normal large*10",
+  "price": 64.13,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni basic small 30 buc",
+  "price": 26.21,
+  "brand": "SENI",
+  "quantity": "30 buc"
+ },
+ {
+  "name": "seni care spuma ingrijire corp 500 ml",
+  "price": 36.3,
+  "brand": "SENI",
+  "quantity": "500 ml"
+ },
+ {
+  "name": "seni clasic air large *10",
+  "price": 30.86,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni clasic air mediu *10",
+  "price": 95.59,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni clasic plus air large 30/buc",
+  "price": 93.17,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni extra large-basic 30/pach",
+  "price": 21.66,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni lady EXTRA PLUS 15/pac",
+  "price": 27.23,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni lady PLUS 15",
+  "price": 17.54,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni lady extra slim A15",
+  "price": 15.73,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni lady slim MINI PLUS 20/pach",
+  "price": 13.07,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni lady slim mini 20/pach",
+  "price": 16.94,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni lady slim normal 20/pach",
+  "price": 22.39,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni lady super 15 BUC",
+  "price": 84.03,
+  "brand": "SENI",
+  "quantity": "15 buc"
+ },
+ {
+  "name": "seni large-basic 30/pach",
+  "price": 70.18,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "seni medium-basic 30/pach",
+  "price": 18.15,
+  "brand": "SENI",
+  "quantity": ""
+ },
+ {
+  "name": "serv.umede igiena corporala-50buc multi care comfort",
+  "price": 0.0,
+  "brand": "PATRICECOM",
+  "quantity": "50buc"
+ },
+ {
+  "name": "servetele umede BARZA cu bicarbonat de sodiu",
+  "price": 9.68,
+  "brand": "BARZA",
+  "quantity": ""
+ },
+ {
+  "name": "set cadouOMEGA plus cr hidratanta 50ml+crema corp200ml",
+  "price": 42.35,
+  "brand": "OMEGA PLUS",
+  "quantity": "50ml"
+ },
+ {
+  "name": "set hranire bebbe silicon linguruta,cioc,rezervor",
+  "price": 33.28,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "set linguruta si furculita ro567",
+  "price": 6.41,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "set manichiura 3 piese primi pasi",
+  "price": 9.2,
+  "brand": "PRIMI PASI",
+  "quantity": ""
+ },
+ {
+  "name": "set perie dinti -3 varste primi pasi",
+  "price": 11.92,
+  "brand": "PRIMI PASI",
+  "quantity": ""
+ },
+ {
+  "name": "spray aloe vera 100% 50ml",
+  "price": 15.37,
+  "brand": "PATRICECOM",
+  "quantity": "50ml"
+ },
+ {
+  "name": "spray cu gheata 150 ml",
+  "price": 15.13,
+  "brand": "PATRICECOM",
+  "quantity": "150 ml"
+ },
+ {
+  "name": "spray cu gheata 300 ml",
+  "price": 24.2,
+  "brand": "PATRICECOM",
+  "quantity": "300 ml"
+ },
+ {
+  "name": "spray de pantofi 150 ml",
+  "price": 11.74,
+  "brand": "PATRICECOM",
+  "quantity": "150 ml"
+ },
+ {
+  "name": "spray de picioare bf",
+  "price": 11.74,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "spray protectiv tantari &capuse spf 50 -100ml",
+  "price": 70.79,
+  "brand": "PATRICECOM",
+  "quantity": "100ml"
+ },
+ {
+  "name": "spray repelent tantari &capuse 100 ml santaderm",
+  "price": 0.0,
+  "brand": "SANTADERM",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "spray repelent tantari&capuse 100 ml santaderm",
+  "price": 30.29,
+  "brand": "SANTADERM",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "spray tratament paduchi santaderm 100 ml",
+  "price": 57.48,
+  "brand": "SANTADERM",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "stiker antitantari",
+  "price": 3.63,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "tamp OB proc. mini-16",
+  "price": 13.61,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "tamp always ultra day super 7/pac",
+  "price": 9.2,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "tamp.Alway Ultra sens. 10",
+  "price": 9.68,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "tamp.always duo day night 14",
+  "price": 15.25,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "test barza amnio test 3 buc/cutie",
+  "price": 76.23,
+  "brand": "BARZA",
+  "quantity": "3 buc"
+ },
+ {
+  "name": "test ovulatie barza 5+1 test de sarcina",
+  "price": 26.62,
+  "brand": "BARZA",
+  "quantity": ""
+ },
+ {
+  "name": "test ovulatie x5 blueCROSS +test sarcina",
+  "price": 10.89,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "tetina gat extralarg curg.rapida 2valve,anticolici-b buc/6luniv",
+  "price": 18.15,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "transderm GIO sol.coloidala pt indepartarea negilor si bataturilor",
+  "price": 31.46,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "transderm-pl.cu efect keratolitic 6/cutie",
+  "price": 9.8,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ulei canabis 30 cps",
+  "price": 59.29,
+  "brand": "PATRICECOM",
+  "quantity": "30 cps"
+ },
+ {
+  "name": "ulei catina-600mg cps moi hofigal",
+  "price": 43.56,
+  "brand": "HOFIGAL",
+  "quantity": ""
+ },
+ {
+  "name": "ulei catina-900mg cps moi hofigal",
+  "price": 43.56,
+  "brand": "HOFIGAL",
+  "quantity": ""
+ },
+ {
+  "name": "ulei esential de citronella 10 ml",
+  "price": 14.52,
+  "brand": "PATRICECOM",
+  "quantity": "10 ml"
+ },
+ {
+  "name": "unguent protectie antiherperica 10ml",
+  "price": 11.13,
+  "brand": "PATRICECOM",
+  "quantity": "10ml"
+ },
+ {
+  "name": "zgarda impotriva puricilor si capuselor caini 65 cm",
+  "price": 16.77,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "Ace 25g 0.5x25 minut",
+  "price": 0.15,
+  "brand": "MINUT",
+  "quantity": "25g"
+ },
+ {
+  "name": "COMPRESE NESTERILE TIFON 10/20*8 pliuri-100 buc",
+  "price": 24.2,
+  "brand": "PATRICECOM",
+  "quantity": "100 buc"
+ },
+ {
+  "name": "FASA TIFON -40 GR. 10M/15CM",
+  "price": 3.57,
+  "brand": "PATRICECOM",
+  "quantity": "40 gr"
+ },
+ {
+  "name": "FASA TIFON -40 GR. 10M/20CM",
+  "price": 1.51,
+  "brand": "PATRICECOM",
+  "quantity": "40 gr"
+ },
+ {
+  "name": "Leucoplast 2,5cm x1.M MINUT",
+  "price": 4.72,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "Leucoplast 2.5cm x5 m MINUT PLAST",
+  "price": 12.1,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "Plas.pt.rau de miscare narcis 10 buc",
+  "price": 9.8,
+  "brand": "NARCIS",
+  "quantity": "10 buc"
+ },
+ {
+  "name": "TIFON HIDROFIL 5 M/PACH-roval",
+  "price": 9.07,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "TIFON METRAJ NARCIS 19GR/2,90cm*5cm",
+  "price": 11.25,
+  "brand": "NARCIS",
+  "quantity": "19gr"
+ },
+ {
+  "name": "VITAMINA C-500 K145",
+  "price": 0.27,
+  "brand": "VITAMINA",
+  "quantity": ""
+ },
+ {
+  "name": "ace 27 g bd 0.4 x13",
+  "price": 14.52,
+  "brand": "PATRICECOM",
+  "quantity": "27 g"
+ },
+ {
+  "name": "ace intramusculare 20GX1 1/4",
+  "price": 14.52,
+  "brand": "PATRICECOM",
+  "quantity": "1/4"
+ },
+ {
+  "name": "ace intramusculare 21G x1 1/2",
+  "price": 14.52,
+  "brand": "PATRICECOM",
+  "quantity": "21g"
+ },
+ {
+  "name": "ace intramusculare 22G 1 1/2 negre",
+  "price": 14.52,
+  "brand": "PATRICECOM",
+  "quantity": "22g"
+ },
+ {
+  "name": "ace intramusculare 23GX1 1/4",
+  "price": 0.15,
+  "brand": "PATRICECOM",
+  "quantity": "1/4"
+ },
+ {
+  "name": "ace stomatologice 0.45/16",
+  "price": 4.48,
+  "brand": "PATRICECOM",
+  "quantity": "45/16"
+ },
+ {
+  "name": "albastru de metil 1% vitalia",
+  "price": 8.59,
+  "brand": "VITALIA",
+  "quantity": ""
+ },
+ {
+  "name": "alcool camforat 10% flacon 40 gr",
+  "price": 8.59,
+  "brand": "PATRICECOM",
+  "quantity": "40 gr"
+ },
+ {
+  "name": "alcool iodat 2% fl.40 g -vitalia",
+  "price": 7.99,
+  "brand": "VITALIA",
+  "quantity": "40 g"
+ },
+ {
+  "name": "alcool mentolat 1% fl.40 ml",
+  "price": 16.94,
+  "brand": "PATRICECOM",
+  "quantity": "40 ml"
+ },
+ {
+  "name": "banda adeziva HELP PORE 10/10",
+  "price": 21.78,
+  "brand": "HELP",
+  "quantity": "10/10"
+ },
+ {
+  "name": "banda adeziva HELP PORE 15cm/10m",
+  "price": 8.47,
+  "brand": "HELP",
+  "quantity": ""
+ },
+ {
+  "name": "banda adeziva HELP PORE 5 CM/10M",
+  "price": 0.94,
+  "brand": "HELP",
+  "quantity": ""
+ },
+ {
+  "name": "banda adeziva rivanol 8 cm x 6 cm",
+  "price": 0.27,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "banda adeziva rivanol cutie",
+  "price": 0.27,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "bandaj elastic cu cleme 10cm/4.5m help",
+  "price": 5.45,
+  "brand": "HELP",
+  "quantity": ""
+ },
+ {
+  "name": "bandaj elastic cu cleme 15cm/4.5m help",
+  "price": 7.02,
+  "brand": "HELP",
+  "quantity": ""
+ },
+ {
+  "name": "bandaj elastic cu cleme 5cm/4.5m help",
+  "price": 3.15,
+  "brand": "HELP",
+  "quantity": ""
+ },
+ {
+  "name": "bandaj elastic cu cleme 7.5/4.5 help",
+  "price": 4.84,
+  "brand": "HELP",
+  "quantity": "5/4"
+ },
+ {
+  "name": "biosept forte 20 cps moi",
+  "price": 47.74,
+  "brand": "BIOSEPT",
+  "quantity": "20 cps"
+ },
+ {
+  "name": "biosept-cps fares",
+  "price": 36.06,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "biosept-sirop fares",
+  "price": 0.12,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "botosei U.F",
+  "price": 0.97,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "branula 16 G",
+  "price": 0.97,
+  "brand": "PATRICECOM",
+  "quantity": "16 g"
+ },
+ {
+  "name": "branula cu valva 18 g verde",
+  "price": 0.97,
+  "brand": "PATRICECOM",
+  "quantity": "18 g"
+ },
+ {
+  "name": "branula cu valva 20 g roz",
+  "price": 0.96,
+  "brand": "PATRICECOM",
+  "quantity": "20 g"
+ },
+ {
+  "name": "branula cu valva 22 g albastra",
+  "price": 1.08,
+  "brand": "PATRICECOM",
+  "quantity": "22 g"
+ },
+ {
+  "name": "branule 24G",
+  "price": 0.96,
+  "brand": "PATRICECOM",
+  "quantity": "24g"
+ },
+ {
+  "name": "branule 14 g",
+  "price": 1.09,
+  "brand": "PATRICECOM",
+  "quantity": "14 g"
+ },
+ {
+  "name": "branule cu valva 26G",
+  "price": 19.36,
+  "brand": "PATRICECOM",
+  "quantity": "26g"
+ },
+ {
+  "name": "burete hemostatic surgipon 70*50*10mm 10buc/amb",
+  "price": 47.19,
+  "brand": "BURETE",
+  "quantity": "10buc"
+ },
+ {
+  "name": "centura spate pt zona lombara",
+  "price": 50.82,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "cicaSilver CREMA tub 50ml",
+  "price": 86.03,
+  "brand": "CICASILVER",
+  "quantity": "50ml"
+ },
+ {
+  "name": "cicaSilver spray 125 ml",
+  "price": 89.36,
+  "brand": "CICASILVER",
+  "quantity": "125 ml"
+ },
+ {
+  "name": "coenzima Q10 forte in uleiul de catina hofigal",
+  "price": 21.18,
+  "brand": "HOFIGAL",
+  "quantity": ""
+ },
+ {
+  "name": "coenzima Q10 forte plus in uleiul de catina",
+  "price": 1.21,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "compresa cald rece 13*27cm qplaster",
+  "price": 1.21,
+  "brand": "QPLASTER",
+  "quantity": ""
+ },
+ {
+  "name": "comprese sterile-Help 10/8",
+  "price": 9.44,
+  "brand": "HELP",
+  "quantity": "10/8"
+ },
+ {
+  "name": "comprese sterile-prodcomfarm 10/8cm x 50 str",
+  "price": 7.14,
+  "brand": "PATRICECOM",
+  "quantity": "10/8"
+ },
+ {
+  "name": "conuri auriculare",
+  "price": 18.43,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "dalin sampon fara lacrimi 100 ml",
+  "price": 2.54,
+  "brand": "DALIN",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "echinacea cps hofigal",
+  "price": 3.03,
+  "brand": "HOFIGAL",
+  "quantity": ""
+ },
+ {
+  "name": "fasa 10/10 40 gr.",
+  "price": 1.2,
+  "brand": "PATRICECOM",
+  "quantity": "40 gr"
+ },
+ {
+  "name": "fasa 10/20 Help",
+  "price": 1.63,
+  "brand": "HELP",
+  "quantity": "10/20"
+ },
+ {
+  "name": "fesi 5/8",
+  "price": 2.3,
+  "brand": "PATRICECOM",
+  "quantity": "5/8"
+ },
+ {
+  "name": "fesi HELP 10/10",
+  "price": 12.84,
+  "brand": "HELP",
+  "quantity": "10/10"
+ },
+ {
+  "name": "fesi-help 10/15",
+  "price": 3.99,
+  "brand": "HELP",
+  "quantity": "10/15"
+ },
+ {
+  "name": "fitodiab cpr-",
+  "price": 19.87,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "forfecuta copii 34045",
+  "price": 17.21,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "giardinofug-medica 30cps",
+  "price": 27.35,
+  "brand": "MEDICA",
+  "quantity": "30cps"
+ },
+ {
+  "name": "giardinofug-medica 50ml herbal drops",
+  "price": 2.54,
+  "brand": "MEDICA",
+  "quantity": "50ml"
+ },
+ {
+  "name": "gutostop*60cps medica",
+  "price": 56.27,
+  "brand": "MEDICA",
+  "quantity": "60cps"
+ },
+ {
+  "name": "halat unica folosinta tip vizitator",
+  "price": 40.53,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "jutavit complex9 cartilaj os&muschi cu 9 subst.active",
+  "price": 35.09,
+  "brand": "JUTAVIT",
+  "quantity": ""
+ },
+ {
+  "name": "jutavit diab control 80tb/cutie",
+  "price": 49.61,
+  "brand": "JUTAVIT",
+  "quantity": "80tb"
+ },
+ {
+  "name": "jutavit merisor ex.de splinuta 800mg 100tb",
+  "price": 27.23,
+  "brand": "JUTAVIT",
+  "quantity": "100tb"
+ },
+ {
+  "name": "jutavit slim lady 100 cps",
+  "price": 1.15,
+  "brand": "JUTAVIT",
+  "quantity": "100 cps"
+ },
+ {
+  "name": "laxaclean miniclisme cu glicerina -copii",
+  "price": 2.36,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "leucoplast hartie -Minut 1.5/5m",
+  "price": 4.24,
+  "brand": "MINUT",
+  "quantity": "5/5"
+ },
+ {
+  "name": "leucoplast hartie -Minut 2.5/5",
+  "price": 4.84,
+  "brand": "MINUT",
+  "quantity": "5/5"
+ },
+ {
+  "name": "leucoplast hartie -Minut 5/5",
+  "price": 2.66,
+  "brand": "MINUT",
+  "quantity": "5/5"
+ },
+ {
+  "name": "leucoplast matase -minut 1.5/5m",
+  "price": 8.77,
+  "brand": "MINUT",
+  "quantity": "5/5"
+ },
+ {
+  "name": "leucoplast matase 5 x5 minut",
+  "price": 8.86,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "leucoplast Minut Plast 5 cm x 5 m",
+  "price": 5.81,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "leucoplast Minut Plast 5cm x3 m",
+  "price": 1.75,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "leucoplast transparent Minut Plast 1.5/5m",
+  "price": 3.14,
+  "brand": "MINUT",
+  "quantity": "5/5"
+ },
+ {
+  "name": "leucoplast transparent Minut Plast 2.5/5 m",
+  "price": 5.81,
+  "brand": "MINUT",
+  "quantity": "5/5"
+ },
+ {
+  "name": "leucoplast transparent Minut Plast 5/5",
+  "price": 7.26,
+  "brand": "MINUT",
+  "quantity": "5/5"
+ },
+ {
+  "name": "lips stick CAPSUNI 5.7 ml",
+  "price": 7.26,
+  "brand": "PATRICECOM",
+  "quantity": "7 ml"
+ },
+ {
+  "name": "lips stick clasic 5.7 ml",
+  "price": 27.5,
+  "brand": "PATRICECOM",
+  "quantity": "7 ml"
+ },
+ {
+  "name": "mag-anghinar 60 cpr",
+  "price": 1.81,
+  "brand": "PATRICECOM",
+  "quantity": "60 cpr"
+ },
+ {
+  "name": "manusi chir.sterile NR 7.5",
+  "price": 2.17,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "manusi chir.sterile nr 6.5",
+  "price": 1.81,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "manusi chir.sterile nr 7",
+  "price": 2.17,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "manusi chir.sterile nr 8",
+  "price": 2.17,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "manusi ex.latex nepudrate large",
+  "price": 22.75,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "manusi ex.nitril SMALL",
+  "price": 18.15,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "manusi ex.nitril SMALL NEGRE",
+  "price": 21.78,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "manusi ex.nitril large",
+  "price": 21.66,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "manusi ex.nitril medii NEGRE",
+  "price": 21.78,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "manusi exam. nitril-extra large x100 nepudrate",
+  "price": 17.54,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "manusi examinare 100 buc XS",
+  "price": 22.99,
+  "brand": "PATRICECOM",
+  "quantity": "100 buc"
+ },
+ {
+  "name": "manusi examinare 100 buc medii-top glove",
+  "price": 21.18,
+  "brand": "PATRICECOM",
+  "quantity": "100 buc"
+ },
+ {
+  "name": "manusi examinare 100 buc smoll",
+  "price": 21.78,
+  "brand": "PATRICECOM",
+  "quantity": "100 buc"
+ },
+ {
+  "name": "melatonina pura spray 20 ml",
+  "price": 49.61,
+  "brand": "MELA",
+  "quantity": "20 ml"
+ },
+ {
+  "name": "melatonina pura 3mg 120 tb",
+  "price": 78.65,
+  "brand": "MELA",
+  "quantity": "120 tb"
+ },
+ {
+  "name": "melatonina pura 5mg 60TB",
+  "price": 45.99,
+  "brand": "MELA",
+  "quantity": "60tb"
+ },
+ {
+  "name": "melatonina pura cu extracte vegetale 60 jeleuri",
+  "price": 70.18,
+  "brand": "MELA",
+  "quantity": ""
+ },
+ {
+  "name": "melatonina pura junior 1mg 40ml",
+  "price": 61.71,
+  "brand": "MELA",
+  "quantity": "40ml"
+ },
+ {
+  "name": "mentholin-spray gura 25 ml",
+  "price": 15.49,
+  "brand": "PATRICECOM",
+  "quantity": "25 ml"
+ },
+ {
+  "name": "milk thisle+colina 30 cps",
+  "price": 0.0,
+  "brand": "MILK THISLE",
+  "quantity": "30 cps"
+ },
+ {
+  "name": "milk thisle+colina 30 cps zdrovit",
+  "price": 64.13,
+  "brand": "ZDROVIT",
+  "quantity": "30 cps"
+ },
+ {
+  "name": "nazomer forte 30 ml cu nebulizatoru",
+  "price": 13.31,
+  "brand": "PATRICECOM",
+  "quantity": "30 ml"
+ },
+ {
+  "name": "nazomer junior 30ml",
+  "price": 9.68,
+  "brand": "PATRICECOM",
+  "quantity": "30ml"
+ },
+ {
+  "name": "nazomer propolis 30ml cu nebulizator",
+  "price": 13.07,
+  "brand": "PATRICECOM",
+  "quantity": "30ml"
+ },
+ {
+  "name": "nazomer-30ml cu nebulizator",
+  "price": 9.68,
+  "brand": "PATRICECOM",
+  "quantity": "30ml"
+ },
+ {
+  "name": "nazomer-HA 30 ml",
+  "price": 12.71,
+  "brand": "PATRICECOM",
+  "quantity": "30 ml"
+ },
+ {
+  "name": "ochelari de citit clasici 888 N 1.00+",
+  "price": 26.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ochelari de citit clasici 888 N 1.5+",
+  "price": 26.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ochelari de citit clasici 888 N 1.75+",
+  "price": 26.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ochelari de citit clasici 888 N 2.75+",
+  "price": 26.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ochelari de citit clasici 888 N 4.00+",
+  "price": 26.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ochelari de citit clasici 888N 2.25+",
+  "price": 26.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ochelari de citit clasici 888N 3,5+",
+  "price": 26.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ochelari de citit clasici 888N 4.5+",
+  "price": 26.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ochelari de citit clasici 888N*1.25",
+  "price": 26.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ochelari de citit clasici 888N*5.00",
+  "price": 26.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ochelari de citit modern 880 n 3.25",
+  "price": 27.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ochelari de citit modern narcis style 1.25 +",
+  "price": 26.0,
+  "brand": "NARCIS",
+  "quantity": ""
+ },
+ {
+  "name": "ochelari de citit modern 1 880 n 3.75",
+  "price": 27.0,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "ocluzoare sterile QPlaster -10buc",
+  "price": 13.92,
+  "brand": "QPLASTER",
+  "quantity": "10buc"
+ },
+ {
+  "name": "optisomn*28 cpr",
+  "price": 62.92,
+  "brand": "PATRICECOM",
+  "quantity": "28 cpr"
+ },
+ {
+  "name": "optolutein forte 60 cps",
+  "price": 33.33,
+  "brand": "OPTOLUTEIN",
+  "quantity": "60 cps"
+ },
+ {
+  "name": "optolutein forte 60 cps medica",
+  "price": 77.44,
+  "brand": "MEDICA",
+  "quantity": "60 cps"
+ },
+ {
+  "name": "org.medicamente lunar *4 casete colorate/zi",
+  "price": 61.71,
+  "brand": "MEDICA",
+  "quantity": ""
+ },
+ {
+  "name": "org.medicamente lunar x2 casete colorate/zi",
+  "price": 23.96,
+  "brand": "MEDICA",
+  "quantity": ""
+ },
+ {
+  "name": "organiz.medicamente 4 x 7 casete colorate",
+  "price": 21.09,
+  "brand": "MEDICA",
+  "quantity": ""
+ },
+ {
+  "name": "paducel 40cps hofigal",
+  "price": 18.15,
+  "brand": "HOFIGAL",
+  "quantity": "40cps"
+ },
+ {
+  "name": "paducel*60cps medica",
+  "price": 0.91,
+  "brand": "MEDICA",
+  "quantity": "60cps"
+ },
+ {
+  "name": "pansament adeziv Help-pore 10 cm x 10 cm",
+  "price": 1.57,
+  "brand": "HELP",
+  "quantity": ""
+ },
+ {
+  "name": "pansament adeziv Help-pore 10cm x 15cm",
+  "price": 1.88,
+  "brand": "HELP",
+  "quantity": ""
+ },
+ {
+  "name": "pansament adeziv Help-pore 10cm x 20 cm",
+  "price": 2.42,
+  "brand": "HELP",
+  "quantity": ""
+ },
+ {
+  "name": "pansament adeziv Help-pore 10cm/30",
+  "price": 0.61,
+  "brand": "HELP",
+  "quantity": ""
+ },
+ {
+  "name": "pansament adeziv Help-pore 5cm x 7 cm",
+  "price": 1.21,
+  "brand": "HELP",
+  "quantity": ""
+ },
+ {
+  "name": "perfuzor HELPSET lock ac plastic",
+  "price": 42.35,
+  "brand": "HELP",
+  "quantity": ""
+ },
+ {
+  "name": "picaturi suedeze 100 ml",
+  "price": 77.44,
+  "brand": "PATRICECOM",
+  "quantity": "100 ml"
+ },
+ {
+  "name": "picaturi suedeze 250 ml",
+  "price": 133.1,
+  "brand": "PATRICECOM",
+  "quantity": "250 ml"
+ },
+ {
+  "name": "picaturi suedeze 500 ml",
+  "price": 5.45,
+  "brand": "PATRICECOM",
+  "quantity": "500 ml"
+ },
+ {
+  "name": "plasturi copii tattoo efect fantasy 16 buc",
+  "price": 7.02,
+  "brand": "PATRICECOM",
+  "quantity": "16 buc"
+ },
+ {
+  "name": "plasturi cu rivanol 2cm/7cm 20 buc narcis",
+  "price": 8.73,
+  "brand": "NARCIS",
+  "quantity": "20 buc"
+ },
+ {
+  "name": "plasturi hidroclorid pt vezicule si bataturi*5",
+  "price": 3.93,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "plasturi rez.la apa minut*10 buc",
+  "price": 7.99,
+  "brand": "MINUT",
+  "quantity": "10 buc"
+ },
+ {
+  "name": "plasturi sterili 19/72mm 100/cutie",
+  "price": 70.18,
+  "brand": "PATRICECOM",
+  "quantity": "19/72"
+ },
+ {
+  "name": "pompa san nimo surpunp-mnl",
+  "price": 22.99,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "punga de depozitare lapte matern 20 buc",
+  "price": 29.04,
+  "brand": "PATRICECOM",
+  "quantity": "20 buc"
+ },
+ {
+  "name": "redigest 50 CPS",
+  "price": 27.83,
+  "brand": "REDIGEST",
+  "quantity": "50 cps"
+ },
+ {
+  "name": "redigest cpr hofigal",
+  "price": 17.0,
+  "brand": "HOFIGAL",
+  "quantity": ""
+ },
+ {
+  "name": "relaxirem 2bls X 20cpr",
+  "price": 16.94,
+  "brand": "PATRICECOM",
+  "quantity": "20cpr"
+ },
+ {
+  "name": "relaxirem forte 2bls x 15 cpr film",
+  "price": 25.41,
+  "brand": "PATRICECOM",
+  "quantity": "15 cpr"
+ },
+ {
+  "name": "relaxirem noapte 2BLS*15 CPR FILM",
+  "price": 29.04,
+  "brand": "PATRICECOM",
+  "quantity": "15 cpr"
+ },
+ {
+  "name": "salviasept KIDS gat acadele-6/cut",
+  "price": 42.35,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "salviasept KIDS-TUSE acadele-6/cut",
+  "price": 42.35,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "sana bandaj- manseta- L-2buc",
+  "price": 13.31,
+  "brand": "SANA",
+  "quantity": "2buc"
+ },
+ {
+  "name": "sana bandaj- manseta- S-2buc",
+  "price": 13.31,
+  "brand": "SANA",
+  "quantity": "2buc"
+ },
+ {
+  "name": "sana bandaj- manseta-M 2 buc",
+  "price": 13.31,
+  "brand": "SANA",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "sana burtiera NR 2",
+  "price": 42.35,
+  "brand": "SANA",
+  "quantity": ""
+ },
+ {
+  "name": "sana burtiera NR 3",
+  "price": 42.35,
+  "brand": "SANA",
+  "quantity": ""
+ },
+ {
+  "name": "sana burtiera NR 8",
+  "price": 42.35,
+  "brand": "SANA",
+  "quantity": ""
+ },
+ {
+  "name": "sana burtiera nr 10",
+  "price": 39.93,
+  "brand": "SANA",
+  "quantity": ""
+ },
+ {
+  "name": "sana burtiera nr 4",
+  "price": 42.35,
+  "brand": "SANA",
+  "quantity": ""
+ },
+ {
+  "name": "sana burtiera nr 6",
+  "price": 42.35,
+  "brand": "SANA",
+  "quantity": ""
+ },
+ {
+  "name": "sana burtiera nr 7",
+  "price": 42.35,
+  "brand": "SANA",
+  "quantity": ""
+ },
+ {
+  "name": "sana conuri pt.curatarea urechi mici",
+  "price": 9.56,
+  "brand": "SANA",
+  "quantity": ""
+ },
+ {
+  "name": "sana glezniera elast. 2 buc XL",
+  "price": 23.6,
+  "brand": "SANA",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "sana glezniera elast. L 2 buc",
+  "price": 23.6,
+  "brand": "SANA",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "sana glezniera elast. M 2 buc",
+  "price": 23.6,
+  "brand": "SANA",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "sana glezniera elast. smoll 2 buc",
+  "price": 23.6,
+  "brand": "SANA",
+  "quantity": "2 buc"
+ },
+ {
+  "name": "sana recipient pt lapte praf si gustari",
+  "price": 19.6,
+  "brand": "SANA",
+  "quantity": ""
+ },
+ {
+  "name": "sana recipient pt lapte praf si gustari sana",
+  "price": 0.0,
+  "brand": "SANA",
+  "quantity": ""
+ },
+ {
+  "name": "sanytayaki plast.antireumatic",
+  "price": 2.78,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "saruri de rehidratare 20pliculete",
+  "price": 21.78,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "senna 30 cps-parafarm",
+  "price": 26.46,
+  "brand": "SENNA",
+  "quantity": "30 cps"
+ },
+ {
+  "name": "seringa 1 ml cu ac",
+  "price": 0.29,
+  "brand": "PATRICECOM",
+  "quantity": "1 ml"
+ },
+ {
+  "name": "seringa 1 ml ac 27g1/2 minut",
+  "price": 0.39,
+  "brand": "MINUT",
+  "quantity": "1 ml"
+ },
+ {
+  "name": "seringa 50 ml cu ac",
+  "price": 1.57,
+  "brand": "PATRICECOM",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "seringa 50 ml fara ac pentru irigatii",
+  "price": 1.45,
+  "brand": "PATRICECOM",
+  "quantity": "50 ml"
+ },
+ {
+  "name": "seringi cu ac 10ml -helm",
+  "price": 0.39,
+  "brand": "PATRICECOM",
+  "quantity": "10ml"
+ },
+ {
+  "name": "seringi cu ac 20ml -helm",
+  "price": 0.61,
+  "brand": "PATRICECOM",
+  "quantity": "20ml"
+ },
+ {
+  "name": "seringi cu ac 2ml -helm",
+  "price": 0.25,
+  "brand": "PATRICECOM",
+  "quantity": "2ml"
+ },
+ {
+  "name": "seringi cu ac 5ml -helm",
+  "price": 0.28,
+  "brand": "PATRICECOM",
+  "quantity": "5ml"
+ },
+ {
+  "name": "sirop ridiche-neagra fares",
+  "price": 24.81,
+  "brand": "FARES",
+  "quantity": ""
+ },
+ {
+  "name": "sonde foley cu 2 cai CH 16",
+  "price": 4.36,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "sonde foley cu 2 cai CH 20",
+  "price": 4.36,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "sonde foley cu 2 cai CH22",
+  "price": 4.54,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "sonde foley B CH 14",
+  "price": 4.36,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "sonde foley ch 24",
+  "price": 38.85,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "spirulina 1000 mg cpr",
+  "price": 21.2,
+  "brand": "SPIRULINA",
+  "quantity": ""
+ },
+ {
+  "name": "spirulina 500 cps",
+  "price": 10.77,
+  "brand": "SPIRULINA",
+  "quantity": "500 cps"
+ },
+ {
+  "name": "termometru digital cool med varf rigid",
+  "price": 32.67,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "test rapid afectiuni ale rinichilor self care",
+  "price": 42.35,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "test rapid alergii self care",
+  "price": 54.45,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "test rapid boala lyme self care",
+  "price": 25.41,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "test rapid streptococ A",
+  "price": 4.82,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "teste de sarcina-caseta sm MINUT INTIM",
+  "price": 1.94,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "teste de sarcina-minut intim banda 2.5mm",
+  "price": 3.75,
+  "brand": "MINUT",
+  "quantity": ""
+ },
+ {
+  "name": "vata medicinala GH 100 gr",
+  "price": 5.93,
+  "brand": "PATRICECOM",
+  "quantity": "100 gr"
+ },
+ {
+  "name": "vata medicinala GH 200 gr",
+  "price": 25.41,
+  "brand": "PATRICECOM",
+  "quantity": "200 gr"
+ },
+ {
+  "name": "vermicin capsule",
+  "price": 28.44,
+  "brand": "PATRICECOM",
+  "quantity": ""
+ },
+ {
+  "name": "verolit forte-sol.negi",
+  "price": 16.94,
+  "brand": "VEROLIT",
+  "quantity": ""
+ },
+ {
+  "name": "verolit-sol.negi",
+  "price": 26.02,
+  "brand": "VEROLIT",
+  "quantity": ""
+ },
+ {
+  "name": "vitamina A 10 ml-zanna",
+  "price": 4.6,
+  "brand": "VITAMINA",
+  "quantity": "10 ml"
+ },
+ {
+  "name": "vivaqua pans.rezistent la apa 20cm x 10 cm",
+  "price": 7.5,
+  "brand": "VIVA",
+  "quantity": ""
+ }
+]
