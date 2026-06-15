@@ -308,6 +308,7 @@
     // Re-render sidebar on language change
     document.addEventListener('langChanged', () => {
         renderSubcatFilters();
+        renderProducts(true);
         updateResultsHeader();
     });
 
@@ -350,41 +351,49 @@
         card.style.animation = 'fadeInUp 0.4s ease forwards';
         card.style.opacity = '0';
 
+        const lang = window.currentLang || 'ro';
+        const L = {
+            ro: { add: 'Adauga in cos', added: 'In cos', ask: 'Pret la cerere', nou: 'Nou', pop: 'Popular' },
+            en: { add: 'Add to cart', added: 'In cart', ask: 'Price on request', nou: 'New', pop: 'Popular' },
+            hu: { add: 'Kosarba', added: 'Kosarban', ask: 'Ar kerésre', nou: 'Uj', pop: 'Nepszeru' },
+            de: { add: 'In den Korb', added: 'Im Korb', ask: 'Preis auf Anfrage', nou: 'Neu', pop: 'Beliebt' }
+        }[lang] || {};
+
         const badges = [];
-        if (product.offer) badges.push(`<span class="badge badge-offer">${product.offer}</span>`);
-        if (product.id % 17 === 0) badges.push('<span class="badge badge-new">Nou</span>');
-        if (product.id % 23 === 0) badges.push('<span class="badge badge-popular">Popular</span>');
+        if (product.offer) badges.push(`<span class="badge badge-offer"><i class="fas fa-tag"></i> ${product.offer}</span>`);
+        if (product.id % 17 === 0) badges.push(`<span class="badge badge-new">${L.nou}</span>`);
+        if (product.id % 23 === 0) badges.push(`<span class="badge badge-popular"><i class="fas fa-star"></i> ${L.pop}</span>`);
+
+        const imgHtml = product.image
+            ? `<img src="${product.image}" alt="${product.name}" loading="lazy" onerror="this.onerror=null;this.parentElement.classList.add('no-img');this.outerHTML='<i class=\\'${icon}\\'></i>'"/>`
+            : `<i class="${icon}"></i>`;
 
         card.innerHTML = `
             ${badges.length ? `<div class="product-badge">${badges.join('')}</div>` : ''}
-            <div class="product-image" onclick="viewProduct(${product.id})">
-                <div class="product-image-bg" style="background:${colors.bg}">
-                    ${product.image ? `<img src="${product.image}" alt="${product.name}" style="width:100%;height:100%;object-fit:contain;" loading="lazy" onerror="this.onerror=null;this.outerHTML='<i class=\\'${icon}\\' style=\\'color:${colors.color}\\'></i>'"/>` : (window.getProductImage ? `<img src="${window.getProductImage(product)}" alt="${product.name}" style="width:100%;height:100%;object-fit:contain;" loading="lazy"/>` : `<i class="${icon}" style="color:${colors.color}"></i>`)}
-                </div>
-                <div class="product-quick-actions">
-                    <button class="quick-action-btn" onclick="event.stopPropagation(); viewProduct(${product.id})" title="Detalii">
-                        <i class="fas fa-eye"></i>
-                    </button>
-                    ${product.price ? `
-                    <button class="quick-action-btn" onclick="event.stopPropagation(); addToCart(${product.id})" title="Adauga in cos">
-                        <i class="fas fa-cart-plus"></i>
-                    </button>` : ''}
-                </div>
+            <div class="product-image ${product.image ? '' : 'no-img'}" onclick="viewProduct(${product.id})">
+                <div class="product-image-bg">${imgHtml}</div>
+                <button class="product-quickview" onclick="event.stopPropagation(); viewProduct(${product.id})" title="Detalii" aria-label="Detalii produs">
+                    <i class="fas fa-eye"></i>
+                </button>
             </div>
             <div class="product-info">
                 <span class="product-brand">${product.brand}</span>
-                <h3 class="product-name">${product.name}</h3>
-                <span class="product-quantity">${product.quantity}</span>
-                <div class="product-footer">
+                <h3 class="product-name" onclick="viewProduct(${product.id})">${product.name}</h3>
+                <span class="product-quantity">${product.quantity || '&nbsp;'}</span>
+                <div class="product-priceblock">
                     ${product.price
-                        ? `<span class="product-price">${product.price.toFixed(2)} <span class="currency">Lei</span></span>`
-                        : '<span class="product-price-unavailable">Pret la cerere</span>'
+                        ? `<span class="product-price">${product.price.toFixed(2)}<span class="currency">Lei</span></span>`
+                        : `<span class="product-price-unavailable">${L.ask}</span>`
                     }
-                    ${product.price ? `
-                    <button class="add-to-cart-btn ${inCart ? 'added' : ''}" onclick="addToCart(${product.id})" title="Adauga in cos">
-                        <i class="fas fa-${inCart ? 'check' : 'plus'}"></i>
-                    </button>` : ''}
                 </div>
+                ${product.price ? `
+                <button class="add-to-cart-cta ${inCart ? 'added' : ''}" onclick="addToCart(${product.id})">
+                    <i class="fas fa-${inCart ? 'check' : 'cart-plus'}"></i>
+                    <span>${inCart ? L.added : L.add}</span>
+                </button>` : `
+                <button class="add-to-cart-cta disabled" onclick="viewProduct(${product.id})">
+                    <i class="fas fa-circle-info"></i><span>Detalii</span>
+                </button>`}
             </div>
         `;
 
@@ -488,12 +497,15 @@
         updateCartUI();
         showToast(`${product.name} a fost adaugat in cos!`, 'success');
 
-        document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
-            if (btn.closest('.product-card')) {
-                const cardName = btn.closest('.product-card').querySelector('.product-name')?.textContent;
+        const lang = window.currentLang || 'ro';
+        const addedLabel = { ro: 'In cos', en: 'In cart', hu: 'Kosarban', de: 'Im Korb' }[lang] || 'In cos';
+        document.querySelectorAll('.add-to-cart-cta').forEach(btn => {
+            const card = btn.closest('.product-card');
+            if (card) {
+                const cardName = card.querySelector('.product-name')?.textContent;
                 if (cardName === product.name) {
                     btn.classList.add('added');
-                    btn.innerHTML = '<i class="fas fa-check"></i>';
+                    btn.innerHTML = `<i class="fas fa-check"></i><span>${addedLabel}</span>`;
                 }
             }
         });

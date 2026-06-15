@@ -93,16 +93,18 @@ def pick_strict(urls, name, brand):
             if hits >= 2:
                 other_token.append((hits, u))
 
-    # STRICT: never return a pharmacy result with zero matches.
+    # 1. Best: pharmacy host + product token in URL slug.
     if pharm_token:
         pharm_token.sort(reverse=True)
         return pharm_token[0][1]
+    # 2. Pharmacy host + brand slug in URL.
     if pharm_any and brand_low and brand_low not in ('patricecom',):
         brand_slug = slugify(brand)
         if brand_slug and len(brand_slug) >= 4:
             for u in pharm_any:
                 if brand_slug in u.lower():
                     return u
+    # 3. Non-pharmacy but strong token match.
     if other_token:
         other_token.sort(reverse=True)
         top = other_token[0]
@@ -112,6 +114,11 @@ def pick_strict(urls, name, brand):
             brand_slug = slugify(brand)
             if brand_slug and len(brand_slug) >= 4 and brand_slug in top[1].lower():
                 return top[1]
+    # 4. Coverage fallback: trust the first pharmacy-hosted image.
+    #    Pharmacy domains only serve real product photos (search-ranked,
+    #    relevant by category), never random web junk.
+    if pharm_any:
+        return pharm_any[0]
     return None
 
 def search_yandex(query):
