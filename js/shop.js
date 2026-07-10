@@ -35,6 +35,7 @@
         currentSubcategory = 'all';
         renderSubcatFilters();
         applyFilters();
+        showMobilePanel();
     };
 
     // Called from app.js when a subcategory is clicked (mega menu or sidebar)
@@ -205,7 +206,11 @@
         renderMobileSubcatPanel();
     }
 
-    // Mobile inline subcategory panel (under cat-nav)
+    // Mobile inline subcategory panel (under cat-nav).
+    // Builds content for the current category. Does NOT toggle visibility —
+    // visibility is controlled by showMobilePanel()/hideMobilePanel() so it only
+    // appears when the user actively selects a section, and it survives re-renders
+    // (e.g. language change) with whatever visibility it currently has.
     function renderMobileSubcatPanel() {
         const panel = document.getElementById('mobileSubcatPanel');
         const header = document.getElementById('mobileSubcatHeader');
@@ -214,58 +219,21 @@
 
         const lang = window.currentLang || 'ro';
         const allLabel = lang === 'en' ? 'All' : lang === 'hu' ? 'Osszes' : lang === 'de' ? 'Alle' : 'Toate';
-        const allProductsLabel = lang === 'en' ? 'All Products' : lang === 'hu' ? 'Osszes Termek' : lang === 'de' ? 'Alle Produkte' : 'Toate Produsele';
-        const catsHeaderLabel = lang === 'en' ? 'Categories' : lang === 'hu' ? 'Kategoriak' : lang === 'de' ? 'Kategorien' : 'Categorii';
-
-        // When on "all": show full categories list
-        if (currentCategory === 'all') {
-            header.innerHTML = `<span><i class="fas fa-th-large"></i>${catsHeaderLabel}</span>`;
-            const cats = Object.keys(window.productCategories || {});
-            let html = '';
-            cats.forEach(catKey => {
-                const meta = window.productCategories[catKey];
-                const label = meta['name_' + lang] || meta.name_ro;
-                const cnt = window.allProducts.filter(p => p.category === catKey).length;
-                if (cnt === 0) return;
-                const icon = meta.icon && meta.icon.startsWith('fa-') ? 'fas ' + meta.icon : (meta.icon || 'fas fa-circle');
-                html += `
-                    <div class="mobile-subcat-pill" data-cat-link="${catKey}">
-                        <span class="pill-name"><i class="${icon}"></i>${label}</span>
-                        <span class="pill-count">${cnt}</span>
-                    </div>
-                `;
-            });
-            list.innerHTML = html;
-            panel.classList.add('visible');
-
-            list.querySelectorAll('.mobile-subcat-pill[data-cat-link]').forEach(pill => {
-                pill.addEventListener('click', () => {
-                    const catKey = pill.getAttribute('data-cat-link');
-                    document.querySelectorAll('.cat-nav-item').forEach(i => i.classList.remove('active'));
-                    const navItem = document.querySelector(`.cat-nav-item[data-cat="${catKey}"]`);
-                    if (navItem) navItem.classList.add('active');
-                    window.filterByCategory(catKey);
-                });
-            });
-            return;
-        }
-
-        // Hide panel when on "oferte"
-        if (currentCategory === 'oferte') {
-            panel.classList.remove('visible');
-            return;
-        }
-
         const catMeta = window.productCategories && window.productCategories[currentCategory];
-        if (!catMeta) {
+
+        // No subcategory panel for "all", "oferte" or unknown categories.
+        if (currentCategory === 'all' || currentCategory === 'oferte' || !catMeta) {
             panel.classList.remove('visible');
+            list.innerHTML = '';
+            header.innerHTML = '';
             return;
         }
 
         const catLabel = catMeta['name_' + lang] || catMeta.name_ro;
         const titleIcon = catMeta.icon && catMeta.icon.startsWith('fa-') ? 'fas ' + catMeta.icon : (catMeta.icon || 'fas fa-layer-group');
 
-        header.innerHTML = `<span><i class="${titleIcon}"></i>${catLabel}</span>`;
+        header.innerHTML = `<span><i class="${titleIcon}"></i>${catLabel}</span>` +
+            `<button class="mobile-subcat-close" aria-label="Inchide"><i class="fas fa-times"></i></button>`;
 
         const subs = (window.productSubcategories && window.productSubcategories[currentCategory]) || [];
         const catProducts = window.allProducts.filter(p => p.category === currentCategory);
@@ -289,14 +257,14 @@
         });
 
         list.innerHTML = html;
-        panel.classList.add('visible');
+
+        header.querySelector('.mobile-subcat-close')?.addEventListener('click', hideMobilePanel);
 
         list.querySelectorAll('.mobile-subcat-pill').forEach(pill => {
             pill.addEventListener('click', () => {
                 list.querySelectorAll('.mobile-subcat-pill').forEach(p => p.classList.remove('active'));
                 pill.classList.add('active');
                 currentSubcategory = pill.getAttribute('data-subcat');
-                // Keep sidebar in sync
                 document.querySelectorAll('.subcat-filter').forEach(e => {
                     e.classList.toggle('active', e.getAttribute('data-subcat') === currentSubcategory);
                 });
@@ -304,6 +272,31 @@
             });
         });
     }
+
+    function showMobilePanel() {
+        const panel = document.getElementById('mobileSubcatPanel');
+        if (!panel) return;
+        const catMeta = window.productCategories && window.productCategories[currentCategory];
+        if (currentCategory !== 'all' && currentCategory !== 'oferte' && catMeta) {
+            panel.classList.add('visible');
+        } else {
+            panel.classList.remove('visible');
+        }
+    }
+
+    function hideMobilePanel() {
+        const panel = document.getElementById('mobileSubcatPanel');
+        if (panel) panel.classList.remove('visible');
+    }
+
+    // Dismiss the panel when tapping anywhere outside it (and outside the category nav).
+    document.addEventListener('click', (e) => {
+        const panel = document.getElementById('mobileSubcatPanel');
+        if (!panel || !panel.classList.contains('visible')) return;
+        if (e.target.closest('#mobileSubcatPanel')) return;
+        if (e.target.closest('.cat-nav')) return;
+        panel.classList.remove('visible');
+    });
 
     // Re-render sidebar on language change
     document.addEventListener('langChanged', () => {

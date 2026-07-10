@@ -1539,12 +1539,23 @@ input:focus, textarea:focus, select:focus {
     }
 
     .mobile-subcat-header .mobile-subcat-close {
-        background: none;
+        background: var(--gray-100);
         border: none;
-        color: var(--gray-400);
+        color: var(--gray-500);
         font-size: 0.85rem;
         cursor: pointer;
-        padding: 4px 8px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .mobile-subcat-header .mobile-subcat-close i {
+        color: var(--gray-500);
+        margin-right: 0;
     }
 
     .mobile-subcat-list {
